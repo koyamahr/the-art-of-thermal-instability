@@ -4,7 +4,7 @@
 
 ## 現在地
 
-初期構築版。論文台帳と展示の構成を用意しています。主要6編のPDFをADS・arXivから取得済みです。Field 1965 Figures 1・2・3を式から再計算し、それぞれ15項目・10項目・24項目の検証を通過しました。英語の展示ページ、Pythonコード、CSVと検証記録を用意しています。GitHub公開とライセンス選定は未完了です。
+初期構築版。論文台帳と展示の構成を用意しています。主要6編のPDFをADS・arXivから取得済みです。Field 1965 Figures 1・2・3を式から再計算し、それぞれ15項目・10項目・24項目の検証を通過しました。英語の展示ページ、Pythonコード、CSVと検証記録を用意しています。GitHub Pagesに初版を公開済みです。ライセンス選定は未完了です。
 
 ## ローカルで見る
 
@@ -12,7 +12,7 @@ Python 3で `python3 -m http.server 8000 --directory docs` を実行し、http:/
 
 ## GitHub Pages
 
-公開練習と自動更新の手順は [PUBLISHING.md](PUBLISHING.md) にあります。GitHub Actionsで全図を再計算・検証し、`docs/`だけを公開する構成です。初期状態では公開せず練習用の成果物を作り、初回公開後に自動更新を有効化できます。リポジトリは https://github.com/koyamahr/the-art-of-thermal-instability に作成済みです。初回pushにはこのMacでのGitHub認証が必要です。サイト自体はまだ未公開です。
+公開練習と自動更新の手順は [PUBLISHING.md](PUBLISHING.md) にあります。GitHub Actionsで全図を再計算・検証し、`docs/`だけを公開する構成です。手動の練習モードに加え、mainへのpush後に検証・公開する自動更新を有効にしています。リポジトリは https://github.com/koyamahr/the-art-of-thermal-instability に作成済みです。サイトは https://koyamahr.github.io/the-art-of-thermal-instability/ で公開しています。
 
 ## コンテンツ
 

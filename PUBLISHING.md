@@ -2,7 +2,9 @@
 
 ## Current status
 
-The workflow is prepared locally. The public repository https://github.com/koyamahr/the-art-of-thermal-instability exists and is configured as origin. The first Git push is awaiting terminal authentication; GitHub Actions and Pages have not yet run. The first publication must be checked at its actual returned URL.
+Initial publication succeeded on 2026-11-03. Site: https://koyamahr.github.io/the-art-of-thermal-instability/ . Repository: https://github.com/koyamahr/the-art-of-thermal-instability . `PAGES_AUTO_DEPLOY=true` is enabled: pushes to main validate and deploy automatically.
+
+The first [rehearsal](https://github.com/koyamahr/the-art-of-thermal-instability/actions/runs/41558943576) and [manual deployment](https://github.com/koyamahr/the-art-of-thermal-instability/actions/runs/41559093976) succeeded, including all 49 scientific checks. The steps below document how to repeat the rehearsal and initial setup.
 
 ## 1. Rehearse locally
 
@@ -20,7 +22,7 @@ Visit http://127.0.0.1:8000 and inspect all three exhibits and their downloads. 
 
 The repository `koyamahr/the-art-of-thermal-instability` has been created. Authenticate Git on this Mac, then push this project with `git push -u origin main`. For a free personal GitHub plan, use a public repository for Pages. Author PDFs are ignored by Git; only `docs/` is packaged for the website.
 
-Do not add the repository variable `PAGES_AUTO_DEPLOY` yet. With that variable absent, pushing `main` runs checks and creates the `site-rehearsal` artifact without deploying. In Actions, open **Check, rehearse, and publish site**, inspect the logs, and download the artifact to review it with a local HTTP server.
+For an initial setup on another repository, do not add the repository variable `PAGES_AUTO_DEPLOY` yet. On this repository it is already enabled. With that variable absent, pushing `main` runs checks and creates the `site-rehearsal` artifact without deploying. In Actions, open **Check, rehearse, and publish site**, inspect the logs, and download the artifact to review it with a local HTTP server.
 
 For another rehearsal, choose **Run workflow**, select **main**, leave **publish** unchecked, and run. A successful rehearsal verifies the remote calculation/build process, but does not produce a public preview URL.
 
@@ -34,7 +36,7 @@ The normal project URL is `https://<account>.github.io/the-art-of-thermal-instab
 
 ## 4. Enable automatic updates
 
-After the first successful publication, add **Settings → Secrets and variables → Actions → Variables → New repository variable**:
+This repository already has the variable below. For a new setup, after the first successful publication, add **Settings → Secrets and variables → Actions → Variables → New repository variable**:
 
 - Name: `PAGES_AUTO_DEPLOY`
 - Value: `true`
