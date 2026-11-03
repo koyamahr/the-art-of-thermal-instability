@@ -2,7 +2,7 @@
 
 ## Current status
 
-The workflow is prepared locally. No GitHub remote or authenticated GitHub CLI is configured yet; a successful GitHub Actions deployment has not been verified. The first publication must be checked at its actual returned URL.
+The workflow is prepared locally. The public repository https://github.com/koyamahr/the-art-of-thermal-instability exists and is configured as origin. The first Git push is awaiting terminal authentication; GitHub Actions and Pages have not yet run. The first publication must be checked at its actual returned URL.
 
 ## 1. Rehearse locally
 
@@ -18,7 +18,7 @@ Visit http://127.0.0.1:8000 and inspect all three exhibits and their downloads. 
 
 ## 2. Connect GitHub and rehearse there
 
-Create the GitHub repository `the-art-of-thermal-instability` under the intended account and push this project. For a free personal GitHub plan, use a public repository for Pages. Author PDFs are ignored by Git; only `docs/` is packaged for the website.
+The repository `koyamahr/the-art-of-thermal-instability` has been created. Authenticate Git on this Mac, then push this project with `git push -u origin main`. For a free personal GitHub plan, use a public repository for Pages. Author PDFs are ignored by Git; only `docs/` is packaged for the website.
 
 Do not add the repository variable `PAGES_AUTO_DEPLOY` yet. With that variable absent, pushing `main` runs checks and creates the `site-rehearsal` artifact without deploying. In Actions, open **Check, rehearse, and publish site**, inspect the logs, and download the artifact to review it with a local HTTP server.
 
