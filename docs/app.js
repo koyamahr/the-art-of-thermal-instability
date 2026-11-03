@@ -40,7 +40,7 @@ function render(filter = "all") {
     list.append(row);
   }
   const ready = visible.reduce((count,p) => count + (p.exhibits ? p.exhibits.filter(e => e.validated ?? p.status === "validated").length : p.status === "validated" && p.exhibit ? 1 : 0), 0);
-  statusLine.textContent = `${visible.length} papers · ${ready} exhibit${ready === 1 ? "" : "s"} numerically validated`;
+  statusLine.textContent = `${visible.length} papers · oldest first · ${ready} exhibit${ready === 1 ? "" : "s"} numerically validated`;
 }
 filters.forEach(button => button.addEventListener("click", () => {
   filters.forEach(b => b.setAttribute("aria-pressed", String(b === button)));
@@ -49,7 +49,7 @@ filters.forEach(button => button.addEventListener("click", () => {
 fetch("catalog.json").then(response => {
   if (!response.ok) throw new Error("catalog unavailable");
   return response.json();
-}).then(data => { papers = data; render(); }).catch(() => {
+}).then(data => { papers = [...data].sort((a, b) => a.year - b.year); render(); }).catch(() => {
   statusLine.textContent = "The paper catalog could not be loaded. Open this site through an HTTP server, or use the JSON link in the footer.";
   filters.forEach(button => { button.disabled = true; });
 });
