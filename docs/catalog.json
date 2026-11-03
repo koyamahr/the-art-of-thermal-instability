@@ -989,5 +989,26 @@
         "label": "Boussinesq convection & scope →"
       }
     ]
+  },
+  {
+    "id": "nishi-nakano-umebayashi-1991",
+    "year": 1991,
+    "authors": "Nishi, Nakano & Umebayashi",
+    "title": "Magnetic Flux Loss from Interstellar Clouds with Various Grain-Size Distributions",
+    "group": "rate_history",
+    "status": "listed",
+    "source": "https://adsabs.harvard.edu/pdf/1991ApJ...368..181N",
+    "topic": "Ionization–recombination equilibrium with electrons, ions and charged grains; grain-size distributions affect magnetic coupling in shielded molecular clouds.",
+    "scope": "Candidate: Figure1 charged-species abundances at10K for the standard MRN grain distribution, before comparing the other grain models. Recover the required reaction rates and PaperI inputs first. This is a charge-equilibrium benchmark, not a thermal-equilibrium curve or a reproduced magnetic-flux-loss calculation.",
+    "journal": "ApJ 368, 181–194",
+    "doi": "10.1086/169682",
+    "reference_section": "rate-history",
+    "review_status": "Original abstract and SectionII read; p.183 Eqs3–4 and Figures1–2 visually checked. Crossref DOI/title checked. Rate tables, grain-capture inputs and numerical reproduction remain unaudited. The likely match to the user’s recalled three-author paper, not a confirmed identification by the user.",
+    "resources": [
+      {
+        "href": "research-paths.html#nishi-nakano-umebayashi-1991",
+        "label": "Ionization, grain charge & proposed benchmark →"
+      }
+    ]
   }
 ]

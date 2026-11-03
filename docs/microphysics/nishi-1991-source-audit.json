@@ -1,0 +1,44 @@
+{
+  "review_date": "2026-11-03",
+  "source": "Nishi, Nakano & Umebayashi (1991), ApJ368,181–194",
+  "title": "Magnetic flux loss from interstellar clouds with various grain-size distributions",
+  "doi": "10.1086/169682",
+  "pdf_url": "https://adsabs.harvard.edu/pdf/1991ApJ...368..181N",
+  "pdf_sha256": "17776c1bf472f687223a506d66516072c65b6cbe24258467d8fef9874025df67",
+  "identification": "Strong candidate for the recalled three-author ionization paper; exact identification not separately confirmed by the user.",
+  "reviewed": "Abstract and SectionII read; original p.183 Eqs3–4 and Figures1–2 visually inspected. Crossref title/DOI matched.",
+  "candidate_figure": 1,
+  "parameters_from_source": {
+    "temperature_K": 10,
+    "grain_model": "standard MRN",
+    "heavy_element_depletion_factors": [
+      0.2,
+      0.02
+    ],
+    "grain_charge_states_e": [
+      -2,
+      -1,
+      0,
+      1,
+      2
+    ]
+  },
+  "normalizations": {
+    "abundance": "n(X)/n_H; n_H counts total hydrogen nuclei",
+    "control_parameter": "n_H/zeta",
+    "zeta": "ionization rate per H2 molecule",
+    "upper_axis_reference_zeta_s_inverse": 1e-17
+  },
+  "parent": {
+    "source": "Umebayashi & Nakano1990, Magnetic flux loss from interstellar clouds, MNRAS243,103–113",
+    "doi": "10.1093/mnras/243.1.103",
+    "role": "Explicit PaperI; reaction scheme and abundance inputs must be recovered.",
+    "review_status": "Publisher bibliography/abstract checked; full rate tables not audited."
+  },
+  "limitations": [
+    "No coefficients transcribed or charge-equilibrium solver implemented for this paper.",
+    "Figures inspected, not digitized.",
+    "Electron fraction, ions and grain charge distribution must be distinguished; charge neutrality does not imply ne=ni when grains carry charge.",
+    "A10K charge-equilibrium sequence is not a thermal-equilibrium curve and does not replace FGH atomic-gas chemistry."
+  ]
+}
