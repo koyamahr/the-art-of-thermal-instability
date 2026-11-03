@@ -1,0 +1,50 @@
+{
+  "review_date": "2026-11-03",
+  "role": "Companion references; not additions to the thermal-instability atlas or completed reproductions",
+  "papers": [
+    {
+      "id": "mori-2008",
+      "year": 2008,
+      "authors": "Mori, Jilkine & Edelstein-Keshet",
+      "title": "Wave-Pinning and Cell Polarity from a Bistable Reaction-Diffusion System",
+      "journal": "Biophysical Journal 94, 3684–3697",
+      "doi": "10.1529/biophysj.107.120824",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2292363/",
+      "review": "Primary article, discussion of Eqs10–11 and Figure3: reaction-integral Maxwell condition and total-pool conservation.",
+      "limit": "Small-diffusion-front and near-uniform inactive-pool assumptions matter; no biological simulation reproduced."
+    },
+    {
+      "id": "mori-2011",
+      "year": 2011,
+      "authors": "Mori, Jilkine & Edelstein-Keshet",
+      "title": "Asymptotic and Bifurcation Analysis of Wave-Pinning in a Reaction-Diffusion Model for Cell Polarization",
+      "journal": "SIAM Journal on Applied Mathematics 71(4), 1401–1427",
+      "doi": "10.1137/10079118X",
+      "url": "https://personal.math.ubc.ca/~keshet/Papers/MoriSIAM2011.pdf",
+      "review": "Publisher metadata and author-hosted published paper: abstract and front/asymptotic and bifurcation discussion; no full-equation implementation audit.",
+      "limit": "No quantitative bifurcation comparison performed."
+    },
+    {
+      "id": "brauns-2020",
+      "year": 2020,
+      "authors": "Brauns, Halatek & Frey",
+      "title": "Phase-Space Geometry of Mass-Conserving Reaction-Diffusion Dynamics",
+      "journal": "Physical Review X 10, 041036",
+      "doi": "10.1103/PhysRevX.10.041036",
+      "url": "https://journals.aps.org/prx/pdf/10.1103/PhysRevX.10.041036",
+      "review": "Primary open-access article, abstract and SectionIII E, Eqs16–20: turnover balance; geometric Maxwell construction requires the stated approximations before Eq19.",
+      "limit": "No universal scalar gradient-flow claim; the correspondence to ZP is our comparison, not a stated identity in the source."
+    },
+    {
+      "id": "fitzhugh-1961",
+      "year": 1961,
+      "authors": "Richard FitzHugh",
+      "title": "Impulses and Physiological States in Theoretical Models of Nerve Membrane",
+      "journal": "Biophysical Journal 1(6), 445–466",
+      "doi": "10.1016/S0006-3495(61)86902-6",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1366333/",
+      "review": "Primary article bibliography and abstract checked; excitation and refractoriness in a two-variable system.",
+      "limit": "Detailed equations and spatial pulse reductions not audited; not presented as the same stationary bistability problem."
+    }
+  ]
+}

@@ -942,5 +942,30 @@
         "label": "Conductive evaporation-front stability →"
       }
     ]
+  },
+  {
+    "id": "elphick-1992",
+    "year": 1992,
+    "authors": "Elphick, Regev & Shaviv",
+    "title": "Dynamics of Fronts in Thermally Bistable Fluids",
+    "group": "fronts",
+    "status": "listed",
+    "source": "https://adsabs.harvard.edu/pdf/1992ApJ...392..106E",
+    "topic": "Isobaric conductive fronts, a Lyapunov functional, equal-depth potential minima and interacting cloud boundaries.",
+    "scope": "The source equations are reviewed; no numerical reproduction yet. Candidate: the cubic benchmark, static kink or front speed versus potential-depth difference, retaining the Lagrangian mass coordinate and state-dependent mobility.",
+    "journal": "ApJ 392, 106–117",
+    "doi": "10.1086/171410",
+    "reference_section": "fronts",
+    "review_status": "Original scan pp.108–109, Eq.2.14, Eqs3.2–3.6 and Figure1 visually checked. The paper allows general bistable cooling; the earlier Elphick–Regev–Spiegel1991 model used a cubic approximation.",
+    "resources": [
+      {
+        "href": "research-paths.html#elphick-1992",
+        "label": "Front lineage & source review →"
+      },
+      {
+        "href": "essays/equal-area.html#ginzburg-landau",
+        "label": "Ginzburg–Landau connection →"
+      }
+    ]
   }
 ]
