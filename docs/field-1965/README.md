@@ -60,7 +60,7 @@ The limiting relations are `x/q -> sqrt((1-alpha)/(gamma*alpha))` as q→0 and, 
 
 ## Publication status
 
-Locally implemented and validated. GitHub deployment and code/content/data license selection remain pending. No redistribution license is granted by this README; the original paper's rights are separate.
+Implemented and validated locally and in GitHub Actions. Code/content/data license selection remains pending. No redistribution license is granted by this README; the original paper's rights are separate.
 
 ## Figure 3 is also available
 

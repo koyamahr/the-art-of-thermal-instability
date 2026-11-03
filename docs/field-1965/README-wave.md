@@ -56,4 +56,4 @@ Validation compares the selected roots and their conjugates with the fluid matri
 - `figure-3.csv`: full signed wave growth and positive frequency, including damped points omitted from the plot.
 - `validation-wave.json`: parameters, checks, sampled peaks, environment, and hashes of both source scripts and configuration.
 
-Overall curve shapes are visually checked. No digitized pointwise comparison with the original printed curves is claimed. Peaks are sampled, and the beta=0 maximum over the plotted range is an endpoint rather than a physical finite-wavenumber maximum. Licenses and GitHub publication remain pending, as for Figure 2.
+Overall curve shapes are visually checked. No digitized pointwise comparison with the original printed curves is claimed. Peaks are sampled, and the beta=0 maximum over the plotted range is an endpoint rather than a physical finite-wavenumber maximum. Licenses remain unselected, as for Figure 2.

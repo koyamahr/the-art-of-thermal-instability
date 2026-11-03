@@ -17,7 +17,7 @@ function render(filter = "all") {
     row.id = p.id;
     row.append(element("div", "year", String(p.year)));
     const body = element("div");
-    body.append(element("span", "state", p.status === "validated" ? "Validated locally" : "Planned"), element("p", "author", p.authors), element("h3", "", p.title), element("p", "topic", p.topic));
+    body.append(element("span", "state", p.status === "validated" ? "Numerically validated" : "Planned"), element("p", "author", p.authors), element("h3", "", p.title), element("p", "topic", p.topic));
     const details = element("details");
     details.append(element("summary", "", p.exhibit ? "About this exhibit" : "View planned exhibit"), element("p", "", p.scope));
     body.append(details);
@@ -35,7 +35,7 @@ function render(filter = "all") {
     list.append(row);
   }
   const ready = visible.reduce((count,p) => count + (p.status === "validated" ? (p.exhibits ? p.exhibits.length : p.exhibit ? 1 : 0) : 0), 0);
-  statusLine.textContent = `${visible.length} papers · ${ready} exhibit${ready === 1 ? "" : "s"} validated locally`;
+  statusLine.textContent = `${visible.length} papers · ${ready} exhibit${ready === 1 ? "" : "s"} numerically validated`;
 }
 filters.forEach(button => button.addEventListener("click", () => {
   filters.forEach(b => b.setAttribute("aria-pressed", String(b === button)));

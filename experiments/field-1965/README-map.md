@@ -58,4 +58,4 @@ Checks compare analytical growing-root counts and D-based topology against numer
 
 Outputs: SVG and PNG figure, a 161x161 domain grid CSV, a trajectory CSV, and `validation-map.json` with measured errors, tolerances, environment, and source hashes. In the grid CSV, growing-root counts on neutral lines are blank; D-based topology uses an absolute 1e-10 tolerance for repeated roots. The plot shows only the requested window; paths outside it are clipped and omitted from the path CSV.
 
-Root-count background colors and typography are modernized. The original circular guide for placing root-count labels is deliberately omitted; it is not a physical boundary. No digitized pointwise comparison with the original printed figure is claimed. Licenses and GitHub publication remain pending.
+Root-count background colors and typography are modernized. The original circular guide for placing root-count labels is deliberately omitted; it is not a physical boundary. No digitized pointwise comparison with the original printed figure is claimed. Licenses remain unselected.
