@@ -31,10 +31,10 @@
     "authors": "Field, Goldsmith & Habing",
     "title": "Cosmic-Ray Heating of the Interstellar Gas",
     "group": "classics",
-    "status": "in_progress",
+    "status": "deferred",
     "source": "https://ui.adsabs.harvard.edu/abs/1969ApJ...155L.149F/abstract",
     "topic": "From heating and cooling balance to two coexisting phases.",
-    "scope": "Historical heating/cooling diagnostics, reduced cold branch, and a cold-to-warm S-curve prototype with 48 numerical checks. Atomic excitation and recombination assumptions remain explicit; the Letter’s Figures 1 and 2 are not yet quantitatively reproduced.",
+    "scope": "Historical heating/cooling diagnostics and cold-to-warm prototype, now compared with96 sparse readings of Figures1/2. Warm pressure maximum1516.7 versus printed1800Kcm^-3; larger local differences remain near the shifted transition. Historical coefficient recovery is deferred, without fitting a correction.",
     "exhibits": [
       {
         "href": "fgh-1969/two-phase.html",
@@ -53,6 +53,12 @@
         "label": "Reduced cold branch →",
         "kind": "reduced_model",
         "validated": true
+      }
+    ],
+    "resources": [
+      {
+        "href": "fgh-1969/two-phase.html#comparison",
+        "label": "Original-figure comparison & stopping note →"
       }
     ]
   },

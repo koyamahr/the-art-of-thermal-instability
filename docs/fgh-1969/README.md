@@ -97,3 +97,71 @@ records the unresolved GHF Eq17 convention. Thermal He excitation/ionization,
 metal level populations, and other limitations remain explicit. No modern KI or
 Wolfire fit substitutes for the historical H cooling here. Passing48 numerical
 checks is not a claim to reproduce the original FGH figure quantitatively.
+
+
+## Original-figure comparison and stopping note
+
+Historical coefficient recovery is **deferred**. The user explicitly permits
+moving on when exact reproduction has no clear prospect. No coefficients have
+been fitted to the original curves. The existing prototype remains unchanged.
+
+Run `python compare.py` with all existing prototype dependencies, plus
+`digitized-fgh.csv` and `config-comparison.json`, in the same directory.
+The script writes `output/comparison.{png,svg,csv}` and
+`output/validation-comparison.json`. A source PDF is not needed to rerun the
+comparison. The JSON identifies its SHA256, page indices, render scale,
+crop origins, axis tick coordinates, and reading method.
+
+The 96 sparse readings were selected on isolated curves and checked visually
+against the source. Pixel envelopes include line width, a practical3-pixel
+reading envelope and axis-fit residuals; they are not statistical confidence
+limits. No independent second digitization has been performed. Source scans
+and the private overlay used for checking are not distributed.
+
+Figure1 compares density at each reference temperature. Figure2 compares
+pressure/electron density at the reference density, retaining every temperature
+root; ambiguous or absent roots are recorded rather than choosing the closest
+branch. This sample has no unscored points. The metrics differ and must not be
+pooled into a single reproduction score. Refining the scans preserves the roots.
+
+The refined model warm pressure maximum is1516.695Kcm^-3 at n0=0.165636cm^-3,
+T=8417.37K. The text quotes1800Kcm^-3,0.21cm^-3,7800K. The pressure discrepancy
+is-15.74%, density-21.13%, temperature+7.91%. At the quoted n,T point, model
+cooling/heating=1.17138. The shifted rapid transition makes some same-density
+pressure discrepancies much larger: the largest sampled difference is1.10dex.
+It would be misleading to describe the entire figure as agreeing within16%.
+
+The depleted a/b curves in the original are cold-side segments; the caption
+assumes transition to normal abundances near n~1cm^-3. The comparison restricts
+the plotted model segments accordingly. The separate full-domain prototype
+shows constant-abundance model extensions, not unseen original curves.
+
+### Coefficient audit
+
+- GHF Table1 (p179), Eq13 and16 (p178), and Field1968 Table1 (p958) were visually
+  rechecked. No transcription error was found in the currently used metal fits
+  or abundance baseline. This does not establish that every approximation
+  matches the unpublished original implementation.
+- Field1968 Eqs17–18 discuss Fe cascades. The GHF554/961K exponential terms
+  should not automatically be reinterpreted as independently populated lower
+  levels and suppressed by additional level fractions. The low-density total
+  cooling sum is retained; finite-density level populations remain unvalidated.
+- At the printed n,T anchor, SiII contributes31.4% of model cooling and
+  OI22500 contributes18.0%; all term budgets are in the report.
+- Eq13+20 reproduces rounded Eq23 heating within3%. This rounding difference
+  is not a resolved explanation of the pressure discrepancy.
+- GHF Eq17 prints a2/3 factor with its energy-weighted recombination definition.
+  The baseline retains the Hjellming kinetic-energy convention; a separate
+  printed-factor probe moves the warm pressure maximum by less than1%.
+- Halving/doubling thermal Ly-alpha cooling moves the warm maximum by about
+  +1.6%/-1.9%. This is a term-sensitivity probe, not a recovered historical
+  cross section or a bound on all H/He atomic-data uncertainties.
+
+The original Ly-alpha fit/Goldsmith thesis, thermal He processes, recombination
+convention, and exact historical implementation remain unresolved. The printed
+FGH and GHF depleted cases also differ and are not merged. Resume only if a
+specific missing fit, original code, or other discriminating evidence becomes
+available; continued unconstrained coefficient adjustment is not planned.
+
+The80 comparison checks test calibration, roots, consistency, and budgets. They
+do not turn the measured figure discrepancies into validation passes.

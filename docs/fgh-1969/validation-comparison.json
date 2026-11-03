@@ -1,0 +1,724 @@
+{
+  "scope": "Sparse quantitative comparison and coefficient diagnostics; historical reproduction is not certified",
+  "checks": [
+    {
+      "name": "Reference set contains exactly96 original-figure readings",
+      "passed": true
+    },
+    {
+      "name": "figure1 x: calibration residual in dex",
+      "error": 0.0012794985384969593,
+      "tolerance": 0.01,
+      "passed": true
+    },
+    {
+      "name": "figure1 x: axis orientation",
+      "passed": true
+    },
+    {
+      "name": "figure1 y: calibration residual in dex",
+      "error": 0.0029686094706184996,
+      "tolerance": 0.01,
+      "passed": true
+    },
+    {
+      "name": "figure1 y: axis orientation",
+      "passed": true
+    },
+    {
+      "name": "figure2 x: calibration residual in dex",
+      "error": 0.0029888901966050874,
+      "tolerance": 0.01,
+      "passed": true
+    },
+    {
+      "name": "figure2 x: axis orientation",
+      "passed": true
+    },
+    {
+      "name": "figure2 y: calibration residual in dex",
+      "error": 0.0029686094706193877,
+      "tolerance": 0.01,
+      "passed": true
+    },
+    {
+      "name": "figure2 y: axis orientation",
+      "passed": true
+    },
+    {
+      "name": "normal: source temperature points are monotonic in density",
+      "passed": true
+    },
+    {
+      "name": "normal: one density root per reference temperature",
+      "passed": true
+    },
+    {
+      "name": "normal: doubled density scan retains root count",
+      "passed": true
+    },
+    {
+      "name": "normal: density scan refinement",
+      "error": 1.1102230246251565e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "normal: baseline agrees with published prototype density roots",
+      "error": 6.217248937900877e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "normal P: doubled temperature scan root counts",
+      "passed": true
+    },
+    {
+      "name": "normal P: temperature scan refinement",
+      "error": 1.5543122344752192e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "normal ne: doubled temperature scan root counts",
+      "passed": true
+    },
+    {
+      "name": "normal ne: temperature scan refinement",
+      "error": 6.661338147750939e-16,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "FGH a: source temperature points are monotonic in density",
+      "passed": true
+    },
+    {
+      "name": "FGH a: one density root per reference temperature",
+      "passed": true
+    },
+    {
+      "name": "FGH a: doubled density scan retains root count",
+      "passed": true
+    },
+    {
+      "name": "FGH a: density scan refinement",
+      "error": 1.6653345369377348e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "FGH a: baseline agrees with published prototype density roots",
+      "error": 6.217248937900877e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "FGH a P: doubled temperature scan root counts",
+      "passed": true
+    },
+    {
+      "name": "FGH a P: temperature scan refinement",
+      "error": 3.4416913763379853e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "FGH a ne: doubled temperature scan root counts",
+      "passed": true
+    },
+    {
+      "name": "FGH a ne: temperature scan refinement",
+      "error": 3.4416913763379853e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "FGH b: source temperature points are monotonic in density",
+      "passed": true
+    },
+    {
+      "name": "FGH b: one density root per reference temperature",
+      "passed": true
+    },
+    {
+      "name": "FGH b: doubled density scan retains root count",
+      "passed": true
+    },
+    {
+      "name": "FGH b: density scan refinement",
+      "error": 1.1102230246251565e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "FGH b: baseline agrees with published prototype density roots",
+      "error": 6.217248937900877e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "FGH b P: doubled temperature scan root counts",
+      "passed": true
+    },
+    {
+      "name": "FGH b P: temperature scan refinement",
+      "error": 2.3314683517128287e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "FGH b ne: doubled temperature scan root counts",
+      "passed": true
+    },
+    {
+      "name": "FGH b ne: temperature scan refinement",
+      "error": 2.3314683517128287e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Normalized thermal residual at all scored roots",
+      "error": 2.776399712072353e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Refined warm-peak bracket in logT",
+      "error": 4.624935101560368e-09,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Heating budget sums",
+      "error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Cooling budget sums",
+      "error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Eq13+20 heating agrees with rounded Eq23 within3percent",
+      "error": 0.023751203960487022,
+      "tolerance": 0.03,
+      "passed": true
+    },
+    {
+      "name": "baseline_grid: complete warm scan",
+      "passed": true
+    },
+    {
+      "name": "baseline_grid: thermal residual",
+      "error": 1.0405503141355369e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "baseline_grid: interior warm pressure maximum",
+      "passed": true
+    },
+    {
+      "name": "GHF_printed_recombination_2over3: complete warm scan",
+      "passed": true
+    },
+    {
+      "name": "GHF_printed_recombination_2over3: thermal residual",
+      "error": 1.3060886858177448e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "GHF_printed_recombination_2over3: interior warm pressure maximum",
+      "passed": true
+    },
+    {
+      "name": "direct_heating_plus10percent: complete warm scan",
+      "passed": true
+    },
+    {
+      "name": "direct_heating_plus10percent: thermal residual",
+      "error": 1.0867296519298848e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "direct_heating_plus10percent: interior warm pressure maximum",
+      "passed": true
+    },
+    {
+      "name": "indirect_heating_plus10percent: complete warm scan",
+      "passed": true
+    },
+    {
+      "name": "indirect_heating_plus10percent: thermal residual",
+      "error": 1.137305300608234e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "indirect_heating_plus10percent: interior warm pressure maximum",
+      "passed": true
+    },
+    {
+      "name": "thermal_Lya_half: complete warm scan",
+      "passed": true
+    },
+    {
+      "name": "thermal_Lya_half: thermal residual",
+      "error": 1.1624865304637797e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "thermal_Lya_half: interior warm pressure maximum",
+      "passed": true
+    },
+    {
+      "name": "thermal_Lya_double: complete warm scan",
+      "passed": true
+    },
+    {
+      "name": "thermal_Lya_double: thermal residual",
+      "error": 1.084063609673261e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "thermal_Lya_double: interior warm pressure maximum",
+      "passed": true
+    },
+    {
+      "name": "cii-92_plus10percent: complete warm scan",
+      "passed": true
+    },
+    {
+      "name": "cii-92_plus10percent: thermal residual",
+      "error": 1.23878509658431e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "cii-92_plus10percent: interior warm pressure maximum",
+      "passed": true
+    },
+    {
+      "name": "siii-413_plus10percent: complete warm scan",
+      "passed": true
+    },
+    {
+      "name": "siii-413_plus10percent: thermal residual",
+      "error": 1.1739295612739506e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "siii-413_plus10percent: interior warm pressure maximum",
+      "passed": true
+    },
+    {
+      "name": "feii-554_plus10percent: complete warm scan",
+      "passed": true
+    },
+    {
+      "name": "feii-554_plus10percent: thermal residual",
+      "error": 1.1986340438580741e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "feii-554_plus10percent: interior warm pressure maximum",
+      "passed": true
+    },
+    {
+      "name": "feii-961_plus10percent: complete warm scan",
+      "passed": true
+    },
+    {
+      "name": "feii-961_plus10percent: thermal residual",
+      "error": 1.15184169636912e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "feii-961_plus10percent: interior warm pressure maximum",
+      "passed": true
+    },
+    {
+      "name": "oi-228_plus10percent: complete warm scan",
+      "passed": true
+    },
+    {
+      "name": "oi-228_plus10percent: thermal residual",
+      "error": 1.1079610748960748e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "oi-228_plus10percent: interior warm pressure maximum",
+      "passed": true
+    },
+    {
+      "name": "oi-326_plus10percent: complete warm scan",
+      "passed": true
+    },
+    {
+      "name": "oi-326_plus10percent: thermal residual",
+      "error": 1.146985369009297e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "oi-326_plus10percent: interior warm pressure maximum",
+      "passed": true
+    },
+    {
+      "name": "oi-22500_plus10percent: complete warm scan",
+      "passed": true
+    },
+    {
+      "name": "oi-22500_plus10percent: thermal residual",
+      "error": 1.1194352623529334e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "oi-22500_plus10percent: interior warm pressure maximum",
+      "passed": true
+    }
+  ],
+  "source_comparison": [
+    {
+      "case": "normal",
+      "quantity": "T",
+      "metric": "log10(n_model(T_ref)/n_ref)",
+      "points": 19,
+      "scored": 19,
+      "unscored": 0,
+      "median_signed_dex": -0.051483362477701834,
+      "rms_dex": 0.11169922743342953,
+      "max_absolute_dex": 0.23126174872216018
+    },
+    {
+      "case": "normal",
+      "quantity": "P",
+      "metric": "log10(y_model(n_ref)/y_ref)",
+      "points": 16,
+      "scored": 16,
+      "unscored": 0,
+      "median_signed_dex": -0.022706980814344226,
+      "rms_dex": 0.29175730397804145,
+      "max_absolute_dex": 1.1006087988613027
+    },
+    {
+      "case": "normal",
+      "quantity": "ne",
+      "metric": "log10(y_model(n_ref)/y_ref)",
+      "points": 17,
+      "scored": 17,
+      "unscored": 0,
+      "median_signed_dex": -0.023502905460644454,
+      "rms_dex": 0.09898730154193351,
+      "max_absolute_dex": 0.38410445963528195
+    },
+    {
+      "case": "FGH a",
+      "quantity": "T",
+      "metric": "log10(n_model(T_ref)/n_ref)",
+      "points": 8,
+      "scored": 8,
+      "unscored": 0,
+      "median_signed_dex": 0.004561235372038901,
+      "rms_dex": 0.009872378002276463,
+      "max_absolute_dex": 0.013421030569938956
+    },
+    {
+      "case": "FGH a",
+      "quantity": "P",
+      "metric": "log10(y_model(n_ref)/y_ref)",
+      "points": 8,
+      "scored": 8,
+      "unscored": 0,
+      "median_signed_dex": 0.006864114867110888,
+      "rms_dex": 0.025140407434261217,
+      "max_absolute_dex": 0.0650647837472094
+    },
+    {
+      "case": "FGH a",
+      "quantity": "ne",
+      "metric": "log10(y_model(n_ref)/y_ref)",
+      "points": 8,
+      "scored": 8,
+      "unscored": 0,
+      "median_signed_dex": -0.02518527208047994,
+      "rms_dex": 0.02669577598397586,
+      "max_absolute_dex": 0.038461483397966165
+    },
+    {
+      "case": "FGH b",
+      "quantity": "T",
+      "metric": "log10(n_model(T_ref)/n_ref)",
+      "points": 8,
+      "scored": 8,
+      "unscored": 0,
+      "median_signed_dex": -0.047567267776829465,
+      "rms_dex": 0.051226845554213564,
+      "max_absolute_dex": 0.06999468206737751
+    },
+    {
+      "case": "FGH b",
+      "quantity": "P",
+      "metric": "log10(y_model(n_ref)/y_ref)",
+      "points": 6,
+      "scored": 6,
+      "unscored": 0,
+      "median_signed_dex": -0.03286054276423042,
+      "rms_dex": 0.03075936495292899,
+      "max_absolute_dex": 0.03722838461534963
+    },
+    {
+      "case": "FGH b",
+      "quantity": "ne",
+      "metric": "log10(y_model(n_ref)/y_ref)",
+      "points": 6,
+      "scored": 6,
+      "unscored": 0,
+      "median_signed_dex": -0.03248699923360902,
+      "rms_dex": 0.031896161759235125,
+      "max_absolute_dex": 0.04047110912561588
+    }
+  ],
+  "printed_anchor_comparison": {
+    "model_warm_peak": {
+      "n0_cm3": 0.16563603153309112,
+      "T_K": 8417.367042993645,
+      "P_over_k": 1516.6949294094188,
+      "ne_cm3": 0.01455035236374376,
+      "thermal_residual": 8.00629207020821e-17,
+      "logT_bracket_width": 4.624935101560368e-09
+    },
+    "source_text": {
+      "page": "L150",
+      "case": "normal",
+      "n0_cm3": 0.21,
+      "T_K": 7800,
+      "P_over_k": 1800,
+      "role": "Rounded values in the text, not digitized points or fitted targets."
+    },
+    "relative_differences": {
+      "n0_cm3": -0.2112569926995661,
+      "T_K": 0.07914962089662114,
+      "P_over_k": -0.15739170588365625
+    }
+  },
+  "energy_budget": {
+    "at_source_text_point": {
+      "n0_cm3": 0.21,
+      "T_K": 7800
+    },
+    "ne_cm3": 0.016013826196898465,
+    "heating": 5.23160960352202e-27,
+    "cooling": 6.12817868220257e-27,
+    "cooling_over_heating": 1.1713753790185266,
+    "normalized_residual": 0.07892480529828484,
+    "terms": {
+      "indirect_heating": 2.285065583292702e-27,
+      "direct_heating": 2.946544020229318e-27,
+      "cii-92": 9.689585442798197e-28,
+      "siii-413": 1.922099045360089e-27,
+      "feii-554": 3.079396745298667e-28,
+      "feii-961": 3.7433073649743857e-28,
+      "oi-228": 8.677857071867599e-28,
+      "oi-326": 4.434433412743896e-28,
+      "oi-22500": 1.1007765270237997e-27,
+      "H_excitation": 4.7805864158308136e-29,
+      "H_ionization": 2.6870085635455036e-31,
+      "recombination": 6.070913372837521e-29,
+      "free_free": 3.4061407307369163e-29
+    }
+  },
+  "sensitivity_probes": [
+    {
+      "id": "baseline_grid",
+      "options": {},
+      "n0_cm3": 0.16572070067465844,
+      "T_K": 8413.350338965562,
+      "P_over_k": 1516.693840002373,
+      "relative_to_refined_baseline": -7.182769748981244e-07
+    },
+    {
+      "id": "GHF_printed_recombination_2over3",
+      "options": {
+        "rec_factor": 0.6666666666666666
+      },
+      "n0_cm3": 0.1663997591780518,
+      "T_K": 8413.350338965562,
+      "P_over_k": 1522.6723208371552,
+      "relative_to_refined_baseline": 0.003941063764262731
+    },
+    {
+      "id": "direct_heating_plus10percent",
+      "options": {
+        "direct_scale": 1.1
+      },
+      "n0_cm3": 0.1754172157894729,
+      "T_K": 8457.690558114924,
+      "P_over_k": 1610.7180869226427,
+      "relative_to_refined_baseline": 0.06199213545853621
+    },
+    {
+      "id": "indirect_heating_plus10percent",
+      "options": {
+        "indirect_scale": 1.1
+      },
+      "n0_cm3": 0.17406459870475058,
+      "T_K": 8369.242577485422,
+      "P_over_k": 1581.5258212995636,
+      "relative_to_refined_baseline": 0.042744846463875996
+    },
+    {
+      "id": "thermal_Lya_half",
+      "options": {
+        "lya_scale": 0.5
+      },
+      "n0_cm3": 0.16201090315937347,
+      "T_K": 8728.682543724837,
+      "P_over_k": 1541.4726332719354,
+      "relative_to_refined_baseline": 0.016336643171982246
+    },
+    {
+      "id": "thermal_Lya_double",
+      "options": {
+        "lya_scale": 2.0
+      },
+      "n0_cm3": 0.1690677679888922,
+      "T_K": 8109.40981890329,
+      "P_over_k": 1488.6082913700354,
+      "relative_to_refined_baseline": -0.018518317358864
+    },
+    {
+      "id": "cii-92_plus10percent",
+      "options": {
+        "cii-92_scale": 1.1
+      },
+      "n0_cm3": 0.1622012899697989,
+      "T_K": 8457.690558114924,
+      "P_over_k": 1493.7800964821183,
+      "relative_to_refined_baseline": -0.01510839950933518
+    },
+    {
+      "id": "siii-413_plus10percent",
+      "options": {
+        "siii-413_scale": 1.1
+      },
+      "n0_cm3": 0.1596386397861269,
+      "T_K": 8457.690558114924,
+      "P_over_k": 1471.0817167011458,
+      "relative_to_refined_baseline": -0.03007408531789202
+    },
+    {
+      "id": "feii-554_plus10percent",
+      "options": {
+        "feii-554_scale": 1.1
+      },
+      "n0_cm3": 0.16487236782423573,
+      "T_K": 8413.350338965562,
+      "P_over_k": 1509.224311806428,
+      "relative_to_refined_baseline": -0.004925590148771586
+    },
+    {
+      "id": "feii-961_plus10percent",
+      "options": {
+        "feii-961_scale": 1.1
+      },
+      "n0_cm3": 0.16468723767433072,
+      "T_K": 8413.350338965562,
+      "P_over_k": 1507.5941397579293,
+      "relative_to_refined_baseline": -0.0060004088330626315
+    },
+    {
+      "id": "oi-228_plus10percent",
+      "options": {
+        "oi-228_scale": 1.1
+      },
+      "n0_cm3": 0.1626349688882718,
+      "T_K": 8457.690558114924,
+      "P_over_k": 1497.6205773341749,
+      "relative_to_refined_baseline": -0.012576261517977971
+    },
+    {
+      "id": "oi-326_plus10percent",
+      "options": {
+        "oi-326_scale": 1.1
+      },
+      "n0_cm3": 0.16460355582346717,
+      "T_K": 8413.350338965562,
+      "P_over_k": 1506.857262352285,
+      "relative_to_refined_baseline": -0.006486253013956111
+    },
+    {
+      "id": "oi-22500_plus10percent",
+      "options": {
+        "oi-22500_scale": 1.1
+      },
+      "n0_cm3": 0.16360628588534834,
+      "T_K": 8325.36605499385,
+      "P_over_k": 1481.9168907737796,
+      "relative_to_refined_baseline": -0.022930147626445407
+    }
+  ],
+  "calibration": {
+    "figure1": {
+      "x": {
+        "slope": 0.004266208498199966,
+        "intercept": -1.660834604338282,
+        "max_residual_dex": 0.0012794985384969593
+      },
+      "y": {
+        "slope": -0.004239073693214337,
+        "intercept": 4.677824109888865,
+        "max_residual_dex": 0.0029686094706184996
+      }
+    },
+    "figure2": {
+      "x": {
+        "slope": 0.004271667857296004,
+        "intercept": -1.6369018456123254,
+        "max_residual_dex": 0.0029888901966050874
+      },
+      "y": {
+        "slope": -0.0042390736932143395,
+        "intercept": 4.139461750850646,
+        "max_residual_dex": 0.0029686094706193877
+      }
+    }
+  },
+  "method_notes": [
+    "Figure1 is scored as density at the digitized temperature, avoiding arbitrary branch selection near a vertical T(n) curve. Figure2 is scored at digitized density only when the model has a unique temperature root; otherwise all candidates are recorded and the point is unscored.",
+    "Pixel reading envelopes include3px and maximum axis-fit residual in each log coordinate. They do not describe model uncertainty, independent rereading, correlated calibration error, or the paper authors numerical precision.",
+    "No coefficients are fitted to the digitized points or the printed1800Kcm^-3 anchor. The baseline model is unchanged.",
+    "Sensitivity probes alter one implemented term at a time. They are diagnostics, not recovered atomic fits, probability bounds, or interchangeable physical models. In particular thermal Lyman-alpha multipliers leave the20eV superthermal collision point unchanged.",
+    "The original depleted curves are cold-side segments with an assumed transition to normal abundances near n~1cm^-3. No depleted warm branch is inferred from the source.",
+    "Figure2 electron ordinates are log10(1000*ne), not log10(ne); this factor is removed during calibration.",
+    "Source point statistics are descriptive sparse-reading discrepancies, not full-curve convergence or a historical validation pass."
+  ],
+  "environment": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "matplotlib": "3.9.4"
+  },
+  "code_sha256": {
+    "compare.py": "2d6b9069e11b2061efef5cf9d2d62b36746d829a3aae848e63c8cf36dbc01572",
+    "two_phase.py": "2e1835ad2c142659dfed2966e13df94b5ad7585d3c599b5a846649576b5b547c",
+    "cold_branch.py": "ba40297e1a4f129ab67cd6b9de55f679de02d6db394708b74da025299f6ed549",
+    "reproduce.py": "9c32c3d42d6b72e323a3a496e560c1347ecdb840b737308a8473d9bbf07e46ac",
+    "config.json": "360a21633aa0db34287120d32f5eecccdd3f97a27fe09dc613b9795d71a772be",
+    "config-cold.json": "9139d8c2eb34e02cf1bc4d85f0da8b9f8c77e42258a6097620d1782582fc8a52",
+    "config-two-phase.json": "5c9747632ad4afa6a99e47c9b9b339fa09bf8e50f08466653779f7bd3e3f13c0",
+    "digitized-fgh.csv": "158d74097913f6272df9a9fbd7eb22f1388c995bd6bd0dd597c24ee684261559"
+  },
+  "config_sha256": "9f134cc7cbd00f35d6ad4de5f1ea9639cdbbc6ca107f11ee9ee93c82435910bf"
+}

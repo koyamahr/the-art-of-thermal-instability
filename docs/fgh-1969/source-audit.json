@@ -94,10 +94,14 @@
     "Reconcile differing Fe depletion values in the Letter caption and detailed paper; do not mix the two parameter sets.",
     "Recover Maxwellian H/He excitation and ionization cross-section fits, including referenced data and Goldsmith thesis details.",
     "Coupled balances implemented and numerically checked in the prototype. Recover the original atomic fits, resolve the recombination energy convention, and add omitted thermal He processes before historical validation.",
-    "Only then compare calculated equilibrium T(n), (n+n_e)T, and n_e(n) with the original Figures 1 and 2.",
+    "Sparse Figure1/2 quantitative comparison completed; historical agreement remains unvalidated. Further coefficient recovery deferred unless specific new evidence becomes available.",
     "Validate cold extrapolation of the Hjellming recombination fits and include trace-level statistical equilibrium; the reduced calculation is not an exact historical model."
   ],
   "rounding_note": "GHF equation (25) uses 0.13, whereas dividing the rounded prefactors of (23) and (24) gives 1.4/11=0.12727... . The code preserves each printed expression and does not enforce exact equality between rounded formulas.",
   "table_blanks": "Blank Table 1 entries remain null and are omitted, not interpreted as measured zero coefficients.",
-  "correction_note": "The initial ingredient CSV and explanatory text mislabeled the equation (23) target sum as n_0. Corrected to n_target; the normalized numerical coefficient is unchanged."
+  "correction_note": "The initial ingredient CSV and explanatory text mislabeled the equation (23) target sum as n_0. Corrected to n_target; the normalized numerical coefficient is unchanged.",
+  "historical_validation_status": "Deferred after a sparse96-point original-figure comparison; no fitted correction or identified cause of the residual discrepancy.",
+  "comparison_note": "compare.py, digitized-fgh.csv, and config-comparison.json record original Figure1/2 readings, source hash and axis calibrations. Refined normal warm Pmax1516.695 versus printed1800; source n=.21,T=7800 yields cooling/heating1.17138. These are discrepancies, not passing historical-validation tolerances.",
+  "source_scope_note": "FGH Figure1 caption assumes transition from depleted a/b cold segments to normal abundances near n~1. Full-domain constant-depletion warm branches are model extensions, not curves shown in the Letter.",
+  "coefficient_recheck": "GHF p178 Eq13/16 and p179 Table1; Field1968 p958 Table1 and pp958\u2013960 cascading discussion rechecked visually. No metal-fit or abundance transcription error found. The cascade energy terms must not be suppressed by an extra lower-level population without a source derivation."
 }

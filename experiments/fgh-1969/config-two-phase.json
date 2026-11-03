@@ -22,7 +22,7 @@
     "H/He charge neutrality follows the printed GHF closure without metal-donor electrons. Pressure excludes trace nuclei and superthermal electrons.",
     "Sign-change root scans can miss tangent roots; doubled scans test numerical robustness but cannot certify completeness.",
     "Pressure turning points demonstrate the prototype S-curve only. No conductive saturation pressure, Maxwell equal-area construction, or full ionization-dependent stability analysis is inferred.",
-    "No pointwise comparison with digitized FGH curves has yet been made. Passing numerical conservation checks does not establish historical accuracy."
+    "A96-point sparse digitized comparison is available in compare.py. Historical agreement remains unvalidated, and further rate recovery is deferred. Numerical conservation does not establish historical accuracy."
   ],
   "helium_nuclei_fraction": 0.1
 }

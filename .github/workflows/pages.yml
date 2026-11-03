@@ -46,7 +46,7 @@ jobs:
         env:
           MPLCONFIGDIR: ${{ runner.temp }}/matplotlib
         run: python experiments/field-1965/publish.py
-      - name: Recompute FGH ingredients, cold branch, and two-phase prototype
+      - name: Recompute FGH models and original-figure comparison
         env:
           MPLCONFIGDIR: ${{ runner.temp }}/matplotlib
         run: python experiments/fgh-1969/publish.py

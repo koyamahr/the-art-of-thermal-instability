@@ -1,0 +1,205 @@
+{
+  "scope": "Sparse figure digitization for comparison, not model-generated reference data",
+  "source": {
+    "bibcode": "1969ApJ...155L.149F",
+    "url": "https://adsabs.harvard.edu/pdf/1969ApJ...155L.149F",
+    "pdf_sha256": "44559a4c75199c01a0cd24410b16b976981677dc04e354bbdbb45c64082c30e3"
+  },
+  "render_scale_pixels_per_PDF_point": 4,
+  "figures": {
+    "figure1": {
+      "page_index": 1,
+      "crop_origin_full_px": [
+        800,
+        840
+      ],
+      "crop_size_px": [
+        900,
+        930
+      ],
+      "x_ticks": [
+        [
+          155,
+          -1
+        ],
+        [
+          389,
+          0
+        ],
+        [
+          624,
+          1
+        ],
+        [
+          858,
+          2
+        ]
+      ],
+      "y_ticks": [
+        [
+          868,
+          1
+        ],
+        [
+          631,
+          2
+        ],
+        [
+          396,
+          3
+        ],
+        [
+          160,
+          4
+        ]
+      ],
+      "y_quantity": "log10(T_K)"
+    },
+    "figure2": {
+      "page_index": 2,
+      "crop_origin_full_px": [
+        840,
+        890
+      ],
+      "crop_size_px": [
+        890,
+        920
+      ],
+      "x_ticks": [
+        [
+          149,
+          -1
+        ],
+        [
+          383,
+          0
+        ],
+        [
+          618,
+          1
+        ],
+        [
+          851,
+          2
+        ]
+      ],
+      "y_ticks": [
+        [
+          741,
+          1
+        ],
+        [
+          504,
+          2
+        ],
+        [
+          269,
+          3
+        ],
+        [
+          33,
+          4
+        ]
+      ],
+      "y_quantity": "log10(P_over_k) or log10(1000*ne)"
+    }
+  },
+  "method": "Manually selected isolated curve crossings; median of the nearest contiguous dark-pixel run (gray<100) on a 3-pixel slice within a 31-pixel search window. Coordinates refer to the declared private-source crops. No original raster is redistributed.",
+  "reading_uncertainty": "Plus/minus3 pixels per coordinate is a practical reading envelope including line width and slight skew, not a statistical confidence interval. Calibration residual is reported separately. Independent reading and digitization have not yet been performed.",
+  "depletion_scope": "FGH plots a/b only on the cold side and assumes a transition to normal abundances near n~1 cm^-3. Compare only the displayed portions; do not infer missing warm depleted curves.",
+  "printed_anchor": {
+    "page": "L150",
+    "case": "normal",
+    "n0_cm3": 0.21,
+    "T_K": 7800,
+    "P_over_k": 1800,
+    "role": "Rounded values in the text, not digitized points or fitted targets."
+  },
+  "comparison_notes": [
+    "Figure1 is scored as density at the digitized temperature, avoiding arbitrary branch selection near a vertical T(n) curve. Figure2 is scored at digitized density only when the model has a unique temperature root; otherwise all candidates are recorded and the point is unscored.",
+    "Pixel reading envelopes include3px and maximum axis-fit residual in each log coordinate. They do not describe model uncertainty, independent rereading, correlated calibration error, or the paper authors numerical precision.",
+    "No coefficients are fitted to the digitized points or the printed1800Kcm^-3 anchor. The baseline model is unchanged.",
+    "Sensitivity probes alter one implemented term at a time. They are diagnostics, not recovered atomic fits, probability bounds, or interchangeable physical models. In particular thermal Lyman-alpha multipliers leave the20eV superthermal collision point unchanged.",
+    "The original depleted curves are cold-side segments with an assumed transition to normal abundances near n~1cm^-3. No depleted warm branch is inferred from the source.",
+    "Figure2 electron ordinates are log10(1000*ne), not log10(ne); this factor is removed during calibration.",
+    "Source point statistics are descriptive sparse-reading discrepancies, not full-curve convergence or a historical validation pass."
+  ],
+  "sensitivity_probes": [
+    {
+      "id": "baseline_grid",
+      "options": {}
+    },
+    {
+      "id": "GHF_printed_recombination_2over3",
+      "options": {
+        "rec_factor": 0.6666666666666666
+      }
+    },
+    {
+      "id": "direct_heating_plus10percent",
+      "options": {
+        "direct_scale": 1.1
+      }
+    },
+    {
+      "id": "indirect_heating_plus10percent",
+      "options": {
+        "indirect_scale": 1.1
+      }
+    },
+    {
+      "id": "thermal_Lya_half",
+      "options": {
+        "lya_scale": 0.5
+      }
+    },
+    {
+      "id": "thermal_Lya_double",
+      "options": {
+        "lya_scale": 2.0
+      }
+    },
+    {
+      "id": "cii-92_plus10percent",
+      "options": {
+        "cii-92_scale": 1.1
+      }
+    },
+    {
+      "id": "siii-413_plus10percent",
+      "options": {
+        "siii-413_scale": 1.1
+      }
+    },
+    {
+      "id": "feii-554_plus10percent",
+      "options": {
+        "feii-554_scale": 1.1
+      }
+    },
+    {
+      "id": "feii-961_plus10percent",
+      "options": {
+        "feii-961_scale": 1.1
+      }
+    },
+    {
+      "id": "oi-228_plus10percent",
+      "options": {
+        "oi-228_scale": 1.1
+      }
+    },
+    {
+      "id": "oi-326_plus10percent",
+      "options": {
+        "oi-326_scale": 1.1
+      }
+    },
+    {
+      "id": "oi-22500_plus10percent",
+      "options": {
+        "oi-22500_scale": 1.1
+      }
+    }
+  ]
+}

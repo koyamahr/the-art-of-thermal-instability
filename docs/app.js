@@ -17,7 +17,7 @@ function render(filter = "all") {
     row.id = p.id;
     row.append(element("div", "year", String(p.year)));
     const body = element("div");
-    body.append(element("span", "state", p.status === "validated" ? "Numerically validated" : p.status === "in_progress" ? "Equilibrium model · in progress" : p.status === "prototype" ? "Computed prototype · review pending" : p.status === "audited" ? "Source rates audited · truncated model" : p.status === "listed" ? "Reference listed · scope proposed" : "Planned"), element("p", "author", p.authors), element("h3", "", p.title), element("p", "topic", p.topic));
+    body.append(element("span", "state", p.status === "validated" ? "Numerically validated" : p.status === "deferred" ? "Historical match unresolved · deferred" : p.status === "in_progress" ? "Equilibrium model · in progress" : p.status === "prototype" ? "Computed prototype · review pending" : p.status === "audited" ? "Source rates audited · truncated model" : p.status === "listed" ? "Reference listed · scope proposed" : "Planned"), element("p", "author", p.authors), element("h3", "", p.title), element("p", "topic", p.topic));
     const details = element("details");
     details.append(element("summary", "", p.status === "listed" ? "Proposed scope" : p.exhibit || p.exhibits ? "About this exhibit" : "View planned exhibit"), element("p", "", p.scope));
     body.append(details);

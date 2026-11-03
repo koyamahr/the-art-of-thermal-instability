@@ -1,0 +1,97 @@
+figure,case,quantity,x_px,y_px,slice_direction,reading_halfwidth_x_px,reading_halfwidth_y_px
+figure1,normal,T,100.0,147.5,v,3.0,3.0
+figure1,normal,T,150.0,153.0,v,3.0,3.0
+figure1,normal,T,200.0,166.0,v,3.0,3.0
+figure1,normal,T,220.0,178.0,v,3.0,3.0
+figure1,normal,T,239.5,210.0,h,3.0,3.0
+figure1,normal,T,247.5,250.0,h,3.0,3.0
+figure1,normal,T,252.5,300.0,h,3.0,3.0
+figure1,normal,T,255.5,350.0,h,3.0,3.0
+figure1,normal,T,260.0,400.0,h,3.0,3.0
+figure1,normal,T,269.5,450.0,h,3.0,3.0
+figure1,normal,T,288.0,500.0,h,3.0,3.0
+figure1,normal,T,313.5,550.0,h,3.0,3.0
+figure1,normal,T,344.5,600.0,h,3.0,3.0
+figure1,normal,T,391.5,650.0,h,3.0,3.0
+figure1,normal,T,450.0,687.5,v,3.0,3.0
+figure1,normal,T,550.0,726.0,v,3.0,3.0
+figure1,normal,T,650.0,754.5,v,3.0,3.0
+figure1,normal,T,750.0,781.0,v,3.0,3.0
+figure1,normal,T,840.0,805.0,v,3.0,3.0
+figure1,FGH a,T,500.0,560.5,v,3.0,3.0
+figure1,FGH a,T,550.0,592.0,v,3.0,3.0
+figure1,FGH a,T,600.0,621.0,v,3.0,3.0
+figure1,FGH a,T,650.0,647.5,v,3.0,3.0
+figure1,FGH a,T,700.0,671.5,v,3.0,3.0
+figure1,FGH a,T,750.0,692.5,v,3.0,3.0
+figure1,FGH a,T,800.0,710.5,v,3.0,3.0
+figure1,FGH a,T,840.0,725.5,v,3.0,3.0
+figure1,FGH b,T,510.0,473.5,v,3.0,3.0
+figure1,FGH b,T,550.0,523.5,v,3.0,3.0
+figure1,FGH b,T,600.0,565.0,v,3.0,3.0
+figure1,FGH b,T,650.0,593.5,v,3.0,3.0
+figure1,FGH b,T,700.0,617.5,v,3.0,3.0
+figure1,FGH b,T,750.0,637.5,v,3.0,3.0
+figure1,FGH b,T,800.0,654.5,v,3.0,3.0
+figure1,FGH b,T,840.0,667.5,v,3.0,3.0
+figure2,normal,P,90.0,278.0,v,3.0,3.0
+figure2,normal,P,130.0,257.0,v,3.0,3.0
+figure2,normal,P,170.0,235.5,v,3.0,3.0
+figure2,normal,P,200.0,219.5,v,3.0,3.0
+figure2,normal,P,220.0,210.0,v,3.0,3.0
+figure2,normal,P,280.0,485.5,v,3.0,3.0
+figure2,normal,P,320.0,507.0,v,3.0,3.0
+figure2,normal,P,370.0,513.0,v,3.0,3.0
+figure2,normal,P,420.0,499.0,v,3.0,3.0
+figure2,normal,P,480.0,464.5,v,3.0,3.0
+figure2,normal,P,550.0,422.5,v,3.0,3.0
+figure2,normal,P,620.0,378.0,v,3.0,3.0
+figure2,normal,P,700.0,323.5,v,3.0,3.0
+figure2,normal,P,780.0,265.0,v,3.0,3.0
+figure2,normal,P,830.0,226.5,v,3.0,3.0
+figure2,normal,P,259.5,432.0,h,3.0,3.0
+figure2,FGH a,P,500.0,334.0,v,3.0,3.0
+figure2,FGH a,P,550.0,307.5,v,3.0,3.0
+figure2,FGH a,P,600.0,281.0,v,3.0,3.0
+figure2,FGH a,P,650.0,254.0,v,3.0,3.0
+figure2,FGH a,P,700.0,227.0,v,3.0,3.0
+figure2,FGH a,P,750.0,198.0,v,3.0,3.0
+figure2,FGH a,P,800.0,168.0,v,3.0,3.0
+figure2,FGH a,P,830.0,149.0,v,3.0,3.0
+figure2,FGH b,P,600.0,226.0,v,3.0,3.0
+figure2,FGH b,P,650.0,198.0,v,3.0,3.0
+figure2,FGH b,P,700.0,170.0,v,3.0,3.0
+figure2,FGH b,P,750.0,140.0,v,3.0,3.0
+figure2,FGH b,P,800.0,108.0,v,3.0,3.0
+figure2,FGH b,P,830.0,86.5,v,3.0,3.0
+figure2,normal,ne,120.0,731.0,v,3.0,3.0
+figure2,normal,ne,160.0,712.0,v,3.0,3.0
+figure2,normal,ne,200.0,696.0,v,3.0,3.0
+figure2,normal,ne,220.0,693.0,v,3.0,3.0
+figure2,normal,ne,270.0,767.0,v,3.0,3.0
+figure2,normal,ne,300.0,769.5,v,3.0,3.0
+figure2,normal,ne,350.0,763.5,v,3.0,3.0
+figure2,normal,ne,400.0,751.5,v,3.0,3.0
+figure2,normal,ne,450.0,735.5,v,3.0,3.0
+figure2,normal,ne,500.0,718.5,v,3.0,3.0
+figure2,normal,ne,550.0,698.5,v,3.0,3.0
+figure2,normal,ne,600.0,679.0,v,3.0,3.0
+figure2,normal,ne,650.0,657.5,v,3.0,3.0
+figure2,normal,ne,700.0,636.0,v,3.0,3.0
+figure2,normal,ne,750.0,615.0,v,3.0,3.0
+figure2,normal,ne,800.0,593.5,v,3.0,3.0
+figure2,normal,ne,830.0,580.5,v,3.0,3.0
+figure2,FGH a,ne,500.0,684.5,v,3.0,3.0
+figure2,FGH a,ne,550.0,664.5,v,3.0,3.0
+figure2,FGH a,ne,600.0,645.5,v,3.0,3.0
+figure2,FGH a,ne,650.0,625.5,v,3.0,3.0
+figure2,FGH a,ne,700.0,605.5,v,3.0,3.0
+figure2,FGH a,ne,750.0,585.5,v,3.0,3.0
+figure2,FGH a,ne,800.0,565.5,v,3.0,3.0
+figure2,FGH a,ne,830.0,553.0,v,3.0,3.0
+figure2,FGH b,ne,600.0,623.5,v,3.0,3.0
+figure2,FGH b,ne,650.0,605.5,v,3.0,3.0
+figure2,FGH b,ne,700.0,588.5,v,3.0,3.0
+figure2,FGH b,ne,750.0,570.5,v,3.0,3.0
+figure2,FGH b,ne,800.0,552.0,v,3.0,3.0
+figure2,FGH b,ne,830.0,541.0,v,3.0,3.0

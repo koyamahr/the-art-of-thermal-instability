@@ -60,6 +60,7 @@ def main():
              ('fgh-1969','validation.json','config.json'),
              ('fgh-1969','validation-cold.json','config-cold.json'),
              ('fgh-1969','validation-two-phase.json','config-two-phase.json'),
+             ('fgh-1969','validation-comparison.json','config-comparison.json'),
              ('takayanagi-nishimura-1960','validation.json','config.json'),
              ('iwasaki-2012','validation.json','config.json')]
     total=0
