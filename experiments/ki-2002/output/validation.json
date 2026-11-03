@@ -1,0 +1,214 @@
+{
+  "scope": "Equilibrium benchmark of the corrected analytic fit, not a rerun or digitization of the 2002 multidimensional simulation; not a full chemistry or ionization calculation. The 10--10000 K interval is a plotting choice, not a claim of physical accuracy throughout it.",
+  "config_sha256": "981fe1e528fdca3d3e8457b939f26d6379051a79d2f607565b6566f63f0258a3",
+  "code_sha256": {
+    "equilibrium.py": "6c26d60ebbb015916e410901aced4ec0c0bc9dba0aaa85e167df963e0c7c3254",
+    "reproduce.py": "22cfeea20285d070061945dfa199ec915960358db83eba014e19d999b429ec4f",
+    "source-audit.json": "578904d14a960410da81af11bec258ded93f11b83bffc9d7194e9003603178fd"
+  },
+  "versions": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1",
+    "matplotlib": "3.9.4"
+  },
+  "checks": [
+    {
+      "name": "Equilibrium energy closure over temperature grid",
+      "error": 1.1102230246251565e-16,
+      "tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "Cooling is strictly increasing in displayed interval",
+      "passed": true
+    },
+    {
+      "name": "Analytic cooling logarithmic slope vs centered differences",
+      "error": 4.179460333375573e-09,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Both turning points satisfy beta=1",
+      "error": 2.220446049250313e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Cold and warm branches stable, intermediate branch unstable",
+      "passed": true
+    },
+    {
+      "name": "Fixed-pressure loss derivative at T=50",
+      "error": 1.5141399245521825e-10,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Fixed-pressure loss derivative at T=1000",
+      "error": 2.0420798385600847e-10,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Fixed-pressure loss derivative at T=8000",
+      "error": 6.601164059816256e-10,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Independent equilibrium root at n=0.1",
+      "error": 4.440892098500626e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Independent equilibrium root at n=1",
+      "error": 2.220446049250313e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Independent equilibrium root at n=10",
+      "error": 1.1102230246251565e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Independent equilibrium root at n=100",
+      "error": 6.661338147750939e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Static-front integral at saturation pressure",
+      "error": 8.866463119261425e-12,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Independent Simpson cancellation of conductive integral",
+      "error": 1.1429583966686235e-11,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Saturation pressure lies inside two-phase range",
+      "passed": true
+    },
+    {
+      "name": "Static integral brackets saturation with opposite signs",
+      "passed": true
+    },
+    {
+      "name": "Saturation equilibrium root 1 closes thermal balance",
+      "error": 6.972200594645983e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Saturation equilibrium root 2 closes thermal balance",
+      "error": 4.440892098500626e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Saturation equilibrium root 3 closes thermal balance",
+      "error": 2.220446049250313e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Isobaric parcel response on cold branch",
+      "error": 5.389273528555449e-07,
+      "tolerance": 5e-05,
+      "passed": true
+    },
+    {
+      "name": "Isobaric parcel response on unstable branch",
+      "error": 7.419356777838004e-07,
+      "tolerance": 5e-05,
+      "passed": true
+    },
+    {
+      "name": "Isobaric parcel response on warm branch",
+      "error": 4.94608566781185e-06,
+      "tolerance": 5e-05,
+      "passed": true
+    },
+    {
+      "name": "Frozen Iwasaki implementation cooling-law agreement",
+      "error": 0.0,
+      "tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "Iwasaki source matches audited version",
+      "passed": true
+    },
+    {
+      "name": "Live Iwasaki cooling law on full grid",
+      "error": 0.0,
+      "tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "Live Iwasaki loss normalization on nonequilibrium states",
+      "error": 0.0,
+      "tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "Independent Iwasaki saturation pressure agreement",
+      "error": 1.7716939026968248e-12,
+      "tolerance": 1e-10,
+      "passed": true
+    }
+  ],
+  "turning_points": [
+    {
+      "label": "Pmin",
+      "T_K": 184.0,
+      "n_H_cm3": 8.681810332364806,
+      "P_over_kB_K_cm3": 1597.4531011551244
+    },
+    {
+      "label": "Pmax",
+      "T_K": 5039.419174566082,
+      "n_H_cm3": 0.9935669061011371,
+      "P_over_kB_K_cm3": 5007.000117820367
+    }
+  ],
+  "saturation_equilibria": [
+    {
+      "branch": "cold",
+      "T_K": 54.98018778250153,
+      "n_H_cm3": 51.343664167665935,
+      "P_over_kB_K_cm3": 2822.8842973799683,
+      "isobaric_stable": true
+    },
+    {
+      "branch": "unstable",
+      "T_K": 1364.881272726123,
+      "n_H_cm3": 2.0682269980463044,
+      "P_over_kB_K_cm3": 2822.8842973799683,
+      "isobaric_stable": false
+    },
+    {
+      "branch": "warm",
+      "T_K": 6417.132178328342,
+      "n_H_cm3": 0.4398981069633083,
+      "P_over_kB_K_cm3": 2822.8842973799683,
+      "isobaric_stable": true
+    }
+  ],
+  "saturation_conductivity": "kappa=2500 sqrt(T) erg cm^-1 K^-1 s^-1; planar static zero-flux end states",
+  "source_pressure_residuals_K_cm3": {
+    "Pmin_minus_text": 1.4531011551243864,
+    "Pmin_minus_figure1": -0.5468988448756136,
+    "Pmax_minus_printed": -4.99988217963255,
+    "Psat_minus_printed": -0.11570262003169773
+  },
+  "live_front_model_sha256": "bfb5fde49f5f420089ff335cb15a016a093eb150c19951508c10dcec8741dd5c"
+}

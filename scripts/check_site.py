@@ -44,6 +44,9 @@ def main():
             require(target.is_file(),f"Missing target from {path}: {href}")
             if url.fragment:
                 require(target in pages and url.fragment in pages[target].ids,f"Missing anchor from {path}: {href}")
+    registry=json.loads((DOCS/'equilibrium-landmarks.json').read_text())
+    for name,sha in registry['reports_sha256'].items():
+        require(hashlib.sha256((DOCS/name).read_bytes()).hexdigest()==sha,f'Stale equilibrium landmark registry: {name}')
     catalog=json.loads((DOCS/'catalog.json').read_text())
     require(len({p['id'] for p in catalog})==len(catalog),'Duplicate paper identifiers')
     for paper in catalog:
@@ -54,7 +57,9 @@ def main():
             target=(DOCS/exhibit['href']).resolve()
             if target.is_dir():target=target/'index.html'
             require(target in pages,f"Catalog exhibit missing: {target}")
-    reports=[('field-1965','validation.json','config.json'),
+    reports=[('ki-2002','validation.json','config.json'),
+             ('fgh-1969','validation-saturation.json','config-saturation.json'),
+             ('field-1965','validation.json','config.json'),
              ('field-1965','validation-wave.json','config-wave.json'),
              ('field-1965','validation-map.json','config-map.json'),
              ('fgh-1969','validation.json','config.json'),

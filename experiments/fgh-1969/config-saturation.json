@@ -1,0 +1,10 @@
+{
+  "scope": "Conditional planar ZP saturation search on the existing FGH/GHF prototype; not historical FGH saturation values.",
+  "conductivity": "Parker neutral-gas kappa=2500 sqrt(T) erg cm^-1 K^-1 s^-1, newly assumed for this diagnostic; not recovered from FGH1969",
+  "chemistry_closure": "Instantaneous local ionization equilibrium from two_phase.py; P/kB=(n0+ne)T, n0=H+He nuclei, nH=0.9 n0.",
+  "temperature_min_K": 10,
+  "temperature_max_K": 12000,
+  "pressure_samples": 13,
+  "quadrature_samples": 2049,
+  "limitations": "A finite pressure and temperature search cannot rule out an unsampled root or a root outside the adopted domain. Depleted warm branches remain prototype extensions. Missing historical rates are not recovered or fitted."
+}

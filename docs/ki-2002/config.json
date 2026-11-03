@@ -1,0 +1,9 @@
+{
+  "temperature_min_K": 10,
+  "temperature_max_K": 10000,
+  "temperature_samples": 1601,
+  "heating_erg_per_H_per_s": 2e-26,
+  "density_convention": "n = rho/m_H; pure atomic H; P/k_B = n T",
+  "stability": "Isobaric local thermal mode at equilibrium, without conduction: d ln Lambda / d ln T > 1 is stable. Finite-wavelength conduction is not included in this branch label.",
+  "scope": "Equilibrium benchmark of the corrected analytic fit, not a rerun or digitization of the 2002 multidimensional simulation; not a full chemistry or ionization calculation. The 10--10000 K interval is a plotting choice, not a claim of physical accuracy throughout it."
+}

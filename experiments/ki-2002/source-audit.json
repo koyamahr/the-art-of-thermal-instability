@@ -1,0 +1,92 @@
+{
+  "review_date": "2026-11-03",
+  "original": {
+    "citation": "Koyama & Inutsuka (2002), ApJL 564, L97--L100",
+    "doi": "https://doi.org/10.1086/338978",
+    "reviewed_url": "https://arxiv.org/pdf/astro-ph/0112420v1",
+    "pdf_sha256": "d98e3376c49811b64eb3c8fa9368d1c9e78209fefd000cc4b62c2bb8e4120a76",
+    "edition": "arXiv v1, 18 December 2001, p.2, equations 4--5, visually inspected. Publisher PDF was inaccessible (ADS 403); publisher typesetting was not independently checked.",
+    "printed_coefficients": {
+      "high_activation_K": 114800,
+      "low_prefactor": 14
+    },
+    "adopted_coefficients": {
+      "high_activation_K": 118400,
+      "low_prefactor": 0.014
+    }
+  },
+  "correction": {
+    "citation": "Vazquez-Semadeni et al. (2007), ApJ 657, 870--883, p.873, equations 3--4 and footnote 5",
+    "url": "https://www.irya.unam.mx/gente/g.gomez/publica/07-MCform2.pdf",
+    "pdf_sha256": "12974a4fd937e2c9c80be3d2adf6f0fa6a145960370864d8fa284abe4d595adf",
+    "finding": "Footnote 5 identifies two typos in KI Eq.4 and attributes corrections to H. Koyama. Formula and footnote visually inspected. Cited only for correction provenance; no simulation added to atlas.",
+    "formal_erratum_status": "No separate journal erratum located in the arXiv record and targeted bibliographic/web searches on the review date. This does not establish that none exists."
+  },
+  "iwasaki": {
+    "citation": "Iwasaki & Inutsuka (2012), MNRAS 423, 3638--3645",
+    "url": "https://arxiv.org/pdf/1204.5532v2",
+    "pdf_sha256": "2a1134890536b86aa97cff8592597e714c0fc625f061c18d1f5eab277c3936e8",
+    "equations": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "finding": "Same corrected coefficients, heating and pure-H equation of state; kappa=2500 sqrt(T). Page 2 visually inspected.",
+    "reference_code_sha256": "bfb5fde49f5f420089ff335cb15a016a093eb150c19951508c10dcec8741dd5c",
+    "reference_values": [
+      {
+        "T_K": 10,
+        "Lambda_over_Gamma_cm3": 4.473205005167031e-06,
+        "P_over_kB_K_cm3": 2235533.580162083
+      },
+      {
+        "T_K": 50,
+        "Lambda_over_Gamma_cm3": 0.01572212305591159,
+        "P_over_kB_K_cm3": 3180.2320731232144
+      },
+      {
+        "T_K": 184,
+        "Lambda_over_Gamma_cm3": 0.1151833502135048,
+        "P_over_kB_K_cm3": 1597.4531011551244
+      },
+      {
+        "T_K": 300,
+        "Lambda_over_Gamma_cm3": 0.17844526227615914,
+        "P_over_kB_K_cm3": 1681.1878117320068
+      },
+      {
+        "T_K": 1000,
+        "Lambda_over_Gamma_cm3": 0.4038061633383369,
+        "P_over_kB_K_cm3": 2476.43570304332
+      },
+      {
+        "T_K": 5000,
+        "Lambda_over_Gamma_cm3": 0.9988115068217349,
+        "P_over_kB_K_cm3": 5005.949536875316
+      },
+      {
+        "T_K": 8000,
+        "Lambda_over_Gamma_cm3": 20.584933028387244,
+        "P_over_kB_K_cm3": 388.6337637809051
+      },
+      {
+        "T_K": 10000,
+        "Lambda_over_Gamma_cm3": 212.93673696066156,
+        "P_over_kB_K_cm3": 46.962305061749035
+      }
+    ],
+    "printed_pressures_K_cm3": {
+      "Pmin_text": 1596,
+      "Pmin_figure1": 1598,
+      "Pmax": 5012,
+      "Psat": 2823
+    }
+  },
+  "limitations": [
+    "Local isobaric labels do not assert instability at all wavelengths; conduction stabilizes small scales.",
+    "Common-pressure stable roots do not imply a static conductive front at every pressure.",
+    "Uniform equilibrium has no conductive term. Static-front selection additionally uses Parker conductivity.",
+    "New diagnostic from the corrected model, not a claim to reproduce an original KI equilibrium figure or the 2D simulation."
+  ]
+}

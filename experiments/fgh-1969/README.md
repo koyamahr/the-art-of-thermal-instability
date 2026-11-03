@@ -165,3 +165,14 @@ available; continued unconstrained coefficient adjustment is not planned.
 
 The80 comparison checks test calibration, roots, consistency, and budgets. They
 do not turn the measured figure discrepancies into validation passes.
+
+## Supplementary bounded ZP search
+
+After two_phase.py, run `python saturation.py`. See config-saturation.json.
+This adds an assumed Parker conductivity and instantaneous ionization closure.
+Normal abundances: no sign bracket at the sampled pressures inside the retained
+10--12000 K domain; P_sat is null. Depleted a/b warm extensions have conditional
+roots, stored with all three temperatures, H+He nuclei density n0, hydrogen nuclei
+density 0.9 n0 and electron density. These are not historical FGH saturation values.
+The finite search does not exclude an unsampled or out-of-domain root.
+Historical coefficient recovery remains deferred.

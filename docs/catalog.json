@@ -107,10 +107,16 @@
     "authors": "Koyama & Inutsuka",
     "title": "An Origin of Supersonic Motions in Interstellar Clouds",
     "group": "ki",
-    "status": "planned",
+    "status": "validated",
     "source": "https://arxiv.org/abs/astro-ph/0112420",
-    "topic": "Explore structure formation and cloud motions in two dimensions.",
-    "scope": "Candidate exhibits include figures, animations, and statistical diagnostics. Original materials and computational requirements will be reviewed."
+    "topic": "Corrected heating/cooling law, thermal equilibria and local isobaric stability.",
+    "scope": "Validated equilibrium benchmark and planar ZP saturation pressure with cold, unstable and warm intersections; corrected coefficients traced to primary sources. Original 2D simulation remains outside this exhibit.",
+    "exhibits": [
+      {
+        "label": "Thermal equilibrium & ZP saturation",
+        "href": "ki-2002/"
+      }
+    ]
   },
   {
     "id": "ki-2004",

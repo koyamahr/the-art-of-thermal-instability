@@ -12,8 +12,9 @@ subprocess.run([sys.executable,str(here/'reproduce.py'),'--output',str(here/'out
 subprocess.run([sys.executable,str(here/'cold_branch.py'),'--output',str(here/'output')],env=env,check=True)
 subprocess.run([sys.executable,str(here/'two_phase.py')],env=env,check=True)
 subprocess.run([sys.executable,str(here/'compare.py')],env=env,check=True)
+subprocess.run([sys.executable,str(here/'saturation.py')],env=env,check=True)
 destination.mkdir(parents=True,exist_ok=True)
-for name in ['reproduce.py','config.json','source-audit.json','requirements.txt','README.md','cold_branch.py','config-cold.json','two_phase.py','config-two-phase.json','compare.py','config-comparison.json','digitized-fgh.csv']:
+for name in ['reproduce.py','config.json','source-audit.json','requirements.txt','README.md','cold_branch.py','config-cold.json','two_phase.py','config-two-phase.json','compare.py','config-comparison.json','digitized-fgh.csv','saturation.py','config-saturation.json']:
     shutil.copyfile(here/name,destination/name)
-for name in ['heating.png','heating.svg','heating.csv','cooling-coefficients.png','cooling-coefficients.svg','cooling-coefficients.csv','validation.json','cold-branch.png','cold-branch.svg','cold-branch.csv','validation-cold.json','two-phase.png','two-phase.svg','two-phase.csv','validation-two-phase.json','comparison.png','comparison.svg','comparison.csv','validation-comparison.json']:
+for name in ['heating.png','heating.svg','heating.csv','cooling-coefficients.png','cooling-coefficients.svg','cooling-coefficients.csv','validation.json','cold-branch.png','cold-branch.svg','cold-branch.csv','validation-cold.json','two-phase.png','two-phase.svg','two-phase.csv','validation-two-phase.json','comparison.png','comparison.svg','comparison.csv','validation-comparison.json','saturation-search.csv','validation-saturation.json']:
     shutil.copyfile(here/'output'/name,destination/name)
