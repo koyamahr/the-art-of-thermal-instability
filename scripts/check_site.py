@@ -50,10 +50,13 @@ def main():
             target=(DOCS/exhibit['href']).resolve()
             if target.is_dir():target=target/'index.html'
             require(target in pages,f"Catalog exhibit missing: {target}")
-    directory=DOCS/'field-1965'
-    config_names={'validation.json':'config.json','validation-wave.json':'config-wave.json','validation-map.json':'config-map.json'}
+    reports=[('field-1965','validation.json','config.json'),
+             ('field-1965','validation-wave.json','config-wave.json'),
+             ('field-1965','validation-map.json','config-map.json'),
+             ('fgh-1969','validation.json','config.json')]
     total=0
-    for report_name,config_name in config_names.items():
+    for chapter,report_name,config_name in reports:
+        directory=DOCS/chapter
         report=json.loads((directory/report_name).read_text())
         require(bool(report['checks']) and all(c['passed'] for c in report['checks']),f"Validation failed: {report_name}")
         total+=len(report['checks'])
@@ -63,10 +66,12 @@ def main():
         for name,sha in hashes.items():
             require(hashlib.sha256((directory/name).read_bytes()).hexdigest()==sha,f"Stale downloadable source: {name}")
         require(hashlib.sha256((directory/config_name).read_bytes()).hexdigest()==report['config_sha256'],f"Stale configuration: {config_name}")
-    for path in (ROOT/'experiments/field-1965').iterdir():
-        if path.name=='publish.py' or path.suffix not in ('.py','.json','.txt','.md'):continue
-        require((directory/path.name).is_file(),f"Download missing: {path.name}")
-        require(path.read_bytes()==(directory/path.name).read_bytes(),f"Download differs from source: {path.name}")
+    for chapter in {r[0] for r in reports}:
+        directory=DOCS/chapter
+        for path in (ROOT/'experiments'/chapter).iterdir():
+            if path.name=='publish.py' or path.suffix not in ('.py','.json','.txt','.md'):continue
+            require((directory/path.name).is_file(),f"Download missing: {chapter}/{path.name}")
+            require(path.read_bytes()==(directory/path.name).read_bytes(),f"Download differs from source: {chapter}/{path.name}")
     print(f"Site check passed: {len(pages)} English pages; {total} scientific checks; links, catalog, and source hashes valid.")
     print("Only docs/ will be uploaded; PDFs and private source material are excluded.")
 

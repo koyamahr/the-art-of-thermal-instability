@@ -12,11 +12,12 @@ Use the project environment described in `experiments/field-1965/README.md`, the
 
 ```sh
 .venv/bin/python experiments/field-1965/publish.py
+.venv/bin/python experiments/fgh-1969/publish.py
 python3 scripts/check_site.py
 python3 -m http.server 8000 --bind 127.0.0.1 --directory docs
 ```
 
-Visit http://127.0.0.1:8000 and inspect all three exhibits and their downloads. Stop the server with Ctrl+C. Rebuilding currently runs all 49 scientific checks. This step does not publish to the internet.
+Visit http://127.0.0.1:8000 and inspect all three exhibits and their downloads. Stop the server with Ctrl+C. Rebuilding Field and FGH/GHF currently runs 60 scientific checks. This step does not publish to the internet.
 
 ## 2. Connect GitHub and rehearse there
 

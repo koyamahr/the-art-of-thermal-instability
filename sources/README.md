@@ -8,3 +8,7 @@ The six core papers were acquired on 2026-11-03. See `manifest.json` for source 
 Titles and authors have been checked on the first page of each PDF. Figure numbering, equations, corrections, and differences between preprints and published versions still require review before reproducing results.
 
 PDFs are stored in `private/`, excluded from Git and the public site. The manifest records provenance; it does not imply permission to redistribute the papers.
+
+## Supplementary sources for the 1969 chapter
+
+GHF (1969), ApJ 158, 173, and Field et al. (1968), ApJ 151, 953, were downloaded from ADS on 2026-11-03. GHF Table 1, heating expressions, and depletion cases were reviewed for the ingredient diagnostics. The 1968 paper remains a supporting source awaiting a detailed rate audit. PDFs remain private and are excluded from Git.

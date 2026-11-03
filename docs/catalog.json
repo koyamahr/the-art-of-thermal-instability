@@ -31,10 +31,18 @@
     "authors": "Field, Goldsmith & Habing",
     "title": "Cosmic-Ray Heating of the Interstellar Gas",
     "group": "classics",
-    "status": "planned",
+    "status": "in_progress",
     "source": "https://ui.adsabs.harvard.edu/abs/1969ApJ...155L.149F/abstract",
     "topic": "From heating and cooling balance to two coexisting phases.",
-    "scope": "Candidate exhibits include equilibrium curves and two-phase structure. Heating and cooling processes will be checked against the original paper."
+    "scope": "Validated heating and metal-cooling ingredient diagnostics from the detailed companion GHF (1969) paper. This is not yet a reproduction of the Letter's equilibrium Figures 1 and 2. The source audit records unresolved rate inputs and differing depletion cases.",
+    "exhibits": [
+      {
+        "href": "fgh-1969/",
+        "label": "Heating & cooling ingredients →",
+        "kind": "diagnostic",
+        "validated": true
+      }
+    ]
   },
   {
     "id": "schwarz-1972",

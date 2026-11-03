@@ -103,5 +103,29 @@
     "edition": "arXiv preprint; compare with published version before reproduction",
     "identity_check": "Title and authors checked on the first page; full equations and figures not yet reviewed",
     "arxiv_version": "astro-ph/0302126v2"
+  },
+  {
+    "id": "ghf-1969",
+    "bibcode": "1969ApJ...158..173G",
+    "source_url": "https://articles.adsabs.harvard.edu/pdf/1969ApJ...158..173G",
+    "path": "sources/private/ghf-1969.pdf",
+    "pages": 12,
+    "sha256": "d033357904e3fe1bd45385c3b47c5e392a5113bf9dfe9b0b4006c544ec58ca34",
+    "retrieved_on": "2026-11-03",
+    "status": "downloaded",
+    "edition": "ADS scan of published paper",
+    "identity_check": "Title and authors visually checked; Table 1 and equations (15)-(16), (23)-(26), plus depletion cases on p. 180, visually reviewed"
+  },
+  {
+    "id": "field-1968",
+    "bibcode": "1968ApJ...151..953F",
+    "source_url": "https://articles.adsabs.harvard.edu/pdf/1968ApJ...151..953F",
+    "path": "sources/private/field-1968.pdf",
+    "pages": 24,
+    "sha256": "3bd0b8d8a03da2a9dea3c9de9c9118d5904c898625055f704e5a33b9d472567d",
+    "retrieved_on": "2026-11-03",
+    "status": "downloaded",
+    "edition": "ADS scan of published paper",
+    "identity_check": "Title and abstract visually checked; detailed rate audit pending"
   }
 ]

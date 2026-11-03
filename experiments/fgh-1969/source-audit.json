@@ -1,0 +1,31 @@
+{
+  "scope":"Model-ingredient diagnostics. FGH (1969) equilibrium Figures 1 and 2 have not been independently recomputed.",
+  "sources":[
+    {"id":"fgh-1969","bibcode":"1969ApJ...155L.149F","role":"Target equilibrium figures; cosmic-ray and depletion assumptions","reviewed_pages":"L149-L154"},
+    {"id":"ghf-1969","bibcode":"1969ApJ...158..173G","role":"Detailed heating, cooling, and ionization calculation; explicitly identifies FGH as Paper I","reviewed_pages":"173-181 and references"},
+    {"id":"field-1968","bibcode":"1968ApJ...151..953F","role":"Earlier cooling-transition data referenced by both 1969 papers","reviewed_pages":"Title and abstract only; detailed rate audit pending"}
+  ],
+  "implemented":[
+    {"item":"Indirect heating energy per primary liberated electron","source":"GHF equation (26), p. 181","definition":"e_h=9(1+130x)/(1+57x) eV; x=n_e/n(H I)"},
+    {"item":"Efficiency relative to ionization plus excitation energy losses","source":"GHF equation (25), p. 181","definition":"f=0.13(1+130x)/(1+57x); not the same denominator as e_h"},
+    {"item":"Indirect heating normalization","source":"GHF equation (23), p. 181","definition":"Gamma_ion/(zeta*n_0)=1.4e-11(1+130x)/(1+57x) erg; n_0=sum_j n_j"},
+    {"item":"Metal energy-loss coefficients","source":"GHF Table 1, p. 179; equations (15)-(16), p. 178","definition":"r_k=R*T^m*exp(-T_star/T); Lambda_2=sum_k n_k(n_e*r_ek+n_H*r_Hk)"}
+  ],
+  "depletion_factor_definitions":"Factors below divide normal abundances. GHF prints remaining fractions xi, converted here by 1/xi without silently reconciling them with the Letter.",
+  "depletion_cases":{
+    "FGH_Figure_1_a":{"C":10,"Si":5,"Fe":4,"O":2},
+    "FGH_Figure_1_b":{"C":100,"Si":20,"Fe":10,"O":3},
+    "GHF_section_IV_a_remaining_fractions":{"C":0.1,"O":0.5,"Si":0.2,"Fe":0.3},
+    "GHF_section_IV_b_remaining_fractions":{"C":0.01,"O":0.3,"Si":0.05,"Fe":0.01}
+  },
+  "open_items":[
+    "Reconcile differing Fe depletion values in the Letter caption and detailed paper; do not mix the two parameter sets.",
+    "Recover Maxwellian H/He excitation and ionization cross-section fits, including referenced data and Goldsmith thesis details.",
+    "Recover excited-state radiative recombination coefficients from Hjellming (1966).",
+    "Record the historical Allen (1963) elemental abundances and population assumptions.",
+    "Implement and validate coupled thermal, H/He ionization, electron-density, and superthermal-electron balances (GHF equations 19-22).",
+    "Only then compare calculated equilibrium T(n), (n+n_e)T, and n_e(n) with the original Figures 1 and 2."
+  ],
+  "rounding_note":"GHF equation (25) uses 0.13, whereas dividing the rounded prefactors of (23) and (24) gives 1.4/11=0.12727... . The code preserves each printed expression and does not enforce exact equality between rounded formulas.",
+  "table_blanks":"Blank Table 1 entries remain null and are omitted, not interpreted as measured zero coefficients."
+}

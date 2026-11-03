@@ -1,0 +1,17 @@
+{
+  "electron_ratio_min": 0.0001,
+  "electron_ratio_max": 1.0,
+  "temperature_min_K": 10.0,
+  "temperature_max_K": 20000.0,
+  "samples": 501,
+  "source": "Goldsmith, Habing & Field (1969), ApJ 158, 173; Table 1 and equations (16), (23)-(26)",
+  "transitions": [
+    {"id":"cii-92","label":"C II, 92 K","T_star_K":92,"electron":{"R":7.9e-20,"m":-0.5},"hydrogen":{"R":1.7e-23,"m":0}},
+    {"id":"siii-413","label":"Si II, 413 K","T_star_K":413,"electron":{"R":1.9e-18,"m":-0.5},"hydrogen":{"R":7.4e-23,"m":0}},
+    {"id":"feii-554","label":"Fe II, 554 K","T_star_K":554,"electron":{"R":1.1e-18,"m":-0.5},"hydrogen":{"R":1.1e-22,"m":0}},
+    {"id":"feii-961","label":"Fe II, 961 K","T_star_K":961,"electron":{"R":1.4e-18,"m":-0.5},"hydrogen":{"R":1.5e-22,"m":0}},
+    {"id":"oi-228","label":"O I, 228 K","T_star_K":228,"electron":null,"hydrogen":{"R":2.1e-24,"m":0.33}},
+    {"id":"oi-326","label":"O I, 326 K","T_star_K":326,"electron":null,"hydrogen":{"R":1.3e-24,"m":0.31}},
+    {"id":"oi-22500","label":"O I, 22500 K","T_star_K":22500,"electron":{"R":1.1e-22,"m":0.5},"hydrogen":null}
+  ]
+}

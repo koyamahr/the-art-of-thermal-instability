@@ -1,0 +1,86 @@
+{
+  "scope": "Model-ingredient diagnostics. FGH (1969) equilibrium Figures 1 and 2 have not been independently recomputed.",
+  "source": "Goldsmith, Habing & Field (1969), ApJ 158, 173; Table 1 and equations (16), (23)-(26)",
+  "checks": [
+    {
+      "name": "equation (26) agrees with rounded 9 eV anchor at x=0.0001",
+      "error": 0.06532763249477824,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "equation (26) agrees with rounded 13 eV anchor at x=0.01",
+      "error": 0.18471337579617675,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "equation (26) agrees with rounded 20 eV anchor at x=1",
+      "error": 0.32758620689655515,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "zero-electron limit of equation (26)",
+      "error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "large-electron limit of equation (26)",
+      "error": 2.022204625973245e-11,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "heating increases while remaining within the 20 eV input energy to printed rounding",
+      "passed": true,
+      "maximum_printed_fit_eV": 20.327586206896555,
+      "note": "The rounded fit slightly exceeds 20 eV at x=1; it is not extrapolated as a physical bound."
+    },
+    {
+      "name": "efficiency stays between zero and one",
+      "passed": true
+    },
+    {
+      "name": "logarithmic cooling slopes match m+T_star/T",
+      "error": 1.8990074281978207e-09,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Table 1 contains five electron and six H-atom fits",
+      "passed": true,
+      "electron_fits": 5,
+      "hydrogen_fits": 6
+    },
+    {
+      "name": "blank coefficients are unavailable rather than zero",
+      "passed": true,
+      "unavailable_pairs": 3
+    },
+    {
+      "name": "C II equal-contribution n_e/n_H ratio at 100 K",
+      "error": 3.9968028886505635e-15,
+      "tolerance": 1e-12,
+      "passed": true
+    }
+  ],
+  "environment": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "matplotlib": "3.9.4"
+  },
+  "code_sha256": {
+    "reproduce.py": "4bd2ec276261da5f26a3340a7e49138f93e4c1e239e061bff97ea46986358f6c",
+    "source-audit.json": "bdd885bd79207d0b21e17a751f06badba80e94d7653613c63852aa07ceaa4db3"
+  },
+  "config_sha256": "360a21633aa0db34287120d32f5eecccdd3f97a27fe09dc613b9795d71a772be",
+  "limitations": [
+    "Derived diagnostics, not a reproduction of FGH equilibrium Figures 1 or 2.",
+    "No coupled thermal/ionization equilibrium solver has been implemented.",
+    "Printed rounded heating fits are preserved; their normalizations are not forced to agree exactly.",
+    "Temperature evaluation range is a diagnostic choice, not an independently established validity range of every historical fit.",
+    "Cooling-curve weights require actual populations, densities, and abundances."
+  ]
+}
