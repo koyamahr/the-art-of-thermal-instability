@@ -5,6 +5,7 @@
 具体的な作業は [GitHub Issues](https://github.com/koyamahr/the-art-of-thermal-instability/issues) を正本とする。公開案内は [progressページ](https://koyamahr.github.io/the-art-of-thermal-instability/progress.html)。同時に進める科学計算は原則1件で、仕様整理・実装・検証・公開を分けて記録する。
 
 - 短期：KI2002の圧力依存ポテンシャル図（[#1](https://github.com/koyamahr/the-art-of-thermal-instability/issues/1)）、圧縮性流体・圧力駆動と反応拡散系の違いの解説（[#2](https://github.com/koyamahr/the-art-of-thermal-instability/issues/2)）。KI図は仕様整理済み、計算と図の実装は未着手。
+- 次の本格的な線形解析：Kim & Kim2013の固有関数（[#6](https://github.com/koyamahr/the-art-of-thermal-instability/issues/6)）。ユーザーの追加指定により、成長率だけでなくFigure9の温度・横速度を同じ固有モードから再構成することを必須成果物とする。原論文・AppendixAの確認と仕様整理まで完了し、背景解・固有値・固有関数ソルバーは未実装。現在のKI課題と同時に二本の計算を走らせない。
 - 中期：定圧近似と圧縮性1Dの小規模比較、Iwasakiの未再現領域を一例ずつ診断（[#3](https://github.com/koyamahr/the-art-of-thermal-instability/issues/3)）、Schwarzの時刻・解像度の限定比較（[#4](https://github.com/koyamahr/the-art-of-thermal-instability/issues/4)）。動く資料が整ってから技術レビュー用資料を用意する。
 - 長期：KI2000/2004、公開済み多次元出力の再解析、未発表計算の整理、出典・版・引用方法・ライセンスを備えるデータ公開。本計算の全面再実行は必須にしない。
 - 保留：FGHの歴史的係数回収（[#5](https://github.com/koyamahr/the-art-of-thermal-instability/issues/5)）。具体的な新資料・検証可能な規約・数値的な新根拠が再開条件。
@@ -23,6 +24,7 @@
 - [x] ユーザー指定でElphick1992を主論文台帳にも追加。生物物理の比較は番外編に分け、Mori et al.2008/2011のwave-pinning、Brauns et al.2020の総量保存反応拡散、FitzHugh1961の興奮・回復を一次資料と対応範囲付きで紹介。生物系の計算再現は未実施。
 - [x] ユーザー指定でChandrasekhar1961の教科書を基礎文献に追加。Boussinesq近似での浮力対流を、Field型放射冷却不安定性と区別して比較する。書誌確認までで、本文の式・図番号の監査と計算再現は未着手。近似の仮定はSpiegel–Veronis1960の原論文を別途参照。
 - [x] 記憶された三著者の有力候補としてNishi–Nakano–Umebayashi1991を電離度・荷電ダストの枝に登録。原論文p183の式3–4とFigures1–2を目視確認。Umebayashi–Nakano1990をPaperIとして参照し、電離率・電子分率・水素核密度の規約を記録。Figure1の1-zone電離平衡を候補に留め、係数回収・計算再現は未着手。KIの最優先課題は変更しない。
+- [x] Kim & Kim2013のAppendixA、Figures5/9、Tables1/3を原文で確認し、固有関数の再現仕様を公開。一定κ=1e5とm=1.37mH、状態ベクトル順序、横速度の−i、T′/T1からT′/T背景への換算、成長率のνσ正規化、両端の基底と共通振幅・位相を記録。温度と速度を独立にフィットしない。背景BVP・残差・領域/解像度収束・独立解法を検証条件にし、Figure9の絶対振幅と原文Lf数値の未確認点を残す。
 - [ ] KI出版版の直接照合・正式erratumの有無の確定。オランダ語学位論文本文の精読は未実施。
 - [ ] 今後の平衡曲線にも同じ基準点を追加。Wolfire/GOWでは熱化学・輸送の仮定を先に定義し、単純な等面積則で代用しない。
 

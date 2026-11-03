@@ -934,12 +934,16 @@
     "status": "listed",
     "reference_section": "fronts",
     "topic": "Thermal conduction suppresses short-wavelength corrugations of CNM–WNM evaporation fronts. Linear stability analysis connects to nonlinear front deformation and enhanced evaporation.",
-    "scope": "Audit the conduction coefficient, equilibrium front, boundary conditions, and wavelength normalization before selecting a linear growth-rate or cutoff calculation. Compare with Inoue et al. (2006), keeping cooling laws and assumptions distinct. Use available outputs for nonlinear saturation diagnostics; a full two-dimensional rerun is optional.",
-    "review_status": "Author preprint bibliography and abstract checked; thermal conduction is explicitly included. Original equations, target figures, and resolution requirements need a dedicated audit.",
+    "scope": "Detailed reconstruction of AppendixA with coupled eigenfunctions as the required output. Primary target: Figure9 temperature and transverse-velocity profiles from the same normalized mode; supporting targets are the background front, Figure5 dispersion and long-wave/cutoff limits. Source-audited plan only; no Kim eigenfunctions computed yet. Nonlinear2D remains separate and optional.",
+    "review_status": "arXiv1310.2940v2 Sections2–3 and AppendixA read; source pp3,5,6,9,14–16 visually checked. Constant conductivity1e5, m=1.37mH, five-component basis/order, Fourier phase and Figure9 normalizations recorded. Numerical reconstruction and source digitization pending.",
     "resources": [
       {
         "href": "research-paths.html#kim-kim-2013",
         "label": "Conductive evaporation-front stability →"
+      },
+      {
+        "href": "kim-kim-2013/index.html",
+        "label": "Eigenfunction reconstruction specification →"
       }
     ]
   },

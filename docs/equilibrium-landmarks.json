@@ -1,10 +1,11 @@
 {
   "schema_version": 1,
   "meaning": "Planar static ZP pressure and thermal-equilibrium intersections. Null means unavailable in the stated model/domain; never substitute a pressure extremum.",
-  "density_warning": "KI/Iwasaki n=rho/mH for pure H; FGH prototype n0 counts H+He nuclei and pressure also includes electrons. Do not equate these density columns.",
+  "density_warning": "KI/Iwasaki n=rho/mH for pure H; FGH prototype n0 counts H+He nuclei and pressure also includes electrons. Kim2013 uses n=rho/(1.37 mH) in its source convention. Do not equate these density columns.",
   "reports_sha256": {
     "ki-2002/validation.json": "7994b4db821d0d86415fb3e7b6b1fcd109de4fefb783b76866cd59a4f1071311",
-    "fgh-1969/validation-saturation.json": "60df699b526637e0383494afc376e4dba9c2005a733645e3722ddf50a2580e41"
+    "fgh-1969/validation-saturation.json": "60df699b526637e0383494afc376e4dba9c2005a733645e3722ddf50a2580e41",
+    "kim-kim-2013/source-audit.json": "c92b1d2d5234bf9c1bed56f91013ed03683fe269a917b9be960e9f266b0bead8"
   },
   "models": [
     {
@@ -57,6 +58,17 @@
       "same_as": "ki-2002-corrected",
       "exhibit": "iwasaki-2012/",
       "note": "An independent implementation was checked; this is the same equilibrium model, not a new distinct cooling curve."
+    },
+    {
+      "id": "kim-kim-2013",
+      "status": "source_reported_not_recomputed",
+      "exhibit": "kim-kim-2013/",
+      "P_sat_over_kB_K_cm3": null,
+      "source_reported_P_sat_over_kB_K_cm3": 2282,
+      "equilibria": [],
+      "conductivity": "Constant kappa=1e5 erg cm^-1 s^-1 K^-1",
+      "density_convention": "n=rho/m and P=n kB T, following the source",
+      "note": "Source value only. Different conductivity from the computed KI/Iwasaki model; eigenfunction reconstruction is planned."
     },
     {
       "id": "fgh-prototype-normal",

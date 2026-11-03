@@ -1,0 +1,120 @@
+{
+  "review_date": "2026-11-03",
+  "citation": "Kim & Kim2013, ApJ779,48",
+  "source_url": "https://arxiv.org/pdf/1310.2940v2",
+  "source_edition": "arXiv1310.2940v2, 6December2013; journal/preprint differences not independently checked",
+  "source_pdf_sha256": "dbdc2b023ba6bb69ffb850ae2ef5b157514f18b0fe8dbe9377e07030a5e4f447",
+  "stage": "Source-audited reconstruction specification; no Kim2013 background, eigenvalue or eigenfunction computed yet.",
+  "priority": "User explicitly requires detailed analytical reproduction, especially eigenfunctions. Figure9 is the primary acceptance target; Figure5 growth rates alone are insufficient.",
+  "issue": "https://github.com/koyamahr/the-art-of-thermal-instability/issues/6",
+  "reviewed": {
+    "text": "Sections2\u20133, Figure9 discussion and AppendixA read.",
+    "visual_pages": [
+      3,
+      5,
+      6,
+      9,
+      14,
+      15,
+      16
+    ],
+    "equations": [
+      "5\u201313",
+      "A1\u2013A24"
+    ],
+    "figures": [
+      5,
+      9
+    ],
+    "tables": [
+      1,
+      3
+    ]
+  },
+  "model": {
+    "gamma": 1.6666666666666667,
+    "mean_mass_over_mH": 1.37,
+    "density_convention": "n=rho/m and P=n kB T, following the source",
+    "heating_erg_s_inverse": 2e-26,
+    "cooling": "Corrected KI2002 fit, Eq8",
+    "conductivity_erg_cm_inverse_s_inverse_K_inverse": 100000.0,
+    "conductivity_temperature_dependent": false,
+    "source_reported_P_sat_over_kB_K_cm3": 2282,
+    "geometry": "Steady plane-parallel front; CNM left, WNM right",
+    "approximation": "Source isobaric/low-Mach reduction. Retain hydrodynamic perturbation coupling; do not claim an exact full-compressible spectrum.",
+    "front_origin": "T=sqrt(T1 T2)"
+  },
+  "primary_target": {
+    "figure": 9,
+    "model": "MU69",
+    "pressure_over_kB_K_cm3": 1800,
+    "temperature_panel": "T_prime/T_background at y=0.5 Ly",
+    "velocity_panel": "v_y_prime/v_x1 at y=0.25 Ly",
+    "time_over_growth_time": 2,
+    "table3_Ly_pc": 1.06,
+    "table1_rounded_lambda_max_pc": 1.05,
+    "comparison": "One common amplitude/phase and front-origin convention. No separate fitting or normalization of the two plotted fields. Distinguish analytic solid curves from simulation dots."
+  },
+  "linear_problem": {
+    "state_order": [
+      "J",
+      "V",
+      "M",
+      "Theta",
+      "dTheta/dxi"
+    ],
+    "warning": "A6 lists J,M,V,Theta, while the A15\u2013A19 state-vector order is J,V,M,Theta,dTheta/dxi.",
+    "variables": {
+      "xi": "x/ell_D1",
+      "nu": "k ell_D1",
+      "sigma": "Omega/(k v_x1)",
+      "Theta": "T_prime/T1"
+    },
+    "physical_transverse_velocity": "Re[-i V exp(Omega t+i k y)] times v_x1; -i must be retained",
+    "temperature_plot_conversion": "Theta times T1/T_background, not Theta alone",
+    "allowed_far_field_bases": {
+      "upstream": [
+        "incompressible",
+        "thermal"
+      ],
+      "downstream": [
+        "incompressible",
+        "vortex",
+        "thermal"
+      ]
+    },
+    "boundary_rule": "Re(beta)>0 upstream; Re(beta)<0 downstream. Source beta_t-minus names the positive root on the upstream side, not the minus arithmetic sign in A14.",
+    "normalization": "C1=1 in A20\u2013A21, or a documented equivalent common gauge; preserve all intercomponent amplitudes and phases.",
+    "matching": "Five-component continuity at a common point, with scaled residuals and no division by vanishing components."
+  },
+  "supporting_targets": {
+    "background": "Eqs9\u201313, Figures2\u20133 and Table1",
+    "dispersion": "Figure5: vertical axis Omega ell_D1/v_x1 = nu*sigma, not sigma; horizontal axis nu.",
+    "pressure_cases_over_kB_K_cm3": [
+      1700,
+      1800,
+      1900
+    ],
+    "long_wave": "A24 and Eq1",
+    "cutoff": "Source nu_crit about0.52\u20130.54; approach from the unstable branch and enlarge the domain as vortex decay becomes long."
+  },
+  "acceptance": [
+    "Background BVP/mass-flux/energy-integral convergence before stability integration.",
+    "Verify all far-field basis vectors against the constant-coefficient equations.",
+    "Equation, boundary and matching residuals for every eigenfunction component.",
+    "Domain, grid, interpolation and tolerance refinement preserve eigenvalues AND normalized eigenfunction shapes.",
+    "Recover k=0 translation mode and long-wave displacement asymptotics without imposing them at finite k.",
+    "Track a continuous eigenmode branch by overlap when sweeping k.",
+    "Source digitization with calibration and uncertainty; compare signs, extrema, nodes, relative amplitudes and tails.",
+    "Independent discretization or small-amplitude linear evolution for a representative mode before detailed-reproduction status.",
+    "Export raw state and reconstructed physical components with units, common gauge, masks and approximation order."
+  ],
+  "open_questions": [
+    "In inspected v2 p5, the1800 evaporation example text gives Lf=0.13pc, while Table1 gives0.29pc. Check journal version/definitions; do not tune coordinates to fit either number.",
+    "Figure9 absolute amplitude at t/tgr=2 depends on projection of the initially shifted front onto the growing mode and transient evolution. A shared arbitrary eigenfunction normalization establishes shapes and relative amplitudes, not that absolute initial-value comparison."
+  ],
+  "limits": [
+    "No source-curve digitization, solver, eigenfunction data or 2D reproduction yet.",
+    "A full nonlinear2D rerun is a separate optional scope; detailed one-dimensional/Fourier-mode linear analysis is required."
+  ]
+}
