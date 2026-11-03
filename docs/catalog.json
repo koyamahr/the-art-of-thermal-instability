@@ -34,12 +34,18 @@
     "status": "in_progress",
     "source": "https://ui.adsabs.harvard.edu/abs/1969ApJ...155L.149F/abstract",
     "topic": "From heating and cooling balance to two coexisting phases.",
-    "scope": "Validated heating and metal-cooling ingredient diagnostics from the detailed companion GHF (1969) paper. This is not yet a reproduction of the Letter's equilibrium Figures 1 and 2. The source audit records unresolved rate inputs and differing depletion cases.",
+    "scope": "Historical heating/cooling diagnostics and a reduced 10–2,000 K cold-branch calculation with explicit assumptions. Numerical checks do not establish reproduction of the Letter’s equilibrium Figures 1 and 2.",
     "exhibits": [
       {
         "href": "fgh-1969/",
         "label": "Heating & cooling ingredients →",
         "kind": "diagnostic",
+        "validated": true
+      },
+      {
+        "href": "fgh-1969/cold-branch.html",
+        "label": "Reduced cold branch →",
+        "kind": "reduced_model",
         "validated": true
       }
     ]
@@ -87,5 +93,299 @@
     "source": "https://arxiv.org/abs/astro-ph/0302126",
     "topic": "Examine numerical convergence through thermal conduction and spatial resolution.",
     "scope": "Candidate exhibits compare simulations with and without thermal conduction across different spatial resolutions."
+  },
+  {
+    "id": "wolfire-1995",
+    "year": 1995,
+    "authors": "Wolfire, Hollenbach, McKee, Tielens & Bakes",
+    "title": "The Neutral Atomic Phases of the Interstellar Medium",
+    "group": "microphysics",
+    "status": "listed",
+    "source": "https://ntrs.nasa.gov/citations/19950053579",
+    "topic": "Photoelectric heating by small grains and PAHs, X-ray/cosmic-ray ionization, and atomic phase equilibrium.",
+    "scope": "Audit the heating/cooling terms and identify a local equilibrium curve for a modest-cost calculation.",
+    "journal": "ApJ 443, 152–168",
+    "doi": "10.1086/175510",
+    "reference_section": "microphysics",
+    "review_status": "Bibliography and abstract checked; equations, data availability, and target figures require an individual audit.",
+    "resources": [
+      {
+        "href": "research-paths.html#wolfire-1995",
+        "label": "Research path & scope →"
+      }
+    ]
+  },
+  {
+    "id": "wolfire-2003",
+    "year": 2003,
+    "authors": "Wolfire, McKee, Hollenbach & Tielens",
+    "title": "Neutral Atomic Phases of the Interstellar Medium in the Galaxy",
+    "group": "microphysics",
+    "status": "listed",
+    "source": "https://arxiv.org/abs/astro-ph/0207098",
+    "topic": "Revised atomic-gas microphysics and the allowed two-phase pressure range across the Galactic disk.",
+    "scope": "Compare physical inputs with the 1995 model before attempting an equilibrium calculation.",
+    "journal": "ApJ 587, 278–311",
+    "doi": "10.1086/368016",
+    "reference_section": "microphysics",
+    "review_status": "Bibliography and abstract checked; equations, data availability, and target figures require an individual audit.",
+    "resources": [
+      {
+        "href": "research-paths.html#wolfire-2003",
+        "label": "Research path & scope →"
+      }
+    ]
+  },
+  {
+    "id": "gow-2017",
+    "year": 2017,
+    "authors": "Gong, Ostriker & Wolfire",
+    "title": "A Simple and Accurate Network for Hydrogen and Carbon Chemistry in the Interstellar Medium",
+    "group": "microphysics",
+    "status": "listed",
+    "source": "https://arxiv.org/abs/1610.09023",
+    "topic": "A compact chemical network with an author-maintained public PDR implementation and rate corrections.",
+    "scope": "Pin a corrected rate/code version, inspect units and validity ranges, then choose a small chemical or thermal benchmark.",
+    "journal": "ApJ 843, 38",
+    "doi": "10.3847/1538-4357/aa7561",
+    "reference_section": "microphysics",
+    "review_status": "Bibliography and abstract checked; equations, data availability, and target figures require an individual audit.",
+    "resources": [
+      {
+        "href": "research-paths.html#gow-2017",
+        "label": "Research path & scope →"
+      }
+    ]
+  },
+  {
+    "id": "gong-2023",
+    "year": 2023,
+    "authors": "Gong, Ho, Stone, Ostriker, Caselli, Grassi, C.-G. Kim, J.-G. Kim & Halevi",
+    "title": "Implementation of Chemistry in the Athena++ Code",
+    "group": "microphysics",
+    "status": "listed",
+    "source": "https://arxiv.org/abs/2305.04965",
+    "topic": "A public chemistry framework including GOW17, general KIDA networks, and coupled thermal/chemical evolution.",
+    "scope": "Begin with published tests, public inputs, or a small one-zone/1D case; full 3D runs are optional.",
+    "journal": "ApJS 268, 42",
+    "doi": "10.3847/1538-4365/aceaf9",
+    "reference_section": "microphysics",
+    "review_status": "Bibliography and abstract checked; equations, data availability, and target figures require an individual audit.",
+    "resources": [
+      {
+        "href": "research-paths.html#gong-2023",
+        "label": "Research path & scope →"
+      }
+    ]
+  },
+  {
+    "id": "inoue-2006",
+    "year": 2006,
+    "authors": "Inoue, Inutsuka & Koyama",
+    "title": "Structure and Stability of Phase Transition Layers in the Interstellar Medium",
+    "group": "dynamics",
+    "status": "listed",
+    "source": "https://arxiv.org/abs/astro-ph/0604564",
+    "topic": "CNM/WNM fronts, evaporation and condensation, and corrugational stability.",
+    "scope": "Candidate: a plane-parallel front or the linear growth relation, after checking boundary conditions.",
+    "journal": "ApJ 652, 1331–1338",
+    "doi": "10.1086/508334",
+    "reference_section": "inoue",
+    "review_status": "Bibliography and abstract checked; equations, data availability, and target figures require an individual audit.",
+    "resources": [
+      {
+        "href": "research-paths.html#inoue-2006",
+        "label": "Research path & scope →"
+      }
+    ]
+  },
+  {
+    "id": "inoue-2007",
+    "year": 2007,
+    "authors": "Inoue, Inutsuka & Koyama",
+    "title": "The Role of Ambipolar Diffusion in the Formation Process of Moderately Magnetized Diffuse Clouds",
+    "group": "dynamics",
+    "status": "listed",
+    "source": "https://arxiv.org/abs/astro-ph/0612770",
+    "topic": "Two-fluid condensation and the competition between magnetic flux accumulation and ambipolar diffusion.",
+    "scope": "Candidate: the analytic field-strength estimate or a small 1D verification case.",
+    "journal": "ApJ 658, L99–L102",
+    "doi": "10.1086/514816",
+    "reference_section": "inoue",
+    "review_status": "Bibliography and abstract checked; equations, data availability, and target figures require an individual audit.",
+    "resources": [
+      {
+        "href": "research-paths.html#inoue-2007",
+        "label": "Research path & scope →"
+      }
+    ]
+  },
+  {
+    "id": "inoue-2008",
+    "year": 2008,
+    "authors": "Inoue & Inutsuka",
+    "title": "Two-Fluid MHD Simulations of Converging H I Flows in the Interstellar Medium. I: Methodology and Basic Results",
+    "group": "dynamics",
+    "status": "listed",
+    "source": "https://arxiv.org/abs/0801.0486",
+    "topic": "Two-fluid coupling and magnetic limits on condensation in converging atomic flows.",
+    "scope": "Document the method and inputs; consider a coupling benchmark or analysis of available outputs rather than a full 2D rerun.",
+    "journal": "ApJ 687, 303–310",
+    "doi": "10.1086/590528",
+    "reference_section": "inoue",
+    "review_status": "Bibliography and abstract checked; equations, data availability, and target figures require an individual audit.",
+    "resources": [
+      {
+        "href": "research-paths.html#inoue-2008",
+        "label": "Research path & scope →"
+      }
+    ]
+  },
+  {
+    "id": "inoue-2009",
+    "year": 2009,
+    "authors": "Inoue & Inutsuka",
+    "title": "Two-Fluid MHD Simulations of Converging H I Flows in the Interstellar Medium. II: Are Molecular Clouds Generated Directly from a Warm Neutral Medium?",
+    "group": "dynamics",
+    "status": "listed",
+    "source": "https://arxiv.org/abs/0908.3701",
+    "topic": "The angle between inflow and mean magnetic field affects shocked atomic gas and cloud formation.",
+    "scope": "Compare model assumptions and published diagnostics; reanalyse public outputs if available. Large runs are outside the initial scope.",
+    "journal": "ApJ 704, 161–169",
+    "doi": "10.1088/0004-637X/704/1/161",
+    "reference_section": "inoue",
+    "review_status": "Bibliography and abstract checked; equations, data availability, and target figures require an individual audit.",
+    "resources": [
+      {
+        "href": "research-paths.html#inoue-2009",
+        "label": "Research path & scope →"
+      }
+    ]
+  },
+  {
+    "id": "inoue-2012",
+    "year": 2012,
+    "authors": "Inoue & Inutsuka",
+    "title": "Formation of Turbulent and Magnetized Molecular Clouds via Accretion Flows of H I Clouds",
+    "group": "dynamics",
+    "status": "listed",
+    "source": "https://arxiv.org/abs/1205.6217",
+    "topic": "Three-dimensional MHD with chemistry, conduction, and accretion of inhomogeneous atomic gas.",
+    "scope": "Focus on setup documentation, analysis methods, and any available snapshots. Do not require rerunning the full 3D calculation.",
+    "journal": "ApJ 759, 35",
+    "doi": "10.1088/0004-637X/759/1/35",
+    "reference_section": "inoue",
+    "review_status": "Bibliography and abstract checked; equations, data availability, and target figures require an individual audit.",
+    "resources": [
+      {
+        "href": "research-paths.html#inoue-2012",
+        "label": "Research path & scope →"
+      }
+    ]
+  },
+  {
+    "id": "iwasaki-2008",
+    "year": 2008,
+    "authors": "Iwasaki & Tsuribe",
+    "title": "Self-similar solutions for the dynamical condensation of a radiative gas layer",
+    "group": "dynamics",
+    "status": "listed",
+    "source": "https://arxiv.org/abs/0806.2725",
+    "topic": "Non-equilibrium thermal condensation described by a family of plane-parallel similarity solutions.",
+    "scope": "Candidate: similarity profiles and limiting scalings, using an ODE solver and a small 1D comparison.",
+    "journal": "MNRAS 387, 1554–1562",
+    "doi": "10.1111/j.1365-2966.2008.13294.x",
+    "reference_section": "iwasaki",
+    "review_status": "Bibliography and abstract checked; equations, data availability, and target figures require an individual audit.",
+    "resources": [
+      {
+        "href": "research-paths.html#iwasaki-2008",
+        "label": "Research path & scope →"
+      }
+    ]
+  },
+  {
+    "id": "iwasaki-2009",
+    "year": 2009,
+    "authors": "Iwasaki & Tsuribe",
+    "title": "Fragmentation of a dynamically condensing radiative layer",
+    "group": "dynamics",
+    "status": "listed",
+    "source": "https://arxiv.org/abs/0910.4726",
+    "topic": "Perturbation growth on a time-dependent, dynamically condensing background.",
+    "scope": "Candidate: linear perturbation evolution on the time-dependent similarity solution, before a full nonlinear calculation.",
+    "journal": "A&A 508, 725–735",
+    "doi": "10.1051/0004-6361/200912806",
+    "reference_section": "iwasaki",
+    "review_status": "Bibliography and abstract checked; equations, data availability, and target figures require an individual audit.",
+    "resources": [
+      {
+        "href": "research-paths.html#iwasaki-2009",
+        "label": "Research path & scope →"
+      }
+    ]
+  },
+  {
+    "id": "iwasaki-2012",
+    "year": 2012,
+    "authors": "Iwasaki & Inutsuka",
+    "title": "Structure of dynamical condensation fronts in the interstellar medium",
+    "group": "dynamics",
+    "status": "listed",
+    "source": "https://arxiv.org/abs/1204.5532",
+    "topic": "Condensation-front families parameterized by pressure and mass flux, with cooling- and Field-length regimes.",
+    "scope": "Candidate: a steady 1D front and the changing characteristic length scale.",
+    "journal": "MNRAS 423, 3638–3645",
+    "doi": "10.1111/j.1365-2966.2012.21156.x",
+    "reference_section": "iwasaki",
+    "review_status": "Bibliography and abstract checked; equations, data availability, and target figures require an individual audit.",
+    "resources": [
+      {
+        "href": "research-paths.html#iwasaki-2012",
+        "label": "Research path & scope →"
+      }
+    ]
+  },
+  {
+    "id": "iwasaki-2014",
+    "year": 2014,
+    "authors": "Iwasaki & Inutsuka",
+    "title": "Self-Sustained Turbulence without Dynamical Forcing: A Two-Dimensional Study of a Bistable Interstellar Medium",
+    "group": "dynamics",
+    "status": "listed",
+    "source": "https://arxiv.org/abs/1309.7139",
+    "topic": "Thermal conduction, phase transitions, viscosity, and kinetic-energy transfer in a bistable medium.",
+    "scope": "Prioritize published energy budgets and analysis of available outputs. A small front problem can isolate the mechanism without reproducing the full 2D run.",
+    "journal": "ApJ 784, 115",
+    "doi": "10.1088/0004-637X/784/2/115",
+    "reference_section": "iwasaki",
+    "review_status": "Bibliography and abstract checked; equations, data availability, and target figures require an individual audit.",
+    "resources": [
+      {
+        "href": "research-paths.html#iwasaki-2014",
+        "label": "Research path & scope →"
+      }
+    ]
+  },
+  {
+    "id": "iwasaki-2019",
+    "year": 2019,
+    "authors": "Iwasaki, Tomida, Inoue & Inutsuka",
+    "title": "The Early Stage of Molecular Cloud Formation by Compression of Two-phase Atomic Gases",
+    "group": "dynamics",
+    "status": "listed",
+    "source": "https://arxiv.org/abs/1806.03824",
+    "topic": "Three-dimensional MHD, non-equilibrium chemistry, and the critical magnetic-field/inflow angle for cloud formation.",
+    "scope": "Candidate: evaluate the analytic critical-angle relation and reanalyse available outputs; full parameter-survey reruns are optional.",
+    "journal": "ApJ 873, 6; preprint first posted in 2018",
+    "doi": "10.3847/1538-4357/ab02ff",
+    "reference_section": "iwasaki",
+    "review_status": "Bibliography and abstract checked; equations, data availability, and target figures require an individual audit.",
+    "resources": [
+      {
+        "href": "research-paths.html#iwasaki-2019",
+        "label": "Research path & scope →"
+      }
+    ]
   }
 ]

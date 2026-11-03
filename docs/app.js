@@ -17,14 +17,19 @@ function render(filter = "all") {
     row.id = p.id;
     row.append(element("div", "year", String(p.year)));
     const body = element("div");
-    body.append(element("span", "state", p.status === "validated" ? "Numerically validated" : p.status === "in_progress" ? "Model ingredients · in progress" : "Planned"), element("p", "author", p.authors), element("h3", "", p.title), element("p", "topic", p.topic));
+    body.append(element("span", "state", p.status === "validated" ? "Numerically validated" : p.status === "in_progress" ? "Equilibrium model · in progress" : p.status === "listed" ? "Reference listed · scope proposed" : "Planned"), element("p", "author", p.authors), element("h3", "", p.title), element("p", "topic", p.topic));
     const details = element("details");
-    details.append(element("summary", "", p.exhibit || p.exhibits ? "About this exhibit" : "View planned exhibit"), element("p", "", p.scope));
+    details.append(element("summary", "", p.status === "listed" ? "Proposed scope" : p.exhibit || p.exhibits ? "About this exhibit" : "View planned exhibit"), element("p", "", p.scope));
     body.append(details);
     for (const entry of p.exhibits || (p.exhibit ? [{href:p.exhibit,label:"Explore exhibit →"}] : [])) {
       const link = element("a", "source", entry.label);
       link.href = entry.href;
       body.append(link);
+    }
+    for (const resource of p.resources || []) {
+      const reference = element("a", "source", resource.label);
+      reference.href = resource.href;
+      body.append(reference);
     }
     const link = element("a", "source", "Paper & bibliography ↗");
     link.href = p.source;

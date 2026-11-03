@@ -118,7 +118,7 @@ def main():
     save_figure(fig,out,'heating')
     plt.close(fig)
     with (out/'heating.csv').open('w',newline='') as file:
-        w=csv.writer(file,lineterminator='\n');w.writerow(['electron_ratio_ne_over_nHI','indirect_heat_eV_eq26','efficiency_eq25','Gamma_ion_over_zeta_n0_erg_eq23']);w.writerows(zip(x,energy,f,norm))
+        w=csv.writer(file,lineterminator='\n');w.writerow(['electron_ratio_ne_over_nHI','indirect_heat_eV_eq26','efficiency_eq25','Gamma_ion_over_zeta_n_target_erg_eq23']);w.writerows(zip(x,energy,f,norm))
     temperatures=np.geomspace(config['temperature_min_K'],config['temperature_max_K'],config['samples'])
     fig,axes=plt.subplots(1,2,figsize=(10,5.7),layout='constrained')
     colors=['#22645c','#8b7050','#596662','#596662','#776b80','#776b80','#776b80']
@@ -142,7 +142,7 @@ def main():
                 environment=dict(python=platform.python_version(),numpy=np.__version__,matplotlib=matplotlib.__version__),
                 code_sha256=hashes,config_sha256=hashlib.sha256(args.config.read_bytes()).hexdigest(),
                 limitations=['Derived diagnostics, not a reproduction of FGH equilibrium Figures 1 or 2.',
-                             'No coupled thermal/ionization equilibrium solver has been implemented.',
+                             'This ingredient script does not solve equilibrium; cold_branch.py implements a separate reduced model.',
                              'Printed rounded heating fits are preserved; their normalizations are not forced to agree exactly.',
                              'Temperature evaluation range is a diagnostic choice, not an independently established validity range of every historical fit.',
                              'Cooling-curve weights require actual populations, densities, and abundances.'])

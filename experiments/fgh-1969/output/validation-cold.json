@@ -1,0 +1,452 @@
+{
+  "scope": "Reduced cold-gas equilibrium experiment; not an original FGH figure reproduction",
+  "checks": [
+    {
+      "name": "Pure-H charge solution agrees with independent quadratic root",
+      "error": 2.220446049250313e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Number and energy recombination coefficients positive throughout chosen window",
+      "passed": true
+    },
+    {
+      "name": "Hydrogenic Z=2 number scaling",
+      "error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Hydrogenic Z=2 energy scaling",
+      "error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Cold asymptote of number coefficient",
+      "error": 5.424147733190665e-07,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "Cold asymptote of energy coefficient",
+      "error": 7.64067587644135e-07,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "normal, H/He charge only: roots found",
+      "passed": true
+    },
+    {
+      "name": "normal, H/He charge only: normalized thermal residual",
+      "error": 3.44107326069532e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "normal, H/He charge only: H nuclei conservation",
+      "error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "normal, H/He charge only: He nuclei conservation",
+      "error": 4.440892098500626e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "normal, H/He charge only: charge conservation",
+      "error": 6.661338147750939e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "normal, H/He charge only: H ionization balance",
+      "error": 3.3306690738754696e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "normal, H/He charge only: He I ionization balance",
+      "error": 4.440892098500626e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "normal, H/He charge only: He II ionization balance",
+      "error": 5.551115123125783e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "normal, H/He charge only: refined scan finds same density/root count",
+      "passed": true
+    },
+    {
+      "name": "normal, H/He charge only: refined scan temperatures agree",
+      "error": 2.220446049250313e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "normal + metal electrons: roots found",
+      "passed": true
+    },
+    {
+      "name": "normal + metal electrons: normalized thermal residual",
+      "error": 3.462167138603866e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "normal + metal electrons: H nuclei conservation",
+      "error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "normal + metal electrons: He nuclei conservation",
+      "error": 4.440892098500626e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "normal + metal electrons: charge conservation",
+      "error": 5.551115123125783e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "normal + metal electrons: H ionization balance",
+      "error": 2.220446049250313e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "normal + metal electrons: He I ionization balance",
+      "error": 4.440892098500626e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "normal + metal electrons: He II ionization balance",
+      "error": 4.440892098500626e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "normal + metal electrons: refined scan finds same density/root count",
+      "passed": true
+    },
+    {
+      "name": "normal + metal electrons: refined scan temperatures agree",
+      "error": 2.6645352591003757e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "FGH a, H/He charge only: roots found",
+      "passed": true
+    },
+    {
+      "name": "FGH a, H/He charge only: normalized thermal residual",
+      "error": 3.3480537600362168e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "FGH a, H/He charge only: H nuclei conservation",
+      "error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "FGH a, H/He charge only: He nuclei conservation",
+      "error": 4.440892098500626e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "FGH a, H/He charge only: charge conservation",
+      "error": 5.551115123125783e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "FGH a, H/He charge only: H ionization balance",
+      "error": 2.220446049250313e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "FGH a, H/He charge only: He I ionization balance",
+      "error": 4.440892098500626e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "FGH a, H/He charge only: He II ionization balance",
+      "error": 4.440892098500626e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "FGH a, H/He charge only: refined scan finds same density/root count",
+      "passed": true
+    },
+    {
+      "name": "FGH a, H/He charge only: refined scan temperatures agree",
+      "error": 2.220446049250313e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "FGH a + metal electrons: roots found",
+      "passed": true
+    },
+    {
+      "name": "FGH a + metal electrons: normalized thermal residual",
+      "error": 3.33406190712498e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "FGH a + metal electrons: H nuclei conservation",
+      "error": 2.220446049250313e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "FGH a + metal electrons: He nuclei conservation",
+      "error": 3.3306690738754696e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "FGH a + metal electrons: charge conservation",
+      "error": 6.661338147750939e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "FGH a + metal electrons: H ionization balance",
+      "error": 4.440892098500626e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "FGH a + metal electrons: He I ionization balance",
+      "error": 4.440892098500626e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "FGH a + metal electrons: He II ionization balance",
+      "error": 3.3306690738754696e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "FGH a + metal electrons: refined scan finds same density/root count",
+      "passed": true
+    },
+    {
+      "name": "FGH a + metal electrons: refined scan temperatures agree",
+      "error": 1.7763568394002505e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "FGH b, H/He charge only: roots found",
+      "passed": true
+    },
+    {
+      "name": "FGH b, H/He charge only: normalized thermal residual",
+      "error": 3.006072005037511e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "FGH b, H/He charge only: H nuclei conservation",
+      "error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "FGH b, H/He charge only: He nuclei conservation",
+      "error": 3.3306690738754696e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "FGH b, H/He charge only: charge conservation",
+      "error": 5.551115123125783e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "FGH b, H/He charge only: H ionization balance",
+      "error": 2.220446049250313e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "FGH b, H/He charge only: He I ionization balance",
+      "error": 4.440892098500626e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "FGH b, H/He charge only: He II ionization balance",
+      "error": 4.440892098500626e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "FGH b, H/He charge only: refined scan finds same density/root count",
+      "passed": true
+    },
+    {
+      "name": "FGH b, H/He charge only: refined scan temperatures agree",
+      "error": 1.1324274851176597e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "FGH b + metal electrons: roots found",
+      "passed": true
+    },
+    {
+      "name": "FGH b + metal electrons: normalized thermal residual",
+      "error": 2.553490909977173e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "FGH b + metal electrons: H nuclei conservation",
+      "error": 1.1102230246251565e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "FGH b + metal electrons: He nuclei conservation",
+      "error": 3.3306690738754696e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "FGH b + metal electrons: charge conservation",
+      "error": 6.661338147750939e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "FGH b + metal electrons: H ionization balance",
+      "error": 2.220446049250313e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "FGH b + metal electrons: He I ionization balance",
+      "error": 4.440892098500626e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "FGH b + metal electrons: He II ionization balance",
+      "error": 3.3306690738754696e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "FGH b + metal electrons: refined scan finds same density/root count",
+      "passed": true
+    },
+    {
+      "name": "FGH b + metal electrons: refined scan temperatures agree",
+      "error": 2.220446049250313e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    }
+  ],
+  "solutions": [
+    {
+      "case": "normal",
+      "metal_donor_electrons": false,
+      "roots": 121,
+      "densities_without_bracket": 0,
+      "temperature_at_n0_100_K": [
+        19.673318532264467
+      ]
+    },
+    {
+      "case": "normal",
+      "metal_donor_electrons": true,
+      "roots": 121,
+      "densities_without_bracket": 0,
+      "temperature_at_n0_100_K": [
+        19.215705207051897
+      ]
+    },
+    {
+      "case": "FGH a",
+      "metal_donor_electrons": false,
+      "roots": 121,
+      "densities_without_bracket": 0,
+      "temperature_at_n0_100_K": [
+        38.169732058809814
+      ]
+    },
+    {
+      "case": "FGH a",
+      "metal_donor_electrons": true,
+      "roots": 121,
+      "densities_without_bracket": 0,
+      "temperature_at_n0_100_K": [
+        38.0664251038321
+      ]
+    },
+    {
+      "case": "FGH b",
+      "metal_donor_electrons": false,
+      "roots": 113,
+      "densities_without_bracket": 8,
+      "temperature_at_n0_100_K": [
+        63.34510088498245
+      ]
+    },
+    {
+      "case": "FGH b",
+      "metal_donor_electrons": true,
+      "roots": 113,
+      "densities_without_bracket": 8,
+      "temperature_at_n0_100_K": [
+        63.344562914386884
+      ]
+    }
+  ],
+  "limitations": [
+    "Equal primary ionization rate for H I, He I, He II; no secondary or thermal collisional ionization.",
+    "Hjellming (1966), equations 56-59: excited-state recombination; He I approximated by H and He II by hydrogenic Z=2 scaling. Cold-temperature accuracy is not established here.",
+    "Low-density cooling with all C, Si, Fe singly ionized and O neutral; each tabulated transition uses the whole elemental target population. Level statistical equilibrium is omitted.",
+    "Only available Table 1 collider channels enter the reduced cooling sum; omitted channels are not measured zeros.",
+    "Two charge prescriptions: H/He only, and explicit C+Si+Fe donor electrons; neither includes all historical trace donors.",
+    "Recombination energy uses Hjellming gamma-minus-gamma1; free-free cooling uses GHF equation 18. No thermal H/He excitation cooling, molecules, grains, or stellar heating.",
+    "n0 counts H+He nuclei; P/k=(n0+ne)*T omits trace nuclei. No stability classification or warm branch is inferred."
+  ],
+  "root_search": "Logarithmic sign-change scan, followed by bisection. Tangential or out-of-window roots are not certified.",
+  "environment": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "matplotlib": "3.9.4"
+  },
+  "code_sha256": {
+    "cold_branch.py": "ba40297e1a4f129ab67cd6b9de55f679de02d6db394708b74da025299f6ed549",
+    "reproduce.py": "9c32c3d42d6b72e323a3a496e560c1347ecdb840b737308a8473d9bbf07e46ac",
+    "config.json": "360a21633aa0db34287120d32f5eecccdd3f97a27fe09dc613b9795d71a772be"
+  },
+  "config_sha256": "9139d8c2eb34e02cf1bc4d85f0da8b9f8c77e42258a6097620d1782582fc8a52"
+}

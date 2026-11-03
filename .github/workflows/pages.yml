@@ -46,10 +46,12 @@ jobs:
         env:
           MPLCONFIGDIR: ${{ runner.temp }}/matplotlib
         run: python experiments/field-1965/publish.py
-      - name: Recompute and validate FGH model ingredients
+      - name: Recompute and validate FGH ingredients and reduced cold branch
         env:
           MPLCONFIGDIR: ${{ runner.temp }}/matplotlib
         run: python experiments/fgh-1969/publish.py
+      - name: Build the research reading paths
+        run: python scripts/build_reading.py
       - name: Check site links, downloads, and provenance
         run: |
           node --check docs/app.js

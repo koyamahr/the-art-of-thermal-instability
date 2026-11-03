@@ -45,7 +45,11 @@ def main():
             if url.fragment:
                 require(target in pages and url.fragment in pages[target].ids,f"Missing anchor from {path}: {href}")
     catalog=json.loads((DOCS/'catalog.json').read_text())
+    require(len({p['id'] for p in catalog})==len(catalog),'Duplicate paper identifiers')
     for paper in catalog:
+        for reference in paper.get('resources',[]):
+            url=urlsplit(reference['href']);target=(DOCS/unquote(url.path)).resolve()
+            require(target in pages and (not url.fragment or url.fragment in pages[target].ids),f"Missing catalog reference: {reference['href']}")
         for exhibit in paper.get('exhibits',[]):
             target=(DOCS/exhibit['href']).resolve()
             if target.is_dir():target=target/'index.html'
@@ -53,7 +57,8 @@ def main():
     reports=[('field-1965','validation.json','config.json'),
              ('field-1965','validation-wave.json','config-wave.json'),
              ('field-1965','validation-map.json','config-map.json'),
-             ('fgh-1969','validation.json','config.json')]
+             ('fgh-1969','validation.json','config.json'),
+             ('fgh-1969','validation-cold.json','config-cold.json')]
     total=0
     for chapter,report_name,config_name in reports:
         directory=DOCS/chapter

@@ -1,0 +1,42 @@
+{
+  "checked_on": "2026-11-03",
+  "scope": "Source links and version references, not a copied or independently validated reaction-rate database.",
+  "resources": [
+    {
+      "id": "gow17-paper",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/1610.09023",
+      "publication_year": 2017,
+      "arxiv_version": "1610.09023v4",
+      "note": "First posted in 2016; v4 dated 2019. Published article and later corrections must be tracked separately."
+    },
+    {
+      "id": "gow17-erratum",
+      "kind": "erratum",
+      "url": "https://doi.org/10.3847/1538-4357/aae6c9",
+      "publication_year": 2018,
+      "journal": "ApJ 866, 163",
+      "note": "Reaction 1 temperature exponent in the printed table is corrected. The authors state their original calculations used the correct formula."
+    },
+    {
+      "id": "gow-author-corrections",
+      "kind": "author-maintained corrections",
+      "url": "https://sites.google.com/view/munangong/codes/pdr-code",
+      "note": "Additional rate updates and a clarification that the CR heating normalization uses the primary rate per H nucleus. This is a live page, not a frozen rate version."
+    },
+    {
+      "id": "gow-pdr-code",
+      "kind": "public code",
+      "url": "https://github.com/munan/pdr",
+      "observed_commit": "2d903af681457e8015dbc8ebe0bf6d0b7d31f201",
+      "snapshot_url": "https://github.com/munan/pdr/tree/2d903af681457e8015dbc8ebe0bf6d0b7d31f201",
+      "note": "Commit recorded for provenance only. Not built or benchmarked here."
+    },
+    {
+      "id": "athena-chemistry",
+      "kind": "public code documentation",
+      "url": "https://github.com/PrincetonUniversity/athena/wiki/Chemistry",
+      "note": "Documents GOW17 and a general KIDA interface. No Athena++ code version or network has yet been benchmarked in this archive."
+    }
+  ]
+}

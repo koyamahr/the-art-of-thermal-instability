@@ -127,5 +127,29 @@
     "status": "downloaded",
     "edition": "ADS scan of published paper",
     "identity_check": "Title and abstract visually checked; detailed rate audit pending"
+  },
+  {
+    "id": "hjellming-1966",
+    "bibcode": "1966ApJ...143..420H",
+    "source_url": "https://articles.adsabs.harvard.edu/pdf/1966ApJ...143..420H",
+    "path": "sources/private/hjellming-1966.pdf",
+    "pages": 32,
+    "sha256": "1e15ef4f0ff52db4c2c2282f923fc0a2e2bb4721d33a476219afafeba73a292a",
+    "retrieved_on": "2026-11-03",
+    "status": "downloaded",
+    "edition": "ADS scan of published paper",
+    "identity_check": "Title pending visual review"
+  },
+  {
+    "id": "goldsmith-1970",
+    "bibcode": "1970ApJ...161...41G",
+    "source_url": "https://articles.adsabs.harvard.edu/pdf/1970ApJ...161...41G",
+    "path": "sources/private/goldsmith-1970.pdf",
+    "pages": 14,
+    "sha256": "c528a1c64e70ebb0efe270b26dea064bb578b4acd6b858e7380bd545c454ac7e",
+    "retrieved_on": "2026-11-03",
+    "status": "downloaded",
+    "edition": "ADS scan of published paper",
+    "identity_check": "Title pending visual review"
   }
 ]

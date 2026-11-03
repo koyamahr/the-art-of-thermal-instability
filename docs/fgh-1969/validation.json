@@ -1,5 +1,5 @@
 {
-  "scope": "Model-ingredient diagnostics. FGH (1969) equilibrium Figures 1 and 2 have not been independently recomputed.",
+  "scope": "Historical ingredients and a reduced cold-gas equilibrium experiment. FGH equilibrium Figures 1 and 2 have not been independently reproduced.",
   "source": "Goldsmith, Habing & Field (1969), ApJ 158, 173; Table 1 and equations (16), (23)-(26)",
   "checks": [
     {
@@ -72,13 +72,13 @@
     "matplotlib": "3.9.4"
   },
   "code_sha256": {
-    "reproduce.py": "4bd2ec276261da5f26a3340a7e49138f93e4c1e239e061bff97ea46986358f6c",
-    "source-audit.json": "bdd885bd79207d0b21e17a751f06badba80e94d7653613c63852aa07ceaa4db3"
+    "reproduce.py": "9c32c3d42d6b72e323a3a496e560c1347ecdb840b737308a8473d9bbf07e46ac",
+    "source-audit.json": "2304bb95a7ac7702b850b5e451e618721b9c91238ad48d9c4e3c3cc74672de91"
   },
   "config_sha256": "360a21633aa0db34287120d32f5eecccdd3f97a27fe09dc613b9795d71a772be",
   "limitations": [
     "Derived diagnostics, not a reproduction of FGH equilibrium Figures 1 or 2.",
-    "No coupled thermal/ionization equilibrium solver has been implemented.",
+    "This ingredient script does not solve equilibrium; cold_branch.py implements a separate reduced model.",
     "Printed rounded heating fits are preserved; their normalizations are not forced to agree exactly.",
     "Temperature evaluation range is a diagnostic choice, not an independently established validity range of every historical fit.",
     "Cooling-curve weights require actual populations, densities, and abundances."

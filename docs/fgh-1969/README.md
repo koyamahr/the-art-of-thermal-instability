@@ -1,6 +1,6 @@
 # FGH/GHF 1969: model ingredients
 
-This is an **ingredient diagnostic**, not a reproduction of FGH's equilibrium Figures 1 and 2. It evaluates published heating expressions and cooling-transition fits, supplying explicit inputs for a future coupled equilibrium solver.
+This is an **ingredient diagnostic**, not a reproduction of FGH's equilibrium Figures 1 and 2. It evaluates published heating expressions and cooling-transition fits, supplying inputs for the separate reduced cold-branch experiment described below.
 
 ## Sources
 
@@ -23,12 +23,12 @@ For a standalone download keep `reproduce.py`, `config.json`, `source-audit.json
 
 ## Heating definitions
 
-Let `x=n_e/n(H I)`, `n_0=sum_j n_j`, and `Q=(1+130*x)/(1+57*x)`.
+Let `x=n_e/n(H I)`, `n_target=n(H I)+n(He I)+n(He II)`, and `Q=(1+130*x)/(1+57*x)`.
 
 - Equation (26): `e_h=9*Q` eV per primary liberated electron.
 - Equation (25): `f=0.13*Q`, a fraction of the cosmic-ray energy loss to **ionization plus excitation**, not a fraction with the same denominator as e_h.
-- Equation (23): `Gamma_ion/(zeta*n_0)=1.4e-11*Q` erg.
-- Direct electron heating, stated on pp. 177 and 179, is `Gamma_el=4.6e-10*n_e*zeta` erg cm^-3 s^-1. It is not added to the plot without specifying `n_e/n_0`.
+- Equation (23): `Gamma_ion/(zeta*n_target)=1.4e-11*Q` erg.
+- Direct electron heating, stated on pp. 177 and 179, is `Gamma_el=4.6e-10*n_e*zeta` erg cm^-3 s^-1. It is not added to the plot without specifying the particle populations.
 
 These are historical rounded formulas. Equation (26) gives approximately 9, 13, and 20 eV for x=1e-4, 1e-2, and 1, as stated in the paper; its printed fit slightly exceeds 20 eV near x=1. The code retains that result and does not extrapolate the expression as a physical energy bound. Likewise, the coefficient 0.13 in equation (25) is not identical to 1.4/11 from the rounded coefficients of equations (23)–(24).
 
@@ -52,3 +52,18 @@ The short Letter does not contain all rate details. The detailed paper requires 
 There is also an unresolved input discrepancy: the Letter's Figure 1 caption gives Fe depletion factors 4 and 10 for cases a and b. The detailed paper's section IV gives remaining Fe fractions 0.3 and 0.01, corresponding to depletion factors about 3.33 and 100. The source audit preserves both statements. They must not be silently combined into a supposedly exact reproduction.
 
 Validation checks the quoted heating anchors, limits, monotonicity, efficiency bounds, analytical cooling slopes, missing-channel handling, and the C II collider-contribution ratio. Passing these checks verifies the implemented ingredients, not the full FGH equilibrium solution. Licenses remain unselected; original paper rights are separate.
+
+
+## Reduced cold-branch experiment
+
+Run `python cold_branch.py --output output` with `cold_branch.py`, `reproduce.py`, `config.json`, `config-cold.json`, and `requirements.txt` in one folder. `publish.py` regenerates and publishes both experiments. Outputs: `cold-branch.svg`, `.png`, `.csv`, and `validation-cold.json`.
+
+This is **not a reproduction of FGH Figures 1 or 2**. It solves primary-only H/He ionization and charge balance at each trial temperature, then scans for thermal-balance roots within 10–2,000 K. Root brackets are refined by bisection, and a doubled scan checks the numerical roots. A sign-change scan can miss tangential roots. Missing segments mean no bracket was found in this window, not that no physical equilibrium exists.
+
+Hjellming (1966), p. 435, equations (56)–(59), gives total and ground-state recombination number (`beta`) and energy (`gamma`) coefficients. We subtract the ground-state fits for excited-state recombination and use `h*nu0*(gamma-gamma1)` for kinetic-energy cooling (definition on p. 425). The exponent of lambda in the last term of gamma is **−1/3**. He I is approximated by H, and hydrogenic Z=2 scaling supplies He II recombination. The paper's cited accuracy for the He approximation concerns H II region temperatures; it does not establish cold-gas accuracy.
+
+The baseline abundances come from Field et al. (1968), Table 1, p. 958, citing Allen (1963): per million H nuclei, C=300, O=670, Si=30, Fe=8. We use the Letter's depletion divisors explicitly, retaining the different companion-paper values in the audit. Dashed curves use H/He charge only; solid curves add one electron per C, Si, Fe nucleus. Other trace donors are absent. All transitions use the elemental target density in a low-density approximation, without a statistical-equilibrium level calculation. Blank collider entries are omitted channels, not measured zeros.
+
+Heating is GHF equation (23) times `zeta*n_target`, plus direct electron heating. Recombination energy follows Hjellming; free-free cooling follows GHF equation (18). Secondary ionization, thermal H/He ionization and excitation, molecules, grains, and stellar heating are absent. The pressure proxy `(n0+ne)*T` omits trace nuclei. No stability assignment, warm branch, or exact agreement with the original Letter is claimed. The config and validation report carry these assumptions.
+
+The previous ingredient CSV mislabeled its normalized heating denominator as `n0`; it is corrected to `n_target`. Its normalized numerical values are unchanged.

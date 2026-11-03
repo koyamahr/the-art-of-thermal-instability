@@ -1,0 +1,32 @@
+"""Build the English research-path page from catalog.json and resource provenance."""
+from pathlib import Path
+from html import escape
+import json
+ROOT=Path(__file__).resolve().parents[1]
+docs=ROOT/'docs'
+catalog=json.loads((docs/'catalog.json').read_text())
+resources=json.loads((docs/'microphysics/resources.json').read_text())
+parts=['''<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Research paths · The Art of Thermal Instability</title><meta name="description" content="From FGH to Wolfire and GOW chemistry, and from phase-transition fronts to magnetized clouds: a growing reading list and realistic computational scope."><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="field-1965/exhibit.css"></head>
+<body><header><a class="brand" href="./">The Art of Thermal Instability</a><nav aria-label="Research paths"><a href="#microphysics">Rates</a><a href="#inoue">Inoue</a><a href="#iwasaki">Iwasaki</a></nav></header><main class="exhibit">
+<section class="hero"><p class="eyebrow">Research paths / Reading list</p><h1>From two phases<br>to chemistry and cloud formation.</h1><p class="intro">FGH established a two-phase picture. Later work changed the heating and chemical inputs, then followed fronts, turbulence, and magnetized clouds. This reading list connects those questions to the calculations we can document and explore.</p><p class="notice">Listed references are not completed reproductions. Bibliography and abstracts have been checked; equations, target figures, and data availability need individual review. Publication years are used where confirmed, with preprint dates noted separately.</p></section>
+<section id="scope"><p class="eyebrow">Scope for modern simulations</p><h2>Choose the scientific question before the computing budget.</h2><p>Reproducing a large multidimensional simulation can require substantial computing time, storage, and access to original inputs. Our modern-paper exhibits can instead provide a source guide, documented setup, analysis of available outputs, or a small benchmark that isolates a physical mechanism.</p><ul><li><strong>Source and method:</strong> link the paper and any public code, inputs, and datasets; record what is actually available.</li><li><strong>Reuse and analysis:</strong> regenerate a diagnostic from released outputs where possible, preserving units, provenance, and processing steps.</li><li><strong>Small calculations:</strong> evaluate an analytic relation, a one-zone chemical model, a front, or a convergence test within an explicit reduced scope.</li><li><strong>Optional full runs:</strong> record the resolution, solver, hardware, wall time, and storage needed. A full 2D/3D rerun is not a condition for completing a source or analysis exhibit.</li></ul><p>Digitized published curves will be identified as digitizations. Reduced models will state their omissions; their results will not be labeled as full-simulation reproductions.</p></section>''']
+for section,title,intro in [
+ ('microphysics','Heating, cooling, and public chemistry','FGH → Wolfire (1995, 2003) → GOW (2017) → public chemistry implementations. These models use different physical assumptions; they are not interchangeable cooling prescriptions.'),
+ ('inoue','Inoue: fronts, two-fluid gas, and magnetic fields','A path from the stability of phase-transition fronts to converging flows and turbulent molecular clouds.'),
+ ('iwasaki','Iwasaki: condensation, interfaces, and cloud formation','Similarity solutions and front structure offer modest-cost entry points. Later multidimensional calculations can be explored through their diagnostics and available data.')]:
+    parts.append(f'<section id="{section}"><p class="eyebrow">Reading path</p><h2>{escape(title)}</h2><p>{escape(intro)}</p>')
+    for p in catalog:
+        if p.get('reference_section')!=section:continue
+        parts.append(f'''<article id="{p['id']}"><p class="eyebrow">{p['year']} / Reference listed</p><h3>{escape(p['title'])}</h3><p class="small">{escape(p['authors'])}<br>{escape(p['journal'])}</p><p>{escape(p['topic'])}</p><p><strong>Proposed scope:</strong> {escape(p['scope'])}</p><div class="downloads"><a href="{escape(p['source'])}" target="_blank" rel="noopener noreferrer">Paper &amp; abstract ↗</a><a href="https://doi.org/{escape(p['doi'])}" target="_blank" rel="noopener noreferrer">Publication / DOI ↗</a></div></article>''')
+    parts.append('</section>')
+parts.append('''<section id="public-rates"><p class="eyebrow">GOW / Code and rate provenance</p><h2>Follow the corrected rates to their implementation.</h2><p>The GOW paper has a 2018 erratum, and Gong’s code page lists further corrections and updates. The original paper, its erratum, a revised preprint, and an evolving code repository are separate references. Before a benchmark, we will pin the actual implementation and audit its rate definitions and units.</p><p>We recorded a public PDR-code commit for reference, but have not compiled it or validated its rates. The linked code and documentation remain maintained by their authors.</p><ul>''')
+for r in resources['resources']:
+    parts.append(f'<li><a href="{escape(r["url"])}" target="_blank" rel="noopener noreferrer">{escape(r["id"])} ↗</a> — {escape(r["note"])}')
+    if r.get('snapshot_url'):parts.append(f' <a href="{r["snapshot_url"]}" target="_blank" rel="noopener noreferrer">Recorded snapshot: {r["observed_commit"][:12]} ↗</a>')
+    parts.append('</li>')
+parts.append('''</ul><p class="small">Links checked on 3 November 2026. <a href="microphysics/resources.json">Resource provenance / JSON</a> · <a href="catalog.json">Complete paper catalog / JSON</a></p></section>
+<section><h2>Connect these references to the current exhibits.</h2><p><a href="field-1965/figure-1.html">Field’s stability map</a> connects to front and perturbation problems. <a href="fgh-1969/">FGH/GHF ingredients</a> and our <a href="fgh-1969/cold-branch.html">reduced cold-branch calculation</a> give a starting point for comparing historical and later microphysics.</p></section>
+</main><footer><p>The Art of Thermal Instability</p><a href="./#atlas">Back to the paper atlas</a></footer></body></html>''')
+(docs/'research-paths.html').write_text('\n'.join(parts)+'\n')
+print('Built research paths from',sum('reference_section' in p for p in catalog),'listed references.')

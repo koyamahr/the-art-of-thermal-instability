@@ -1,0 +1,27 @@
+{
+  "scope": "Reduced cold-gas equilibrium experiment; not an original FGH figure reproduction",
+  "zeta_s_inverse": 4e-16,
+  "helium_nuclei_fraction": 0.1,
+  "abundances_per_H_nucleus": {"C": 0.0003, "O": 0.00067, "Si": 0.00003, "Fe": 0.000008},
+  "abundance_source": "Field et al. (1968), Table 1, p. 958, citing Allen (1963)",
+  "depletion_divisors": {
+    "normal": {"C": 1, "O": 1, "Si": 1, "Fe": 1},
+    "FGH a": {"C": 10, "O": 2, "Si": 5, "Fe": 4},
+    "FGH b": {"C": 100, "O": 3, "Si": 20, "Fe": 10}
+  },
+  "density_min_cm_inverse3": 1.0,
+  "density_max_cm_inverse3": 1000.0,
+  "density_samples": 121,
+  "temperature_min_K": 10.0,
+  "temperature_max_K": 2000.0,
+  "temperature_scan_samples": 97,
+  "assumptions": [
+    "Equal primary ionization rate for H I, He I, He II; no secondary or thermal collisional ionization.",
+    "Hjellming (1966), equations 56-59: excited-state recombination; He I approximated by H and He II by hydrogenic Z=2 scaling. Cold-temperature accuracy is not established here.",
+    "Low-density cooling with all C, Si, Fe singly ionized and O neutral; each tabulated transition uses the whole elemental target population. Level statistical equilibrium is omitted.",
+    "Only available Table 1 collider channels enter the reduced cooling sum; omitted channels are not measured zeros.",
+    "Two charge prescriptions: H/He only, and explicit C+Si+Fe donor electrons; neither includes all historical trace donors.",
+    "Recombination energy uses Hjellming gamma-minus-gamma1; free-free cooling uses GHF equation 18. No thermal H/He excitation cooling, molecules, grains, or stellar heating.",
+    "n0 counts H+He nuclei; P/k=(n0+ne)*T omits trace nuclei. No stability classification or warm branch is inferred."
+  ]
+}
