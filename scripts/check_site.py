@@ -15,7 +15,7 @@ class Page(HTMLParser):
         self.feed(path.read_text())
     def handle_starttag(self,tag,attrs):
         for key,val in attrs:
-            if key in ("href","src"):self.links.append(val)
+            if key in ("href","src","poster","data-src"):self.links.append(val)
             if key=="id":self.ids.add(val)
             if tag=="html" and key=="lang":self.language=val
 
@@ -25,7 +25,7 @@ def require(condition,message):
 
 
 def main():
-    allowed={".html",".css",".js",".json",".svg",".png",".csv",".py",".txt",".md"}
+    allowed={".html",".css",".js",".json",".svg",".png",".csv",".py",".txt",".md",".cpp",".mp4",".npz"}
     for path in DOCS.rglob("*"):
         require(not path.is_symlink(),f"Publication cannot contain symlinks: {path}")
         if path.is_file():
@@ -57,7 +57,7 @@ def main():
             target=(DOCS/exhibit['href']).resolve()
             if target.is_dir():target=target/'index.html'
             require(target in pages,f"Catalog exhibit missing: {target}")
-    reports=[('ki-2002','validation.json','config.json'),
+    reports=[('ti-2d','validation.json','config.json'),('ki-2002','validation.json','config.json'),
              ('fgh-1969','validation-saturation.json','config-saturation.json'),
              ('field-1965','validation.json','config.json'),
              ('field-1965','validation-wave.json','config-wave.json'),
@@ -85,7 +85,7 @@ def main():
     for chapter in {r[0] for r in reports}:
         directory=DOCS/chapter
         for path in (ROOT/'experiments'/chapter).iterdir():
-            if path.name=='publish.py' or path.suffix not in ('.py','.json','.txt','.md'):continue
+            if path.name=='publish.py' or path.suffix not in ('.py','.json','.txt','.md','.cpp'):continue
             require((directory/path.name).is_file(),f"Download missing: {chapter}/{path.name}")
             require(path.read_bytes()==(directory/path.name).read_bytes(),f"Download differs from source: {chapter}/{path.name}")
     print(f"Site check passed: {len(pages)} English pages; {total} scientific checks; links, catalog, and source hashes valid.")

@@ -1,0 +1,35 @@
+{
+  "run_id": "ti2d-cover-20261104-r1",
+  "scope": "Illustrative 2D compressible hydrodynamics with KI-type radiative heating/cooling and deliberately enhanced, temperature-dependent conduction. Not an original-paper reproduction or a demonstration of sustained turbulence.",
+  "grid": [
+    256,
+    160
+  ],
+  "domain_pc": [
+    4.8,
+    3.0
+  ],
+  "mean_n_cm3": 2.8,
+  "density_rms_fraction": 0.1,
+  "seed": 1965,
+  "end_time_Myr": 12.0,
+  "snapshots": 240,
+  "conductivity": {
+    "base_cgs": 3000000.0,
+    "cold_cgs": 300000000.0,
+    "reference_K": 100.0,
+    "formula": "kappa(T)=base+cold*(reference_K/T)^2, erg cm^-1 s^-1 K^-1",
+    "reason": "Broaden the cold and intermediate interfaces for a modest resolved grid; this is an explicit illustrative transport model, not the Parker conductivity."
+  },
+  "equation_of_state": "gamma=5/3; m=1.37 m_H; n=rho/m; P=n k_B T",
+  "boundary_conditions": "Periodic in x and y",
+  "initial_conditions": "Zero velocity; uniform pressure at the unstable equilibrium for mean n; seeded low-wavenumber density perturbations with the stated RMS; temperature adjusts to keep pressure uniform.",
+  "video": {
+    "fps": 15,
+    "width": 1280,
+    "height": 800,
+    "density_min_cm3": 0.15,
+    "density_max_cm3": 40.0,
+    "color_scale": "fixed log10 density; no per-frame autoscaling"
+  }
+}

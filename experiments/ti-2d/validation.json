@@ -1,0 +1,95 @@
+{
+  "checks": [
+    {
+      "name": "advected contact Fourier error",
+      "value": 0.00021128321953541848,
+      "limit": 0.025,
+      "passed": true
+    },
+    {
+      "name": "contact pressure preservation",
+      "value": 1.4432899320127035e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "heat equation Fourier error",
+      "value": 7.139650173848544e-05,
+      "limit": 0.001,
+      "passed": true
+    },
+    {
+      "name": "conduction energy conservation",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "isochoric cooling versus adaptive ODE",
+      "value": 5.125739980238464e-05,
+      "limit": 0.0005,
+      "passed": true
+    },
+    {
+      "name": "linear TI density eigenmode error",
+      "value": 0.00011449515810424462,
+      "limit": 0.025,
+      "passed": true
+    },
+    {
+      "name": "linear TI velocity eigenmode error",
+      "value": 0.00016843498732088701,
+      "limit": 0.025,
+      "passed": true
+    },
+    {
+      "name": "linear TI pressure eigenmode error",
+      "value": 0.00011166416024399606,
+      "limit": 0.025,
+      "passed": true
+    },
+    {
+      "name": "positive TI eigenvalue",
+      "value": 0.0,
+      "limit": 0.5,
+      "passed": true
+    },
+    {
+      "name": "radiative energy ledger",
+      "value": 8.939368945436675e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "movie run mass conservation",
+      "value": 1.554312234475219e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "movie run radiative energy ledger",
+      "value": 1.3556792231959098e-13,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "positive temperatures",
+      "value": 0,
+      "limit": 0.5,
+      "passed": true
+    },
+    {
+      "name": "movie has all actual frames",
+      "value": 0,
+      "limit": 0.5,
+      "passed": true
+    }
+  ],
+  "code_sha256": {
+    "render.py": "0a781018e63784d3130a979b9820bbbcb979c89ead5ceaebe41e34db161eb9f0",
+    "model.py": "6fc2565260a5b80fbe106a43ab5daff6b06042ad1320e1d5612d20c088350964",
+    "validate.py": "d4d76db0c78cf89164aa61b8a69eae05c84a033d85fd61c40955e23234ffefb0",
+    "solver.cpp": "34fa851b686ec40512253546ffb0ba0dcb37dc01e5dfe36df68fd3be51fc56e6"
+  },
+  "config_sha256": "3b6627f2df13291c03f023ed05905878e483e21c3a514842f0ecfe0f9a119d8f"
+}

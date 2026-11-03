@@ -1,0 +1,48 @@
+{
+  "grid": [
+    256,
+    160
+  ],
+  "dx_pc": 0.01875,
+  "end_Myr": 12.0,
+  "frames": 241,
+  "poster_time_Myr": 9.35,
+  "min_n_cm3": 0.2539274325234411,
+  "max_n_cm3": 25.5681412128995,
+  "min_T_K": 85.64342081524491,
+  "max_T_K": 6835.491313548171,
+  "min_Field_proxy_cells_sampled": 3.979232447807215,
+  "max_Mach_sampled": 0.3804517290068296,
+  "final_cold_mass_fraction": 0.8077033321083412,
+  "coarse_final_cold_mass_fraction": 0.8093460931849171,
+  "final_mean_P_over_kB": 1732.991830538956,
+  "coarse_final_mean_P_over_kB": 1732.093186957901,
+  "relative_mass_drift": 1.554312234475219e-14,
+  "relative_energy_ledger_residual": 1.3556792231959098e-13,
+  "retries": 0,
+  "HLLE_fallbacks": 0,
+  "model_landmarks": {
+    "P_sat_over_kB_K_cm3": 1717.2044723575555,
+    "states": [
+      {
+        "T_K": 112.32327302199907,
+        "n_cm3": 15.288055860170958
+      },
+      {
+        "T_K": 332.1177755774828,
+        "n_cm3": 5.170468426062709
+      },
+      {
+        "T_K": 6856.0435838027515,
+        "n_cm3": 0.2504658045661221
+      }
+    ],
+    "conductivity": {
+      "base_cgs": 3000000.0,
+      "cold_cgs": 300000000.0,
+      "reference_K": 100.0,
+      "formula": "kappa(T)=base+cold*(reference_K/T)^2, erg cm^-1 s^-1 K^-1",
+      "reason": "Broaden the cold and intermediate interfaces for a modest resolved grid; this is an explicit illustrative transport model, not the Parker conductivity."
+    }
+  }
+}

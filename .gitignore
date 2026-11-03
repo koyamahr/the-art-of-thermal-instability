@@ -5,3 +5,4 @@ sources/private/*
 !sources/private/.gitkeep
 data/raw/
 **/.matplotlib/
+experiments/ti-2d/output/raw/

@@ -66,6 +66,10 @@ jobs:
         env:
           MPLCONFIGDIR: ${{ runner.temp }}/matplotlib
         run: python experiments/ki-2002/publish.py
+      - name: Check independent 2D flow benchmarks and archived cover assets
+        run: |
+          python experiments/ti-2d/validate.py --check-only
+          python experiments/ti-2d/publish.py --verify-only
       - name: Build the research reading paths
         run: python scripts/build_reading.py
       - name: Build model-specific equilibrium landmark registry

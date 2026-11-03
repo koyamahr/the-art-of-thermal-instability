@@ -29,3 +29,5 @@
 論文の画像やPDFの転載と、自作コードで生成する図は別に扱う。作業用PDFは `sources/private/` に置く。公開前に共有条件を確認する。
 
 データセットは `run_id`, `paper_id`, `figure`, `code_commit`, `config`, `units`, `resolution`, `boundary_conditions`, `seed`（該当時）, `files`, `checksums`, `license`, `citation` を記録する。欠けている項目は不明と明示する。
+
+2026-11-04: ユーザー指定の2D表紙動画 #7 を一時的に先行。公開後は #1 を作業中へ戻す。動画全計算を毎pushのCIで再実行するのではなく、小規模な独立物理検証と公開アセットのハッシュ照合を行う。全計算の手順・条件・粗格子比較は専用ページに残す。
