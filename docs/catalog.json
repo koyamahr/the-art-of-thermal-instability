@@ -619,5 +619,152 @@
         "label": "Planar fronts & steady flow →"
       }
     ]
+  },
+  {
+    "id": "hennebelle-perault-1999",
+    "year": 1999,
+    "authors": "Hennebelle & Pérault",
+    "title": "Dynamical condensation in a thermally bistable flow. Application to interstellar cirrus",
+    "journal": "A&A 351, 309–322",
+    "source": "https://adsabs.harvard.edu/pdf/1999A%26A...351..309H",
+    "doi": "",
+    "topic": "Transonic converging warm flows produce cold condensations; self-similar non-isobaric solutions describe early condensation.",
+    "scope": "Audit the self-similar solution and size/velocity thresholds versus ambient pressure. Start with analytic relations or a planar one-dimensional benchmark; preserve the original heating/cooling and boundary conditions.",
+    "group": "cloud_formation",
+    "status": "listed",
+    "reference_section": "cloud-formation",
+    "review_status": "Bibliography and abstract checked in the source paper or author preprint; equations, target figures, and output availability require a dedicated audit.",
+    "resources": [
+      {
+        "href": "research-paths.html#hennebelle-perault-1999",
+        "label": "Condensation, turbulence & fragmentation →"
+      }
+    ]
+  },
+  {
+    "id": "hennebelle-perault-2000",
+    "year": 2000,
+    "authors": "Hennebelle & Pérault",
+    "title": "Dynamical condensation in a magnetized and thermally bistable flow. Application to interstellar cirrus",
+    "journal": "A&A 359, 1124–1138",
+    "source": "https://adsabs.harvard.edu/pdf/2000A%26A...359.1124H",
+    "doi": "",
+    "topic": "Oblique magnetic fields and tension alter condensation in slab geometry; transverse motions can align fields or flows and permit compression.",
+    "scope": "Compare nonmagnetic, transverse-field, and oblique-field limits using the published self-similar analysis and a small one-dimensional MHD benchmark. Audit the angle and field-strength assumptions before choosing a figure.",
+    "group": "cloud_formation",
+    "status": "listed",
+    "reference_section": "cloud-formation",
+    "review_status": "Bibliography and abstract checked in the source paper or author preprint; equations, target figures, and output availability require a dedicated audit.",
+    "resources": [
+      {
+        "href": "research-paths.html#hennebelle-perault-2000",
+        "label": "Condensation, turbulence & fragmentation →"
+      }
+    ]
+  },
+  {
+    "id": "burkert-lin-2000",
+    "year": 2000,
+    "authors": "Burkert & Lin",
+    "title": "Thermal Instability and the Formation of Clumpy Gas Clouds",
+    "journal": "ApJ 537, 270–282",
+    "source": "https://arxiv.org/abs/astro-ph/0002106",
+    "doi": "10.1086/308989",
+    "topic": "During radiative cooling, the transition from isobaric to isochoric evolution limits perturbation growth and influences the characteristic clump scale; conduction suppresses small scales.",
+    "scope": "Audit the growth, transition-temperature, and nonlinear-amplitude estimates. Use small analytic or time-dependent perturbation calculations before considering fragmentation simulations; distinguish cooling backgrounds from thermal equilibrium.",
+    "group": "cloud_formation",
+    "status": "listed",
+    "reference_section": "cloud-formation",
+    "review_status": "Bibliography and abstract checked in the source paper or author preprint; equations, target figures, and output availability require a dedicated audit.",
+    "resources": [
+      {
+        "href": "research-paths.html#burkert-lin-2000",
+        "label": "Condensation, turbulence & fragmentation →"
+      }
+    ]
+  },
+  {
+    "id": "audit-hennebelle-2005",
+    "year": 2005,
+    "authors": "Audit & Hennebelle",
+    "title": "Thermal condensation in a turbulent atomic hydrogen flow",
+    "journal": "A&A 433, 1–13",
+    "source": "https://arxiv.org/abs/astro-ph/0410062",
+    "doi": "10.1051/0004-6361:20041474",
+    "topic": "Two-dimensional turbulent converging flows condense warm H I into cold structures; the thermally unstable gas fraction correlates with turbulence.",
+    "scope": "Start with the semi-analytical model for unstable gas and its relation to turbulence. Reanalyse published diagnostics or available outputs after a provenance audit. A full high-resolution two-dimensional run is optional.",
+    "group": "cloud_formation",
+    "status": "listed",
+    "reference_section": "cloud-formation",
+    "review_status": "Bibliography and abstract checked in the source paper or author preprint; equations, target figures, and output availability require a dedicated audit.",
+    "resources": [
+      {
+        "href": "research-paths.html#audit-hennebelle-2005",
+        "label": "Condensation, turbulence & fragmentation →"
+      }
+    ]
+  },
+  {
+    "id": "heitsch-2006",
+    "year": 2006,
+    "authors": "Heitsch, Slyz, Devriendt, Hartmann & Burkert",
+    "title": "The Birth of Molecular Clouds: Formation of Atomic Precursors in Colliding Flows",
+    "journal": "ApJ 648, 1052–1065",
+    "source": "https://arxiv.org/abs/astro-ph/0605435",
+    "doi": "10.1086/505931",
+    "topic": "Colliding atomic flows develop structure through dynamical and thermal instabilities before molecular hydrogen begins to form.",
+    "scope": "Document the inflow, cooling law, geometry, and instability diagnostics. Prefer reanalysis of available density/temperature and fragmentation outputs; do not require a full multidimensional rerun or imply that this model follows the molecular stage.",
+    "group": "cloud_formation",
+    "status": "listed",
+    "reference_section": "cloud-formation",
+    "review_status": "Bibliography and abstract checked in the source paper or author preprint; equations, target figures, and output availability require a dedicated audit.",
+    "resources": [
+      {
+        "href": "research-paths.html#heitsch-2006",
+        "label": "Condensation, turbulence & fragmentation →"
+      }
+    ]
+  },
+  {
+    "id": "hennebelle-audit-2007",
+    "year": 2007,
+    "authors": "Hennebelle & Audit",
+    "title": "On the structure of the turbulent interstellar atomic hydrogen. I. Physical characteristics. Influence and nature of turbulence in a thermally bistable flow",
+    "journal": "A&A 465, 431–443",
+    "source": "https://arxiv.org/abs/astro-ph/0612778",
+    "doi": "10.1051/0004-6361:20066139",
+    "topic": "High-resolution two-dimensional bistable turbulence produces small-scale CNM structures, a cloud mass spectrum, and distinct density and velocity statistics.",
+    "scope": "Begin with the analytical mass-spectrum argument and definitions of the measured spectra. Recompute diagnostics only from accessible, documented outputs; retain the dimensionality dependence and avoid treating a small run as a reproduction of the full statistics.",
+    "group": "cloud_formation",
+    "status": "listed",
+    "reference_section": "cloud-formation",
+    "review_status": "Bibliography and abstract checked in the source paper or author preprint; equations, target figures, and output availability require a dedicated audit.",
+    "resources": [
+      {
+        "href": "research-paths.html#hennebelle-audit-2007",
+        "label": "Condensation, turbulence & fragmentation →"
+      }
+    ]
+  },
+  {
+    "id": "heitsch-hartmann-burkert-2008",
+    "year": 2008,
+    "authors": "Heitsch, Hartmann & Burkert",
+    "title": "Fragmentation of Shocked Flows: Gravity, Turbulence, and Cooling",
+    "journal": "ApJ 683, 786–795",
+    "source": "https://arxiv.org/abs/0805.0801",
+    "doi": "10.1086/589919",
+    "topic": "Comparing dynamical, thermal, and gravitational timescales identifies where shocked flows fragment and seed local collapse.",
+    "scope": "A timescale/regime diagram is a promising inexpensive reproduction target. First audit the cooling law, perturbation scales, background state, and boundaries; keep this calculation distinct from a full flow-driven cloud simulation.",
+    "group": "cloud_formation",
+    "status": "listed",
+    "reference_section": "cloud-formation",
+    "review_status": "Bibliography and abstract checked in the source paper or author preprint; equations, target figures, and output availability require a dedicated audit.",
+    "resources": [
+      {
+        "href": "research-paths.html#heitsch-hartmann-burkert-2008",
+        "label": "Condensation, turbulence & fragmentation →"
+      }
+    ]
   }
 ]

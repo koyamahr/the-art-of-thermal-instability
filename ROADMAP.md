@@ -85,3 +85,8 @@ Zel’dovich & Pikel’ner (1969, JETP 29, 170–173)、Penston & Brown (1970, M
 
 
 平面定常フロントの関連文献としてFerrara & Shchekinov (1993, ApJ 417, 595)とShchekinov & Ibáñez (2001, ApJ 563, 209–220)を追加。前者の静的／定常解と動的進化、後者の定常背景に入射する一次元音波・エントロピー摂動を区別する。Iwasaki & Inutsuka (2012)第3節が後者のjZP(P)固有値問題を明示的に参照することを確認。原論文の式・図・冷却則の照合後に小規模ODEと摂動の展示を別々に選ぶ。
+
+
+## Hennebelle・Burkert系：動的凝縮から乱流・破砕へ
+
+Hennebelle & Pérault 1999/2000、Burkert & Lin 2000、Audit & Hennebelle 2005、Heitsch et al. 2006、Hennebelle & Audit 2007、Heitsch, Hartmann & Burkert 2008の7編を追加。出版年で配列し、2005論文の2004 preprint、2007論文の2006 preprintを区別。低コストの候補は自己相似解・凝縮閾値、冷却背景での摂動成長、乱流下の不安定ガスの半解析モデル、時間尺度の領域図。多次元の統計量は取得可能な出力の再解析を基本とし、大規模な再計算は必須にしない。本文式・図番号・出力の利用可能性は各論文ごとに監査する。
