@@ -31,7 +31,7 @@ function render(filter = "all") {
       reference.href = resource.href;
       body.append(reference);
     }
-    const link = element("a", "source", "Paper & bibliography ↗");
+    const link = element("a", "source", p.reference_type === "book" ? "Book & bibliography ↗" : "Paper & bibliography ↗");
     link.href = p.source;
     link.target = "_blank";
     link.rel = "noopener noreferrer";
@@ -40,7 +40,7 @@ function render(filter = "all") {
     list.append(row);
   }
   const ready = visible.reduce((count,p) => count + (p.exhibits ? p.exhibits.filter(e => e.validated ?? p.status === "validated").length : p.status === "validated" && p.exhibit ? 1 : 0), 0);
-  statusLine.textContent = `${visible.length} papers · oldest first · ${ready} exhibit${ready === 1 ? "" : "s"} numerically validated`;
+  statusLine.textContent = `${visible.length} references · oldest first · ${ready} exhibit${ready === 1 ? "" : "s"} numerically validated`;
 }
 filters.forEach(button => button.addEventListener("click", () => {
   filters.forEach(b => b.setAttribute("aria-pressed", String(b === button)));

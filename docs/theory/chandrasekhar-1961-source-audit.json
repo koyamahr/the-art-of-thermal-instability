@@ -1,0 +1,22 @@
+{
+  "review_date": "2026-11-03",
+  "source": "S. Chandrasekhar, Hydrodynamic and Hydromagnetic Stability, Clarendon Press, Oxford, 1961",
+  "reference_type": "book",
+  "publisher_listing": "https://store.doverpublications.com/products/9780486640716",
+  "original_bibliography": "https://books.google.com/books?id=9QhRAAAAMAAJ",
+  "isbn_later_edition": "9780486640716",
+  "year_convention": "Catalog uses original publication year1961; the publisher link is a later Dover edition.",
+  "review_status": "Bibliography and publisher record checked. Full-text university PDF requests timed out; chapter/section/equation/figure audit pending.",
+  "attempted_fulltext_urls": [
+    "https://www.maths.gla.ac.uk/~rs/res/18ChandrasekharBook.pdf",
+    "https://maths.gla.ac.uk/~rs/res/18ChandrasekharBook.pdf"
+  ],
+  "proposed_scope": "Onset of buoyancy-driven convection in a heated layer; possible neutral Rayleigh curve with stated boundary conditions. No computation implemented.",
+  "comparison": "Boussinesq flow retains momentum, pressure gradients and buoyancy but filters acoustic compressibility. This is not the same driver as radiative cooling instability.",
+  "primary_assumptions_reference": {
+    "source": "Spiegel & Veronis1960, ApJ131,442–447, On the Boussinesq Approximation for a Compressible Fluid",
+    "url": "https://adsabs.harvard.edu/pdf/1960ApJ...131..442S",
+    "reviewed": "Original abstract and introduction through basic equations1–2 read in ADS text; full equation audit not performed.",
+    "role": "Supports the approximation assumptions separately from the textbook entry; not a newly added main-atlas item."
+  }
+}

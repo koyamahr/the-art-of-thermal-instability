@@ -967,5 +967,27 @@
         "label": "Ginzburg–Landau connection →"
       }
     ]
+  },
+  {
+    "id": "chandrasekhar-1961",
+    "year": 1961,
+    "authors": "S. Chandrasekhar",
+    "title": "Hydrodynamic and Hydromagnetic Stability",
+    "reference_type": "book",
+    "group": "theory",
+    "status": "listed",
+    "source": "https://store.doverpublications.com/products/9780486640716",
+    "topic": "Buoyancy-driven thermal convection and its Boussinesq approximation: a fluid-dynamical comparison with radiative thermal instability.",
+    "scope": "Proposed entry point: the onset of convection in a layer heated from below, followed by a neutral Rayleigh curve for explicitly specified mechanical and thermal boundaries. Retain velocity, perturbation pressure and buoyancy; distinguish this mechanism from the Field radiative-condensation mode. No equation or figure reproduction yet.",
+    "journal": "Monograph: Clarendon Press, Oxford (1961); later Dover edition, ISBN 9780486640716",
+    "doi": "",
+    "reference_section": "theory",
+    "review_status": "Original-year bibliography and publisher listing checked. Full-text download attempts failed; exact chapter/section/equation numbers and target figures remain unaudited. Boussinesq assumptions are supported separately by Spiegel & Veronis1960, not presented as a completed textbook audit.",
+    "resources": [
+      {
+        "href": "research-paths.html#chandrasekhar-1961",
+        "label": "Boussinesq convection & scope →"
+      }
+    ]
   }
 ]
