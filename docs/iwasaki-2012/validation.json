@@ -1,0 +1,368 @@
+{
+  "scope": "Computed prototype toward Figures 5 and 7, restricted to the outgoing CNM saddle on the plus-density branch of equation 11. Not a complete reproduction of every published region or auxiliary curve.",
+  "checks": [
+    {
+      "name": "Cold turning point agrees with printed 1596/1598 pressure range",
+      "error": 0.5468988448756136,
+      "tolerance": 2.0,
+      "passed": true
+    },
+    {
+      "name": "Warm turning point near printed Pmax=5012; difference retained",
+      "error": 4.999882179631641,
+      "tolerance": 6.0,
+      "passed": true
+    },
+    {
+      "name": "Saturation pressure near printed 2823 K cm^-3",
+      "error": 0.1157026250330091,
+      "tolerance": 1.0,
+      "passed": true
+    },
+    {
+      "name": "Conductivity-weighted static-front integral closes",
+      "error": 2.7489899245836114e-11,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "ZP flux at P=3000 agrees with rounded printed 0.0032",
+      "error": 0.012520854742683607,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "name": "Independent left/right phase integrations match for ZP flux",
+      "error": 7.587242834006247e-09,
+      "tolerance": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "ZP eigenvalue stable under tighter integration tolerance",
+      "error": 3.5987473001597436e-09,
+      "tolerance": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "Published case P=3000, j/jZP=3: C-U-o",
+      "passed": true,
+      "computed": "C-U-o",
+      "source": "Figure 2b and section 4.1.1"
+    },
+    {
+      "name": "Refinement preserves case P=3000, ratio=3",
+      "passed": true
+    },
+    {
+      "name": "Published case P=3000, j/jZP=25: C-U",
+      "passed": true,
+      "computed": "C-U",
+      "source": "Figure 2c and section 4.1.1"
+    },
+    {
+      "name": "Refinement preserves case P=3000, ratio=25",
+      "passed": true
+    },
+    {
+      "name": "Published case P=3000, j/jZP=1000: C-U",
+      "passed": true,
+      "computed": "C-U",
+      "source": "Figure 3 plot labels"
+    },
+    {
+      "name": "Refinement preserves case P=3000, ratio=1000",
+      "passed": true
+    },
+    {
+      "name": "Published case P=3000, j/jZP=2000: C-U",
+      "passed": true,
+      "computed": "C-U",
+      "source": "Figure 3 plot labels"
+    },
+    {
+      "name": "Refinement preserves case P=3000, ratio=2000",
+      "passed": true
+    },
+    {
+      "name": "Published case P=3000, j/jZP=3000: C-U",
+      "passed": true,
+      "computed": "C-U",
+      "source": "Figure 3 plot labels"
+    },
+    {
+      "name": "Refinement preserves case P=3000, ratio=3000",
+      "passed": true
+    },
+    {
+      "name": "Published case P=4000, j/jZP=300: C-U",
+      "passed": true,
+      "computed": "C-U",
+      "source": "Figure 4"
+    },
+    {
+      "name": "Refinement preserves case P=4000, ratio=300",
+      "passed": true
+    },
+    {
+      "name": "Published case P=4000, j/jZP=500: C-c",
+      "passed": true,
+      "computed": "C-c",
+      "source": "Figure 4"
+    },
+    {
+      "name": "Refinement preserves case P=4000, ratio=500",
+      "passed": true
+    },
+    {
+      "name": "Published case P=4000, j/jZP=1000: C-c",
+      "passed": true,
+      "computed": "C-c",
+      "source": "Figure 4"
+    },
+    {
+      "name": "Refinement preserves case P=4000, ratio=1000",
+      "passed": true
+    },
+    {
+      "name": "Published case P=4000, j/jZP=1500: C-C",
+      "passed": true,
+      "computed": "C-C",
+      "source": "Figure 4"
+    },
+    {
+      "name": "Refinement preserves case P=4000, ratio=1500",
+      "passed": true
+    },
+    {
+      "name": "Mass flux conserved in reconstructed density/velocity",
+      "error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Momentum flux conserved in reconstructed states",
+      "error": 2.220446049250313e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Critical-point pressure is exactly half the momentum flux",
+      "error": 0.0,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Loss derivative agrees with independent finite differences",
+      "error": 2.2110420012828184e-10,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "No outgoing saddle is assigned a physical class",
+      "passed": true
+    }
+  ],
+  "published_examples": [
+    {
+      "P_c_over_kB": 3000,
+      "j_over_j_ZP": 3,
+      "expected": "C-U-o",
+      "source": "Figure 2b and section 4.1.1",
+      "minus_j_normalized": 0.009479799794470237,
+      "computed": "C-U-o",
+      "details": {
+        "reason": "Unstable-phase spiral; temperature overshoot",
+        "T_terminal_K": 1568.7683515953133
+      }
+    },
+    {
+      "P_c_over_kB": 3000,
+      "j_over_j_ZP": 25,
+      "expected": "C-U",
+      "source": "Figure 2c and section 4.1.1",
+      "minus_j_normalized": 0.07899833162058531,
+      "computed": "C-U",
+      "details": {
+        "reason": "Converged approach to thermal fixed point",
+        "T_terminal_K": 1568.3219156789899,
+        "flux_distance_exponent": 1.0000751278865643,
+        "distance_fraction": 1e-05
+      }
+    },
+    {
+      "P_c_over_kB": 3000,
+      "j_over_j_ZP": 1000,
+      "expected": "C-U",
+      "source": "Figure 3 plot labels",
+      "minus_j_normalized": 3.1599332648234126,
+      "computed": "C-U",
+      "details": {
+        "reason": "Converged approach to thermal fixed point",
+        "T_terminal_K": 1043.4003248156407,
+        "flux_distance_exponent": 1.0000493268972583,
+        "distance_fraction": 1e-05
+      }
+    },
+    {
+      "P_c_over_kB": 3000,
+      "j_over_j_ZP": 2000,
+      "expected": "C-U",
+      "source": "Figure 3 plot labels",
+      "minus_j_normalized": 6.319866529646825,
+      "computed": "C-U",
+      "details": {
+        "reason": "Converged approach to thermal fixed point",
+        "T_terminal_K": 467.6222972649443,
+        "flux_distance_exponent": 1.0001259454530018,
+        "distance_fraction": 1e-05
+      }
+    },
+    {
+      "P_c_over_kB": 3000,
+      "j_over_j_ZP": 3000,
+      "expected": "C-U",
+      "source": "Figure 3 plot labels",
+      "minus_j_normalized": 9.479799794470237,
+      "computed": "C-U",
+      "details": {
+        "reason": "Converged approach to thermal fixed point",
+        "T_terminal_K": 233.47535445962998,
+        "flux_distance_exponent": 1.0254422915759538,
+        "distance_fraction": 1e-05
+      }
+    },
+    {
+      "P_c_over_kB": 4000,
+      "j_over_j_ZP": 300,
+      "expected": "C-U",
+      "source": "Figure 4",
+      "minus_j_normalized": 6.442893684676499,
+      "computed": "C-U",
+      "details": {
+        "reason": "Converged approach to thermal fixed point",
+        "T_terminal_K": 804.6357905669701,
+        "flux_distance_exponent": 1.0004443661072826,
+        "distance_fraction": 1e-05
+      }
+    },
+    {
+      "P_c_over_kB": 4000,
+      "j_over_j_ZP": 500,
+      "expected": "C-c",
+      "source": "Figure 4",
+      "minus_j_normalized": 10.738156141127499,
+      "computed": "C-c",
+      "details": {
+        "reason": "No intervening thermal fixed point before the critical temperature",
+        "T_terminal_K": 308.0156784602123
+      }
+    },
+    {
+      "P_c_over_kB": 4000,
+      "j_over_j_ZP": 1000,
+      "expected": "C-c",
+      "source": "Figure 4",
+      "minus_j_normalized": 21.476312282254998,
+      "computed": "C-c",
+      "details": {
+        "reason": "No intervening thermal fixed point before the critical temperature",
+        "T_terminal_K": 94.58248958024387
+      }
+    },
+    {
+      "P_c_over_kB": 4000,
+      "j_over_j_ZP": 1500,
+      "expected": "C-C",
+      "source": "Figure 4",
+      "minus_j_normalized": 32.2144684233825,
+      "computed": "C-C",
+      "details": {
+        "reason": "Converged approach to thermal fixed point",
+        "T_terminal_K": 56.82571997103093,
+        "flux_distance_exponent": 1.0071933333483132,
+        "distance_fraction": 1e-05
+      }
+    }
+  ],
+  "grid_summary": [
+    {
+      "figure": "figure5",
+      "pressure_samples": 29,
+      "flux_samples": 45,
+      "classification_counts": {
+        "C-U-o": 277,
+        "C-U": 594,
+        "C-c": 106,
+        "C-C": 65,
+        "below condensation ZP line": 148,
+        "outside outgoing CNM branch": 114,
+        "unresolved / outside T window": 1
+      },
+      "decision_counts": {
+        "Unstable-phase spiral; temperature overshoot": 247,
+        "Converged approach to thermal fixed point": 659,
+        "Eq. 11 plus-density branch lacks an outgoing CNM saddle": 114,
+        "Finite heat flux across unstable fixed-point temperature": 30,
+        "No intervening thermal fixed point before the critical temperature": 106,
+        "Below or on the condensation ZP separatrix": 148,
+        "Near-root asymptotics did not separate capture from overshoot": 1
+      }
+    },
+    {
+      "figure": "figure7",
+      "pressure_samples": 33,
+      "flux_samples": 49,
+      "classification_counts": {
+        "C-U-o": 130,
+        "C-U": 351,
+        "C-c": 324,
+        "C-C": 40,
+        "below condensation ZP line": 23,
+        "outside outgoing CNM branch": 80,
+        "unresolved / outside T window": 669
+      },
+      "decision_counts": {
+        "Unstable-phase spiral; temperature overshoot": 115,
+        "Converged approach to thermal fixed point": 391,
+        "Eq. 11 plus-density branch lacks an outgoing CNM saddle": 80,
+        "Finite heat flux across unstable fixed-point temperature": 15,
+        "No intervening thermal fixed point before the critical temperature": 324,
+        "Below or on the condensation ZP separatrix": 23,
+        "No terminal point within the audited 20000 K integration window": 669
+      }
+    }
+  ],
+  "calculated_landmarks": {
+    "Pmin_over_kB": 1597.4531011551244,
+    "Pmax_over_kB": 5007.000117820368,
+    "Psat_over_kB": 2822.884297374967,
+    "minus_jZP_at_P3000": 0.0031599332648234125
+  },
+  "limitations": [
+    "Pure atomic hydrogen, gamma=5/3, kappa=2.5e3 sqrt(T), and the printed equations 5-7 heating/cooling fit.",
+    "Steady planar geometry, constant mass and momentum flux, plus-density branch of equation 11.",
+    "Temperature rises from the cold equilibrium along its outgoing saddle direction; inputs lacking this saddle are masked.",
+    "No time-dependent hydrodynamic calculation, self-gravity, magnetic field, shock continuation, or alternative density branch.",
+    "A finite sampling grid; color boundaries are not digitized comparisons with the original figures.",
+    "Near-root capture versus overshoot is tested by successive temperature-distance refinements. Unresolved cases stay separate.",
+    "The published j_crit overlay is not reproduced: its reference-temperature selection requires clarification. It is not needed for direct trajectory classification."
+  ],
+  "open_questions_for_review": [
+    "For large imposed condensation flux, how should the CNM boundary and density branch be continued when equation 11's plus branch no longer gives an outgoing CNM saddle? The prototype masks these inputs rather than assigning a published color.",
+    "For the j_crit curve, which temperature interval and which loss normalization were used to select the reference state T_m? Section 4.1.2 states maximum |L| for T>T_c; this prototype does not infer an unprinted selection or overlay the curve.",
+    "The printed cooling fit gives P_min=1597.45 and P_max=5007.00 K cm^-3, compared with the quoted 1596/1598 and 5012. Keep these small differences visible when judging boundary agreement."
+  ],
+  "environment": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1",
+    "matplotlib": "3.9.4"
+  },
+  "elapsed_seconds": 49.530390042,
+  "code_sha256": {
+    "front_model.py": "bfb5fde49f5f420089ff335cb15a016a093eb150c19951508c10dcec8741dd5c",
+    "reproduce.py": "19535440d88ad3d8e89ca5ead285295be60ac378feba6ec15ae1b38982b6a168",
+    "source-audit.json": "04900d6a7e6bde0d9768d7e7fa3afbde26f862d7912e5dda4b4a4a65d3258dd1"
+  },
+  "config_sha256": "4d0df60cac5935e4c80b07fe155195ff096a8cd862350b5d2e1afeed3c3d9247"
+}

@@ -1,0 +1,19 @@
+{
+  "source": "Iwasaki & Inutsuka (2012), MNRAS 423, 3638–3645; arXiv:1204.5532v2",
+  "scope": "Computed prototype toward Figures 5 and 7, restricted to the outgoing CNM saddle on the plus-density branch of equation 11. Not a complete reproduction of every published region or auxiliary curve.",
+  "figure5": {"pressure_samples": 29, "flux_samples": 45, "pressure_min_K_cm_inverse3": 1608, "pressure_max_K_cm_inverse3": 4997, "minus_j_min_normalized": 0.003, "minus_j_max_normalized": 60},
+  "figure7": {"pressure_samples": 33, "flux_samples": 49, "pressure_min_K_cm_inverse3": 1608, "pressure_max_K_cm_inverse3": 30000, "minus_j_min_normalized": 0.01, "minus_j_max_normalized": 60},
+  "ode_relative_tolerance": 0.000002,
+  "CNM_temperature_offset_fraction": 0.00001,
+  "maximum_integration_temperature_K": 20000,
+  "mass_flux_normalization": "-j / [m_H * (1 cm^-3) * (1 km s^-1)]; positive means condensation. Physical j is g cm^-2 s^-1.",
+  "assumptions": [
+    "Pure atomic hydrogen, gamma=5/3, kappa=2.5e3 sqrt(T), and the printed equations 5-7 heating/cooling fit.",
+    "Steady planar geometry, constant mass and momentum flux, plus-density branch of equation 11.",
+    "Temperature rises from the cold equilibrium along its outgoing saddle direction; inputs lacking this saddle are masked.",
+    "No time-dependent hydrodynamic calculation, self-gravity, magnetic field, shock continuation, or alternative density branch.",
+    "A finite sampling grid; color boundaries are not digitized comparisons with the original figures.",
+    "Near-root capture versus overshoot is tested by successive temperature-distance refinements. Unresolved cases stay separate.",
+    "The published j_crit overlay is not reproduced: its reference-temperature selection requires clarification. It is not needed for direct trajectory classification."
+  ]
+}

@@ -331,18 +331,26 @@
     "authors": "Iwasaki & Inutsuka",
     "title": "Structure of dynamical condensation fronts in the interstellar medium",
     "group": "dynamics",
-    "status": "listed",
+    "status": "prototype",
     "source": "https://arxiv.org/abs/1204.5532",
     "topic": "Condensation-front families parameterized by pressure and mass flux, with cooling- and Field-length regimes.",
-    "scope": "Candidate: a steady 1D front and the changing characteristic length scale.",
+    "scope": "Confirmed target: Figures 5 and 7, pressure–mass-flux classification. A computed prototype reproduces nine stated example classes and passes 30 checks. Unavailable CNM branches and temperature-limited cells are masked; the jcrit overlay and complete boundary comparison await technical review.",
     "journal": "MNRAS 423, 3638–3645",
     "doi": "10.1111/j.1365-2966.2012.21156.x",
     "reference_section": "iwasaki",
-    "review_status": "Bibliography and abstract checked; equations, data availability, and target figures require an individual audit.",
+    "review_status": "arXiv:1204.5532v2 equations and figures reviewed; user confirmed Figures 5 and 7 as the target. Complete source-figure reproduction is pending.",
     "resources": [
       {
         "href": "research-paths.html#iwasaki-2012",
         "label": "Research path & scope →"
+      }
+    ],
+    "exhibits": [
+      {
+        "href": "iwasaki-2012/",
+        "label": "Figures 5 & 7: computed prototype →",
+        "kind": "prototype",
+        "validated": false
       }
     ]
   },

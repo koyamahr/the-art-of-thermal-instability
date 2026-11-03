@@ -1,0 +1,32 @@
+{
+  "source_url": "https://arxiv.org/pdf/1204.5532v2",
+  "source_pdf_sha256": "2a1134890536b86aa97cff8592597e714c0fc625f061c18d1f5eab277c3936e8",
+  "source_edition": "arXiv:1204.5532v2, 14 May 2012. Publication is MNRAS 423, 3638–3645. The preprint template's 2002/2018 header is not the publication year.",
+  "target_figures": [5, 7],
+  "target_confirmed_by_user": true,
+  "implemented_equations": [5, 6, 7, 8, 9, 11, 13, 14, 15, 16],
+  "reviewed_pages": "Printed pp. 2–7: heat-loss law, conservation integrals, front ODE, boundary conditions, classifications and critical point. Equations 11–16 and Figures 5–7 visually reviewed.",
+  "printed_anchors": {"P_min_text_K_cm_inverse3": 1596, "P_min_figure1_K_cm_inverse3": 1598, "P_max_K_cm_inverse3": 5012, "P_sat_K_cm_inverse3": 2823, "minus_j_ZP_at_P_3000_normalized": 0.0032},
+  "classification_examples": [
+    {"P_c_over_kB": 3000, "j_over_j_ZP": 3, "expected": "C-U-o", "source": "Figure 2b and section 4.1.1"},
+    {"P_c_over_kB": 3000, "j_over_j_ZP": 25, "expected": "C-U", "source": "Figure 2c and section 4.1.1"},
+    {"P_c_over_kB": 3000, "j_over_j_ZP": 1000, "expected": "C-U", "source": "Figure 3 plot labels"},
+    {"P_c_over_kB": 3000, "j_over_j_ZP": 2000, "expected": "C-U", "source": "Figure 3 plot labels"},
+    {"P_c_over_kB": 3000, "j_over_j_ZP": 3000, "expected": "C-U", "source": "Figure 3 plot labels"},
+    {"P_c_over_kB": 4000, "j_over_j_ZP": 300, "expected": "C-U", "source": "Figure 4"},
+    {"P_c_over_kB": 4000, "j_over_j_ZP": 500, "expected": "C-c", "source": "Figure 4"},
+    {"P_c_over_kB": 4000, "j_over_j_ZP": 1000, "expected": "C-c", "source": "Figure 4"},
+    {"P_c_over_kB": 4000, "j_over_j_ZP": 1500, "expected": "C-C", "source": "Figure 4"}
+  ],
+  "open_questions_for_review": [
+    "For large imposed condensation flux, how should the CNM boundary and density branch be continued when equation 11's plus branch no longer gives an outgoing CNM saddle? The prototype masks these inputs rather than assigning a published color.",
+    "For the j_crit curve, which temperature interval and which loss normalization were used to select the reference state T_m? Section 4.1.2 states maximum |L| for T>T_c; this prototype does not infer an unprinted selection or overlay the curve.",
+    "The printed cooling fit gives P_min=1597.45 and P_max=5007.00 K cm^-3, compared with the quoted 1596/1598 and 5012. Keep these small differences visible when judging boundary agreement."
+  ],
+  "scope_notes": [
+    "C-U-o denotes an oscillatory approach to unstable gas; C-U a monotone approach; C-c terminates at the critical point; C-C connects cold equilibria.",
+    "The paper's footnote 1 warns that a node at the unstable equilibrium is not sufficient to classify a global trajectory as C-U. The solver checks its approach or overshoot.",
+    "Black represents below/on the condensation ZP separatrix, not a region classified in this prototype. Gray is outside the implemented outgoing CNM branch; white is numerically unresolved.",
+    "No assertion of a mistake in the source paper is made. The open points may reflect an implementation or interpretation difference."
+  ]
+}

@@ -20,7 +20,7 @@ for section,title,intro in [
     parts.append(f'<section id="{section}"><p class="eyebrow">Reading path</p><h2>{escape(title)}</h2><p>{escape(intro)}</p>')
     for p in sorted(catalog,key=lambda item:item['year']):
         if p.get('reference_section')!=section:continue
-        state='Source rates audited / truncated model' if p['status']=='audited' else 'Reference listed'
+        state='Computed prototype / technical review pending' if p['status']=='prototype' else 'Source rates audited / truncated model' if p['status']=='audited' else 'Reference listed'
         publication_link=f'<a href="https://doi.org/{escape(p["doi"])}" target="_blank" rel="noopener noreferrer">Publication / DOI ↗</a>' if p.get('doi') else ''
         exhibit_links=''.join(f'<a href="{escape(e["href"])}">{escape(e["label"])}</a>' for e in p.get('exhibits',[]))
         parts.append(f'''<article id="{p['id']}"><p class="eyebrow">{p['year']} / {state}</p><h3>{escape(p['title'])}</h3><p class="small">{escape(p['authors'])}<br>{escape(p['journal'])}</p><p>{escape(p['topic'])}</p><p><strong>Proposed scope:</strong> {escape(p['scope'])}</p><div class="downloads"><a href="{escape(p['source'])}" target="_blank" rel="noopener noreferrer">Paper &amp; abstract ↗</a>{publication_link}{exhibit_links}</div></article>''')

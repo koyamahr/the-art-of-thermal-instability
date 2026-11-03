@@ -189,5 +189,28 @@
     ],
     "bibliography_url": "https://doi.org/10.1143/PTP.42.781",
     "identity_check": "Publisher bibliography and abstract checked; local source PDF unavailable; coefficient audit pending"
+  },
+  {
+    "id": "iwasaki-2012",
+    "source_url": "https://arxiv.org/pdf/1204.5532",
+    "path": "sources/private/iwasaki-2012.pdf",
+    "sha256": "2a1134890536b86aa97cff8592597e714c0fc625f061c18d1f5eab277c3936e8",
+    "retrieved_on": "2026-11-03",
+    "status": "downloaded",
+    "edition": "arXiv:1204.5532v2, 14 May 2012; published MNRAS 423, 3638\u20133645",
+    "identity_check": "Title/authors, equations 11\u201316, critical-state definition, and Figures 5\u20137 visually reviewed; printed model and nine classification examples implemented in a restricted prototype.",
+    "pages": 10,
+    "arxiv_version": "1204.5532v2"
+  },
+  {
+    "id": "iwasaki-2014",
+    "source_url": "https://arxiv.org/pdf/1309.7139",
+    "path": "sources/private/iwasaki-2014.pdf",
+    "sha256": "9301468f5cee73d3b6674ab26b7faa55f763e38c6d2f7c0bc790acfb4999c0ee",
+    "retrieved_on": "2026-11-03",
+    "status": "downloaded",
+    "edition": "arXiv PDF; version and publication comparison pending",
+    "identity_check": "Pending visual inspection",
+    "pages": 14
   }
 ]
