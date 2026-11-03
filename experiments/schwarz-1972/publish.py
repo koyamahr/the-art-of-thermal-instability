@@ -6,10 +6,11 @@ import subprocess
 import sys
 here=Path(__file__).resolve().parent
 destination=here.parents[1]/'docs'/'schwarz-1972'
-env=dict(os.environ);env.setdefault('MPLCONFIGDIR',str(here/'output'/'.matplotlib'))
+env=dict(os.environ);env['OPENBLAS_NUM_THREADS']='1';env.setdefault('MPLCONFIGDIR',str(here/'output'/'.matplotlib'))
 subprocess.run([sys.executable,str(here/'reproduce.py')],env=env,check=True)
+subprocess.run([sys.executable,str(here/'reproduce-nonlinear.py')],env=env,check=True)
 destination.mkdir(parents=True,exist_ok=True)
-for name in ['reproduce.py','config.json','cooling-readings.csv','reference-readings.csv','requirements.txt','source-audit.json','README.md']:
+for name in ['reproduce.py','config.json','cooling-readings.csv','reference-readings.csv','requirements.txt','source-audit.json','README.md','nonlinear.py','reproduce-nonlinear.py','config-nonlinear.json','cooling-nonlinear-readings.csv']:
     shutil.copyfile(here/name,destination/name)
-for name in ['linear.png','linear.svg','linear.csv','cooling.csv','reference-comparison.csv','validation.json']:
+for name in ['linear.png','linear.svg','linear.csv','cooling.csv','reference-comparison.csv','validation.json','nonlinear.png','nonlinear.svg','nonlinear-convergence.png','nonlinear-convergence.svg','nonlinear-profiles.csv','nonlinear-history.csv','validation-nonlinear.json']:
     shutil.copyfile(here/'output'/name,destination/name)

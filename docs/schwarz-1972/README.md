@@ -1,8 +1,8 @@
 # Schwarz, McCray & Stein (1972): an early-time linear prototype
 
 Target: *Formation of Clouds in a Cooling Interstellar Medium*, ApJ175,
-673–686. Figure2 is the first calculation target. Nonlinear Figures3–6
-remain a separate, unfinished stage.
+673–686. Figure2 is the first calculation target. Nonlinear Figures3–6 now have a separate numerical prototype, with
+explicit historical-input and spatial-resolution limitations.
 
 ## Run
 
@@ -89,8 +89,69 @@ and cooling; it does not supply a replacement numerical rate table.
 
 Recover or extend the cold input with explicit source justification,
 confirm the recombination coefficient and initial linear mode, then
-revisit the full Figure2. For Figures3–6, implement periodic1D flow with
-a3pc wavelength and10% initially isobaric density modulation, including
-conduction, recombination, shock handling and grid/time convergence.
+revisit the full Figure2. The nonlinear prototype below now implements periodic1D flow with
+a3pc wavelength and10% initially isobaric density modulation. Its
+historical input limits and unresolved front-scale resolution are explicit.
 A large linear amplification alone cannot reproduce the finite-amplitude
 cloud contrast, thickness or shock.
+
+## Nonlinear1D calculation
+
+Run `python reproduce-nonlinear.py` with `nonlinear.py`, `config-nonlinear.json`,
+`cooling-nonlinear-readings.csv`, and the linear prototype files beside it.
+`OPENBLAS_NUM_THREADS=1` is recommended for reproducible small-matrix performance.
+The nonlinear input adds12 warm-end readings to the original39 points so that
+the hotter cells in the initially isobaric wave remain within the warm domain.
+It preserves the earlier linear input and results.
+
+A periodic3pc domain starts with a10% sinusoidal physical-space density wave,
+mean nH=.3cm^-3, unperturbed T=8200K, x=.05, and uniform pressure. Local initial
+T therefore varies inversely with n. Equal-H-mass cells move with the gas,
+keeping recombination fractions attached to their mass. Cell widths and
+physical positions are exported alongside the equal-mass coordinate.
+The original plots use zone number; the original grid/mass mapping is not
+fully specified and is not identified with our coordinate by assumption.
+
+Compatible midpoint pressure work conserves hydro thermal plus kinetic
+energy. Compression-only artificial viscosity supplies shock heating.
+Conduction uses a conservative periodic implicit backward-Euler solve,
+so the full method is not advertised as globally second order. Local
+cooling/recombination use a coupled midpoint energy solve and the exact
+constant-rate quadratic recombination update. No temperature floor,
+density clipping, imposed cold cloud, or fitted time shift is applied.
+
+Below the source temperature boundary, a continuous CII-like asymptote is
+used: exp(-92/T), with neutral-collider T^0 and electron-collider T^-1/2
+prefactors. Below x=.001 the two low-x curves continue to a nonnegative
+neutral-collider contribution. These are declared input extensions, not
+recovered historical coefficients. Every accepted state's exposure is
+tracked. A cold-exponent alternative measures sensitivity without being
+called an uncertainty interval. States above the warm input domain or
+below the1K validity guard fail rather than being clipped.
+
+The driver compares64/96/128-cell runs, an auxiliary512-cell run, a
+half-timestep96-cell run, and an alternate cold-asymptote96-cell run.
+The displayed profiles use96cells as a historical-scale experiment, not
+an assertion of the original mesh. The paper states100–200points;
+sub100-cell cases are separate historical-scale experiments. Controls compare periodic
+conduction against a discrete Fourier solution, local recombination and
+cooling against an adaptive ODE, compatible hydro energy conservation,
+and a tiny-amplitude nonlinear wave against the independently derived
+linear3pc equations. Global radiative/recombination energy accounting,
+box length, momentum, positivity, and ionization bounds are reported.
+
+The Field-length diagnostic is sqrt[K(T)T/(nH^2 Lambda)] divided by cell
+width. The chosen four-cell criterion is reported as unmet in this mesh study. It
+is a separate diagnostic, not a passing numerical check or a
+universal stability theorem or a replacement for spatial/time convergence.
+Profile errors are L1 differences on equal-mass coordinate, without phase
+or time shifts.
+
+Snapshots at0,.701,.955,.985,1.05Myr export density, velocity, T, x, pressure,
+physical positions, cell widths, and the Field-length proxy. The report
+compares the .985Myr state with approximate cloud quantities in the paper's
+p682 text, keeping the definitions separate. Our cold-cloud selection is
+T<100K and n>10nmean; density FWHM is measured separately. Neither must
+equal the original cloud-edge definition. Numerical checks cannot certify
+historical agreement where the cooling inputs and observed cloud values
+differ.

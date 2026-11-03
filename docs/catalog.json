@@ -71,13 +71,19 @@
     "status": "prototype",
     "source": "https://adsabs.harvard.edu/pdf/1972ApJ...175..673S",
     "topic": "Thermal conduction and recombination shape perturbations growing in an isochorically cooling background.",
-    "scope": "Figure2 early-time linear prototype with graph-reconstructed cooling;31 numerical checks. Runs to about1.68Myr at the source-data boundary. Source comparisons, interpolation sensitivity and historical normalization issues remain visible. Late-time Figure2 and nonlinear Figures3–6 are unfinished.",
+    "scope": "Early-time linear Figure2 plus a nonlinear3pc/10percent Lagrangian prototype without a Riemann solver. Historical-scale64/96/128-cell runs and a512-cell auxiliary comparison document conservation, timing/input differences, and unresolved conductive-front resolution.",
     "journal": "ApJ175,673–686",
     "reference_section": "theory",
     "exhibits": [
       {
         "href": "schwarz-1972/",
         "label": "Cooling-medium condensation: Figure2 prototype →",
+        "kind": "prototype",
+        "validated": false
+      },
+      {
+        "href": "schwarz-1972/nonlinear.html",
+        "label": "Nonlinear Lagrangian condensation →",
         "kind": "prototype",
         "validated": false
       }

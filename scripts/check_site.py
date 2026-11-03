@@ -63,7 +63,8 @@ def main():
              ('fgh-1969','validation-comparison.json','config-comparison.json'),
              ('takayanagi-nishimura-1960','validation.json','config.json'),
              ('iwasaki-2012','validation.json','config.json'),
-             ('schwarz-1972','validation.json','config.json')]
+             ('schwarz-1972','validation.json','config.json'),
+             ('schwarz-1972','validation-nonlinear.json','config-nonlinear.json')]
     total=0
     for chapter,report_name,config_name in reports:
         directory=DOCS/chapter

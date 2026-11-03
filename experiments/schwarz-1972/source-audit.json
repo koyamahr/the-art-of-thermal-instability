@@ -23,6 +23,28 @@
     "x": 0.05,
     "geometry": "one-dimensional periodic",
     "targets": "Figures3\u20136; later density/velocity/temperature/ionization snapshots and convergence",
-    "status": "not implemented"
+    "status": "Nonlinear numerical prototype implemented; exact historical agreement and continuum front convergence remain unvalidated"
+  },
+  "nonlinear_input_extension": {
+    "cooling_readings": "cooling-nonlinear-readings.csv",
+    "original_readings": 39,
+    "warm_points_added": 12,
+    "method": "Original crop/calibration retained. Four further temperature columns per curve; nearest contiguous dark-pixel run in45-pixel windows, median ordinate. Large steep-curve pixel envelopes retained.",
+    "cold": "Continuous declared CII-like asymptote below the plotted domain, not a recovered historical fit.",
+    "low_ionization": "Declared continuation of low-x collider contributions. Exposure and sensitivity reported."
+  },
+  "nonlinear_numerics": {
+    "method": "Periodic equal-H-mass Lagrangian cells; compatible midpoint pressure work with compression viscosity; conservative semi-implicit conduction; coupled cooling/recombination source solve",
+    "coordinate": "Equal-mass percentage and physical positions exported. Original zone-number mapping is not fully specified.",
+    "snapshots_Myr": [
+      0,
+      0.701,
+      0.955,
+      0.985,
+      1.05
+    ],
+    "controls": "Hydro energy, periodic heat Fourier mode, independent source ODE, linear-wave limit, grid/time convergence and source-domain exposure",
+    "original_method_evidence": "p680 specifies periodic boundaries,100\u2013200spatial mesh points, and vonNeumann\u2013Richtmyer artificial viscosity. This implementation likewise uses no Riemann solver; it is not the recovered original program.",
+    "mesh_study": "64/96/128cells with96-cell displayed profiles and512-cell auxiliary comparison; field-front criterion reported separately, not assumed satisfied."
   }
 }

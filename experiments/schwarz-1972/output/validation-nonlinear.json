@@ -1,0 +1,433 @@
+{
+  "scope": "Nonlinear1D Lagrangian prototype using graph-reconstructed cooling, not a certified reproduction of Figures3\u20136",
+  "primary_cells": 96,
+  "checks": [
+    {
+      "name": "An initially isobaric static mesh stays static without sources",
+      "error": 7.116434538219899e-18,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Compatible hydro work conserves thermal plus kinetic energy",
+      "error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Periodic hydro preserves box length",
+      "error": 2.220446049250313e-16,
+      "tolerance": 1e-13,
+      "passed": true
+    },
+    {
+      "name": "Periodic hydro preserves total nodal momentum",
+      "error": 1.0444978215673472e-18,
+      "tolerance": 1e-13,
+      "passed": true
+    },
+    {
+      "name": "Periodic conduction agrees with backward-Euler Fourier damping",
+      "error": 5.577649453414324e-12,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Periodic conduction conserves summed thermal energy",
+      "error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Implicit conduction respects temperature maximum principle",
+      "passed": true
+    },
+    {
+      "name": "Nonlinear source temperature agrees with adaptive ODE",
+      "error": 1.2842768848386754e-08,
+      "tolerance": 2e-06,
+      "passed": true
+    },
+    {
+      "name": "Quadratic hydrogen recombination agrees with adaptive ODE",
+      "error": 2.1915997905352924e-09,
+      "tolerance": 2e-06,
+      "passed": true
+    },
+    {
+      "name": "Small-amplitude nonlinear density agrees with linear3pc solution",
+      "error": 0.0004063420951267993,
+      "tolerance": 0.005,
+      "passed": true
+    },
+    {
+      "name": "64: radiative plus recombination energy budget",
+      "error": 3.5860203695392556e-14,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "64: periodic box length",
+      "error": 2.220446049250313e-16,
+      "tolerance": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "64: total momentum",
+      "error": 1.1823431123048066e-17,
+      "tolerance": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "64: nonlinear density contrast exceeds100",
+      "passed": true
+    },
+    {
+      "name": "64: finite positive primitive states",
+      "passed": true
+    },
+    {
+      "name": "64: ionization does not exceed initial fraction",
+      "passed": true
+    },
+    {
+      "name": "96: radiative plus recombination energy budget",
+      "error": 1.0769163338864018e-14,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "96: periodic box length",
+      "error": 2.220446049250313e-16,
+      "tolerance": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "96: total momentum",
+      "error": 1.167184867275258e-17,
+      "tolerance": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "96: nonlinear density contrast exceeds100",
+      "passed": true
+    },
+    {
+      "name": "96: finite positive primitive states",
+      "passed": true
+    },
+    {
+      "name": "96: ionization does not exceed initial fraction",
+      "passed": true
+    },
+    {
+      "name": "128: radiative plus recombination energy budget",
+      "error": 4.440892098500626e-15,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "128: periodic box length",
+      "error": 4.440892098500626e-16,
+      "tolerance": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "128: total momentum",
+      "error": 1.1596057447604835e-17,
+      "tolerance": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "128: nonlinear density contrast exceeds100",
+      "passed": true
+    },
+    {
+      "name": "128: finite positive primitive states",
+      "passed": true
+    },
+    {
+      "name": "128: ionization does not exceed initial fraction",
+      "passed": true
+    },
+    {
+      "name": "Auxiliary grid: global energy budget",
+      "error": 2.992255332401328e-09,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "Auxiliary grid: periodic box length",
+      "error": 2.220446049250313e-16,
+      "tolerance": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "Auxiliary grid: total momentum",
+      "error": 1.8189894035458566e-17,
+      "tolerance": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "Half timestep: density-profile L1",
+      "error": 0.00018227872576657018,
+      "tolerance": 0.03,
+      "passed": true
+    },
+    {
+      "name": "Condensation reaches contrast100 before the cold extrapolation starts",
+      "passed": true
+    }
+  ],
+  "runs": [
+    {
+      "first_contrast100_time_bracket_Myr": [
+        0.9544877216622392,
+        0.955
+      ],
+      "first_cold_extension_time_bracket_Myr": [
+        0.9832349931500557,
+        0.9836185105589785
+      ],
+      "first_low_x_extension_time_bracket_Myr": [
+        0.9929777883249317,
+        0.9933896981780262
+      ],
+      "cells": 64,
+      "timestep_scale": 1.0,
+      "steps": 707,
+      "rejected_steps": 0,
+      "wall_seconds": 0.6420085,
+      "max_energy_budget_relative_error": 3.5860203695392556e-14,
+      "max_box_length_relative_error": 2.220446049250313e-16,
+      "max_mean_velocity_over_10kms": 1.1823431123048066e-17,
+      "minimum_Field_length_cells": 0.1737051442351979,
+      "mass_fraction_ever_below_input_T": 0.28125,
+      "mass_fraction_ever_below_input_x": 0.25,
+      "cooling_T_domain_K": [
+        13.929034040622067,
+        14072.311003136556
+      ],
+      "initial_energy_per_area": 5423495.562239748,
+      "radiated_energy_per_area": 5109264.336493401,
+      "recombination_energy_per_area": 15556.726328977289,
+      "end_time_Myr": 1.05
+    },
+    {
+      "first_contrast100_time_bracket_Myr": [
+        0.9478272592007717,
+        0.9481866891207538
+      ],
+      "first_cold_extension_time_bracket_Myr": [
+        0.9740335967369836,
+        0.9742862255022594
+      ],
+      "first_low_x_extension_time_bracket_Myr": [
+        0.9855561996335765,
+        0.9858349926225192
+      ],
+      "cells": 96,
+      "timestep_scale": 1.0,
+      "steps": 1052,
+      "rejected_steps": 0,
+      "wall_seconds": 0.992950167,
+      "max_energy_budget_relative_error": 1.0769163338864018e-14,
+      "max_box_length_relative_error": 2.220446049250313e-16,
+      "max_mean_velocity_over_10kms": 1.167184867275258e-17,
+      "minimum_Field_length_cells": 0.25915072613037393,
+      "mass_fraction_ever_below_input_T": 0.3020833333333333,
+      "mass_fraction_ever_below_input_x": 0.2604166666666667,
+      "cooling_T_domain_K": [
+        13.929034040622067,
+        14072.311003136556
+      ],
+      "initial_energy_per_area": 5423495.562239749,
+      "radiated_energy_per_area": 5108612.496061643,
+      "recombination_energy_per_area": 15557.861260445483,
+      "end_time_Myr": 1.05
+    },
+    {
+      "first_contrast100_time_bracket_Myr": [
+        0.9449560063924957,
+        0.9452287116573413
+      ],
+      "first_cold_extension_time_bracket_Myr": [
+        0.9700584606794768,
+        0.9702474880285137
+      ],
+      "first_low_x_extension_time_bracket_Myr": [
+        0.9825446923624207,
+        0.9827569817618814
+      ],
+      "cells": 128,
+      "timestep_scale": 1.0,
+      "steps": 1398,
+      "rejected_steps": 0,
+      "wall_seconds": 1.4082088750000001,
+      "max_energy_budget_relative_error": 4.440892098500626e-15,
+      "max_box_length_relative_error": 4.440892098500626e-16,
+      "max_mean_velocity_over_10kms": 1.1596057447604835e-17,
+      "minimum_Field_length_cells": 0.34447341276780413,
+      "mass_fraction_ever_below_input_T": 0.3125,
+      "mass_fraction_ever_below_input_x": 0.265625,
+      "cooling_T_domain_K": [
+        13.929034040622067,
+        14072.311003136556
+      ],
+      "initial_energy_per_area": 5423495.562239748,
+      "radiated_energy_per_area": 5108329.990694576,
+      "recombination_energy_per_area": 15558.521844856961,
+      "end_time_Myr": 1.05
+    }
+  ],
+  "spatial_comparison_at_Myr": 0.985,
+  "spatial_comparison": [
+    {
+      "coarse_cells": 64,
+      "fine_cells": 96,
+      "density_L1_mass_coordinate": 0.0792830097589971,
+      "relative_peak_density": 0.03133736606802806,
+      "relative_minimum_temperature": 0.0811740825791154
+    },
+    {
+      "coarse_cells": 96,
+      "fine_cells": 128,
+      "density_L1_mass_coordinate": 0.031562952253014726,
+      "relative_peak_density": 0.01581405382904766,
+      "relative_minimum_temperature": 0.02742363589391905
+    }
+  ],
+  "resolution_diagnostics": {
+    "scope": "Historical mesh comparison, not a continuum-convergence claim",
+    "finest_historical_pair_density_L1": 0.031562952253014726,
+    "five_percent_profile_criterion_met": true,
+    "historical_vs_auxiliary_density_L1": 0.0474764035035595,
+    "four_Field_cells_criterion_met": false,
+    "auxiliary_stats": {
+      "first_contrast100_time_bracket_Myr": [
+        0.940105854201145,
+        0.9401757931686983
+      ],
+      "first_cold_extension_time_bracket_Myr": [
+        0.9622562348735195,
+        0.9623033180968085
+      ],
+      "first_low_x_extension_time_bracket_Myr": [
+        0.9771517636081238,
+        0.9772067669364822
+      ],
+      "cells": 512,
+      "timestep_scale": 1.0,
+      "steps": 5611,
+      "rejected_steps": 19,
+      "wall_seconds": 7.054883208,
+      "max_energy_budget_relative_error": 2.992255332401328e-09,
+      "max_box_length_relative_error": 2.220446049250313e-16,
+      "max_mean_velocity_over_10kms": 1.8189894035458566e-17,
+      "minimum_Field_length_cells": 1.370819135528792,
+      "mass_fraction_ever_below_input_T": 0.326171875,
+      "mass_fraction_ever_below_input_x": 0.283203125,
+      "cooling_T_domain_K": [
+        13.929034040622067,
+        14072.311003136556
+      ],
+      "initial_energy_per_area": 5423495.562239749,
+      "radiated_energy_per_area": 5107818.082390902,
+      "recombination_energy_per_area": 15559.820670890962,
+      "end_time_Myr": 1.05
+    }
+  },
+  "temporal_comparison": {
+    "cells": 96,
+    "density_L1": 0.00018227872576657018,
+    "half_step_stats": {
+      "first_contrast100_time_bracket_Myr": [
+        0.9478683556426132,
+        0.9480478655171329
+      ],
+      "first_cold_extension_time_bracket_Myr": [
+        0.9742854212787463,
+        0.97441201979996
+      ],
+      "first_low_x_extension_time_bracket_Myr": [
+        0.985556333766821,
+        0.9856957052831273
+      ],
+      "cells": 96,
+      "timestep_scale": 0.5,
+      "steps": 2101,
+      "rejected_steps": 0,
+      "wall_seconds": 1.9891108749999997,
+      "max_energy_budget_relative_error": 6.439293542825908e-15,
+      "max_box_length_relative_error": 4.440892098500626e-16,
+      "max_mean_velocity_over_10kms": 1.561299238043527e-17,
+      "minimum_Field_length_cells": 0.2591530024266962,
+      "mass_fraction_ever_below_input_T": 0.3020833333333333,
+      "mass_fraction_ever_below_input_x": 0.2604166666666667,
+      "cooling_T_domain_K": [
+        13.929034040622067,
+        14072.311003136556
+      ],
+      "initial_energy_per_area": 5423495.562239749,
+      "radiated_energy_per_area": 5108611.563154817,
+      "recombination_energy_per_area": 15557.866066637109,
+      "end_time_Myr": 1.05
+    }
+  },
+  "cold_extension_sensitivity": {
+    "scope": "Electron T-power0 versus-1/2 below source Tmin; a sensitivity probe, not an uncertainty bound",
+    "cells": 96,
+    "relative_peak_density": -0.00027533767096221684,
+    "relative_min_temperature": 0.0007729701067666905,
+    "density_profile_L1": 0.00016812806177401676
+  },
+  "source_comparison": {
+    "source": {
+      "time_Myr": 0.985,
+      "cloud_temperature_K": 15,
+      "intercloud_temperature_K": 1800,
+      "cloud_x": 0.002,
+      "cloud_width_pc": 0.007,
+      "cloud_mass_fraction": 0.2,
+      "source": "SMS1972 p682 text, approximate cloud quantities, not exact profile samples or equivalently defined width criteria"
+    },
+    "model": {
+      "peak_nH_cm3": 31.07758809062937,
+      "density_contrast": 186.8339445578185,
+      "min_temperature_K": 12.705678529033367,
+      "warm_temperature_K": 1429.6107173963146,
+      "minimum_x": 0.0010161802946194857,
+      "cloud_width_pc": 0.015471818801023702,
+      "density_FWHM_pc": 0.007807914649486266,
+      "cloud_mass_fraction": 0.28125
+    },
+    "note": "Measured differences remain. Cloud selection is T<100K and n>10nmean; FWHM uses half the density excess. These need not equal the original cloud-edge definition. No coefficients or time shifts fitted."
+  },
+  "limitations": [
+    "Cooling uses51 digitized Figure1 points;12 warm-end points were added for the locally hotter part of an initially isobaric density wave. Linear input and results are preserved.",
+    "No hard temperature floor or density clipping. Below the graph domain a declared CII-like asymptote is used; every exposure is recorded and an alternate asymptote is compared.",
+    "For x below.001, the two lowest source-x curves are continued linearly to a nonnegative neutral-collider contribution. This is a declared extrapolation, not a recovered rate.",
+    "The published coordinate is zone number; the original mass/grid mapping is not fully specified. Our plots use equal-H-mass coordinate and also export physical positions.",
+    "An explicit compatible midpoint pressure-work step uses compression-only artificial viscosity. Conduction is conservative semi-implicit backward Euler and thus limits temporal order; a half-timestep comparison is required.",
+    "Initial density is a sinusoid in physical position, initially isobaric, with zero velocity and uniform ionization. The mean unperturbed temperature is8200K; local initial temperatures vary.",
+    "No external heating, continued ionization, magnetic pressure, gravity, thermal H ionization, or He ionization. Recombination uses the same declared historical H approximation as the linear prototype.",
+    "Convergence checks assess this implementation; agreement with the1972 nonlinear cloud parameters is measured separately and not assumed.",
+    "The historical-scale mesh study is not a continuum-converged resolution claim. The Field-length proxy criterion and fixed-time profile differences are diagnostic results, even when unmet."
+  ],
+  "wall_seconds": 14.790215834,
+  "environment": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1",
+    "matplotlib": "3.9.4"
+  },
+  "code_sha256": {
+    "nonlinear.py": "50eea0881bcd602d4cd38acea78285cff0a8f0608eb1ba51869902eebf2ff126",
+    "reproduce-nonlinear.py": "990b17355981692bf9339f461eed53b72402ef87b0d91d4e3961b2d7a1375f4e",
+    "reproduce.py": "9ef86ec0a221e666f8f5b3a3048fe02e71c5000eabe76317240602229cec4801",
+    "config.json": "14a875c16998f48eff5ce9a47355798847b6b9ee79336dfc7413ad9acad6989f",
+    "cooling-readings.csv": "0eb7b2611659b24ad2fa47ae4e79ab6e54fa746a825effbc629a8ad034456203",
+    "cooling-nonlinear-readings.csv": "6bce473107d9d4e056ec96dce97f8c28fe85e6dd6b3e021b5d2e61700daf90a5"
+  },
+  "config_sha256": "177e05e15e76ccf6b0bc8c92ed78446c7a3451049423134615463218253bcd6e"
+}

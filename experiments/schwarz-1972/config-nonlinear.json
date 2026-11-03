@@ -1,0 +1,58 @@
+{
+  "scope": "Nonlinear1D Lagrangian prototype using graph-reconstructed cooling, not a certified reproduction of Figures3\u20136",
+  "wavelength_pc": 3.0,
+  "density_amplitude": 0.1,
+  "nH_mean_cm3": 0.3,
+  "T_background_K": 8200.0,
+  "electron_fraction": 0.05,
+  "helium_per_H": 0.1,
+  "gamma": 1.6666666666666667,
+  "resolutions": [
+    64,
+    96,
+    128
+  ],
+  "snapshot_times_Myr": [
+    0.0,
+    0.701,
+    0.955,
+    0.985,
+    1.05
+  ],
+  "time_end_Myr": 1.05,
+  "cfl": 0.35,
+  "cooling_fraction": 0.08,
+  "viscosity_quadratic": 2.0,
+  "viscosity_linear": 0.25,
+  "conductivity_cgs_prefactor": 2500.0,
+  "cold_extension": {
+    "enabled": true,
+    "threshold_K": 92.0,
+    "form": "Continuous CII-like low-T asymptote: electron factor T^-1/2 and neutral factor T^0, both exp(-92/T), anchored at the lowest source temperature. Not recovered historical input."
+  },
+  "limitations": [
+    "Cooling uses51 digitized Figure1 points;12 warm-end points were added for the locally hotter part of an initially isobaric density wave. Linear input and results are preserved.",
+    "No hard temperature floor or density clipping. Below the graph domain a declared CII-like asymptote is used; every exposure is recorded and an alternate asymptote is compared.",
+    "For x below.001, the two lowest source-x curves are continued linearly to a nonnegative neutral-collider contribution. This is a declared extrapolation, not a recovered rate.",
+    "The published coordinate is zone number; the original mass/grid mapping is not fully specified. Our plots use equal-H-mass coordinate and also export physical positions.",
+    "An explicit compatible midpoint pressure-work step uses compression-only artificial viscosity. Conduction is conservative semi-implicit backward Euler and thus limits temporal order; a half-timestep comparison is required.",
+    "Initial density is a sinusoid in physical position, initially isobaric, with zero velocity and uniform ionization. The mean unperturbed temperature is8200K; local initial temperatures vary.",
+    "No external heating, continued ionization, magnetic pressure, gravity, thermal H ionization, or He ionization. Recombination uses the same declared historical H approximation as the linear prototype.",
+    "Convergence checks assess this implementation; agreement with the1972 nonlinear cloud parameters is measured separately and not assumed.",
+    "The historical-scale mesh study is not a continuum-converged resolution claim. The Field-length proxy criterion and fixed-time profile differences are diagnostic results, even when unmet."
+  ],
+  "time_refinement_cells": 96,
+  "cold_sensitivity_cells": 96,
+  "comparison_time_Myr": 0.985,
+  "convergence_tolerances": {
+    "finest_pair_mass_coordinate_density_L1": 0.05,
+    "half_step_mass_coordinate_density_L1": 0.03,
+    "finest_min_Field_length_cells": 4,
+    "energy_budget_relative_error": 1e-06
+  },
+  "history_interval_steps": 20,
+  "artificial_viscosity": "Compression-only quadratic plus linear vonNeumann-style pressure, included in compatible pressure work; no physical viscosity is claimed.",
+  "auxiliary_resolution": 512,
+  "comparison_note": "Historical-mesh study at64/96/128equal-mass cells, plus an auxiliary512-cell run. The source reports100\u2013200points; sub100runs are exploratory, not asserted original settings. Continuum/front-resolution criteria are reported separately and may remain unmet.",
+  "primary_cells": 96
+}
