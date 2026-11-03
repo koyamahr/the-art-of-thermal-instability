@@ -1,0 +1,126 @@
+{
+  "source": "Field (1965), Figure 1; equations (17)-(28)",
+  "config": {
+    "gamma": 1.6666666666666667,
+    "extent": 8.0,
+    "grid_samples": 161,
+    "alphas": [
+      0.5,
+      -2.0
+    ],
+    "betas": [
+      0.01,
+      0.1,
+      1.0
+    ],
+    "path_samples": 1201
+  },
+  "checks": [
+    {
+      "name": "positive-root count mismatches on off-boundary grid",
+      "error": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "points_tested": 2702
+    },
+    {
+      "name": "Cardano D topology mismatches on off-boundary grid",
+      "error": 0.0,
+      "tolerance": 0.5,
+      "passed": true,
+      "points_tested": 2702
+    },
+    {
+      "name": "maximum root-set error against fluid-matrix eigenvalues",
+      "error": 1.7763568394002505e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "maximum scaled equation (18) residual",
+      "error": 1.6587397048707065e-15,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "equation (20) boundaries satisfy D=0",
+      "error": 7.752505650641945e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "triple-root polynomial and derivatives at cusp sign=-1",
+      "error": 1.1102230246251565e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "triple-root polynomial and derivatives at cusp sign=1",
+      "error": 1.1102230246251565e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "neutral-line zero and imaginary roots",
+      "error": 5.595524044110789e-14,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "path mapping y=x/q agrees with Figures 2 and 3 cubic",
+      "error": 3.552713678800501e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Figure 2 path crosses isobaric neutral line, beta=0.01",
+      "error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Figure 3 path crosses isentropic neutral line, beta=0.01",
+      "error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Figure 2 path crosses isobaric neutral line, beta=0.1",
+      "error": 5.551115123125783e-17,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Figure 3 path crosses isentropic neutral line, beta=0.1",
+      "error": 5.551115123125783e-17,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Figure 2 path crosses isobaric neutral line, beta=1",
+      "error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Figure 3 path crosses isentropic neutral line, beta=1",
+      "error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "No digitized pointwise comparison with the printed figure.",
+    "Root-count background, typography, and legend are modernized.",
+    "The original circular annotation guide is omitted: it is not a stability boundary.",
+    "Neutral-line grid counts are blank; topology labels use an absolute 1e-10 D tolerance.",
+    "Grid root counts include multiplicity and count Re(y)>0, not merely real roots."
+  ],
+  "environment": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "matplotlib": "3.9.4"
+  },
+  "code_sha256": "4e2bf80d0636bb3bb5d0982d595185bfc8e44058f27f58ae0fda4477cfab3a11",
+  "config_sha256": "82da784443b6f19960f28ab850184e44ed765e35dbf7bd4f3e7a732e3dc16061"
+}

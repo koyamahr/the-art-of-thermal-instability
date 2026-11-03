@@ -1,0 +1,205 @@
+{
+  "source": "Field (1965), Figure 3; equations (15), (27), (30), (38)-(40)",
+  "config": {
+    "gamma": 1.6666666666666667,
+    "alpha": -2.0,
+    "betas": [
+      0.0,
+      0.01,
+      0.1,
+      1.0
+    ],
+    "q_max": 7.0,
+    "samples": 1401
+  },
+  "checks": [
+    {
+      "name": "maximum scaled wave-root error against fluid-matrix eigenvalues",
+      "error": 1.886607068092617e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "conjugate wave root also matches fluid-matrix eigenvalues",
+      "error": 1.886607068092617e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "maximum scaled equation (39) complex residual",
+      "error": 1.168368686084142e-15,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "maximum scaled equation (40) real-part residual",
+      "error": 7.719355582304966e-15,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "long-wave Re(x)/q^2 limit, beta=0",
+      "error": 4.998681153028928e-09,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "long-wave Re(x)/q^2 limit, beta=0.01",
+      "error": 5.252107606462664e-09,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "long-wave Re(x)/q^2 limit, beta=0.1",
+      "error": 7.500392602138861e-09,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "long-wave Re(x)/q^2 limit, beta=1",
+      "error": 3.0001006220969906e-08,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "long-wave Im(x)/q limit",
+      "error": 1.1529136645371807e-08,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "zero-conduction short-wave Re(x) limit",
+      "error": 3.239972179436279e-11,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "zero-conduction short-wave Im(x)/q limit",
+      "error": 1.849942421472406e-11,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "neutral Re(x) at wave cutoff, beta=0.01",
+      "error": 1.086742216638794e-15,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Im(x)=q at wave cutoff, beta=0.01",
+      "error": 8.881784197001252e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "wave changes from growth to damping, beta=0.01",
+      "passed": true,
+      "below": 1.9137566364076128e-05,
+      "above": -1.913994555293334e-05
+    },
+    {
+      "name": "condensation still grows above wave cutoff, beta=0.01",
+      "passed": true,
+      "fastest_root_real": 1.4999382748911063
+    },
+    {
+      "name": "neutral Re(x) at wave cutoff, beta=0.1",
+      "error": 1.2995685496566354e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Im(x)=q at wave cutoff, beta=0.1",
+      "error": 2.6645352591003757e-15,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "wave changes from growth to damping, beta=0.1",
+      "passed": true,
+      "below": 1.3791144333704963e-05,
+      "above": -1.3795062493102533e-05
+    },
+    {
+      "name": "condensation still grows above wave cutoff, beta=0.1",
+      "passed": true,
+      "fastest_root_real": 1.499927585124987
+    },
+    {
+      "name": "neutral Re(x) at wave cutoff, beta=1",
+      "error": 1.3218565638230174e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Im(x)=q at wave cutoff, beta=1",
+      "error": 1.1102230246251565e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "wave changes from growth to damping, beta=1",
+      "passed": true,
+      "below": 3.635219073007543e-06,
+      "above": -3.6375084794031816e-06
+    },
+    {
+      "name": "condensation still grows above wave cutoff, beta=1",
+      "passed": true,
+      "fastest_root_real": 1.4999072700169591
+    },
+    {
+      "name": "wave selector does not select fastest condensation root",
+      "passed": true,
+      "wave_growth": 0.000249500733866118,
+      "fastest_root_real": 1.9995009985322685
+    }
+  ],
+  "curves": [
+    {
+      "beta": 0.0,
+      "wave_cutoff_q": null,
+      "sampled_peak_q": 7.0,
+      "sampled_peak_real_x": 0.09371641071726136,
+      "peak_is_interior": false
+    },
+    {
+      "beta": 0.01,
+      "wave_cutoff_q": 7.071067811865476,
+      "sampled_peak_q": 3.215,
+      "sampled_peak_real_x": 0.06079531053125205,
+      "peak_is_interior": true
+    },
+    {
+      "beta": 0.1,
+      "wave_cutoff_q": 2.2360679774997902,
+      "sampled_peak_q": 1.455,
+      "sampled_peak_real_x": 0.02371303514106532,
+      "peak_is_interior": true
+    },
+    {
+      "beta": 1.0,
+      "wave_cutoff_q": 0.7071067811865477,
+      "sampled_peak_q": 0.525,
+      "sampled_peak_real_x": 0.0038380075970245587,
+      "peak_is_interior": true
+    }
+  ],
+  "limitations": [
+    "No digitized pointwise comparison with the printed curves.",
+    "Modern line styles and typography; not a facsimile.",
+    "Plot omits damped wave branches; CSV retains their signed real and positive imaginary parts.",
+    "Wave stabilization is not full-system stabilization: condensation can remain unstable.",
+    "Peaks are sampled maxima; beta=0 has no finite-wavenumber maximum."
+  ],
+  "environment": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "matplotlib": "3.9.4"
+  },
+  "code_sha256": {
+    "reproduce-wave.py": "aac27429b5d97abe92e8945756a9bba63d181296ffa2094af4257fde9f894d88",
+    "reproduce.py": "0cf739924dd2f7ddab152d4a2292f9d5733cc51a58f578a854e1872fd91087dd"
+  },
+  "config_sha256": "192a5a63dd192d03a3640ce388372da03acae68ca837b9bd66c3f19410634c7d"
+}

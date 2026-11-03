@@ -1,0 +1,83 @@
+[
+  {
+    "id": "field-1965",
+    "year": 1965,
+    "authors": "George B. Field",
+    "title": "Thermal Instability",
+    "group": "classics",
+    "status": "validated",
+    "source": "https://adsabs.harvard.edu/pdf/1965ApJ...142..531F",
+    "topic": "Explore the conditions for condensation through linear theory.",
+    "scope": "Figures 1–3: stability domains, condensation growth (alpha=1/2), and wave growth (alpha=-2), with gamma=5/3. Equation-based reproductions with 15 map checks, 10 condensation checks, and 24 wave checks. Printed boundaries and curves have not been digitized for a pointwise comparison.",
+    "exhibit": "field-1965/",
+    "exhibits": [
+      {
+        "href": "field-1965/figure-1.html",
+        "label": "Figure 1: stability map →"
+      },
+      {
+        "href": "field-1965/",
+        "label": "Figure 2: condensation →"
+      },
+      {
+        "href": "field-1965/figure-3.html",
+        "label": "Figure 3: waves →"
+      }
+    ]
+  },
+  {
+    "id": "fgh-1969",
+    "year": 1969,
+    "authors": "Field, Goldsmith & Habing",
+    "title": "Cosmic-Ray Heating of the Interstellar Gas",
+    "group": "classics",
+    "status": "planned",
+    "source": "https://ui.adsabs.harvard.edu/abs/1969ApJ...155L.149F/abstract",
+    "topic": "From heating and cooling balance to two coexisting phases.",
+    "scope": "Candidate exhibits include equilibrium curves and two-phase structure. Heating and cooling processes will be checked against the original paper."
+  },
+  {
+    "id": "schwarz-1972",
+    "year": 1972,
+    "authors": "Schwarz, McCray & Stein",
+    "title": "Formation of Clouds in a Cooling Interstellar Medium",
+    "group": "classics",
+    "status": "planned",
+    "source": "https://adsabs.harvard.edu/pdf/1972ApJ...175..673S",
+    "topic": "Follow the formation of clouds in a cooling medium.",
+    "scope": "Time-dependent evolution is a candidate exhibit. We will first review ionization, perturbations, and boundary conditions."
+  },
+  {
+    "id": "ki-2000",
+    "year": 2000,
+    "authors": "Koyama & Inutsuka",
+    "title": "Molecular Cloud Formation in Shock-Compressed Layers",
+    "group": "ki",
+    "status": "planned",
+    "source": "https://arxiv.org/abs/astro-ph/9912509",
+    "topic": "From shock-compressed layers to molecular cloud formation.",
+    "scope": "Locate original code and data, then select target figures and define the scope of a new implementation."
+  },
+  {
+    "id": "ki-2002",
+    "year": 2002,
+    "authors": "Koyama & Inutsuka",
+    "title": "An Origin of Supersonic Motions in Interstellar Clouds",
+    "group": "ki",
+    "status": "planned",
+    "source": "https://arxiv.org/abs/astro-ph/0112420",
+    "topic": "Explore structure formation and cloud motions in two dimensions.",
+    "scope": "Candidate exhibits include figures, animations, and statistical diagnostics. Original materials and computational requirements will be reviewed."
+  },
+  {
+    "id": "ki-2004",
+    "year": 2004,
+    "authors": "Koyama & Inutsuka",
+    "title": "The Field Condition: A New Constraint on Spatial Resolution in Simulations of the Nonlinear Development of Thermal Instability",
+    "group": "ki",
+    "status": "planned",
+    "source": "https://arxiv.org/abs/astro-ph/0302126",
+    "topic": "Examine numerical convergence through thermal conduction and spatial resolution.",
+    "scope": "Candidate exhibits compare simulations with and without thermal conduction across different spatial resolutions."
+  }
+]

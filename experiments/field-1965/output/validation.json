@@ -1,0 +1,120 @@
+{
+  "source": "Field (1965), Figure 2; equations (11)-(16), (27), (38)-(39)",
+  "config": {
+    "gamma": 1.6666666666666667,
+    "alpha": 0.5,
+    "betas": [
+      0.0,
+      0.01,
+      0.1,
+      1.0
+    ],
+    "q_max": 7.0,
+    "samples": 1401
+  },
+  "checks": [
+    {
+      "name": "maximum absolute error against linear-system eigenvalues",
+      "error": 4.440892098500626e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "maximum scaled cubic residual",
+      "error": 1.0412921786991953e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "long-wave x/q limit, beta=0",
+      "error": 1.5999995861548655e-07,
+      "tolerance": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "short-wave x limit, beta=0",
+      "error": 7.199962848147834e-12,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "neutral root at cutoff, beta=0.01",
+      "error": 3.33066907387547e-15,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "growth changes to damping across cutoff, beta=0.01",
+      "below": 5.999692799586389e-05,
+      "above": -6.000307199596192e-05,
+      "passed": true
+    },
+    {
+      "name": "neutral root at cutoff, beta=0.1",
+      "error": 3.33066907387547e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "growth changes to damping across cutoff, beta=0.1",
+      "below": 5.99962799740204e-05,
+      "above": -6.000371997419302e-05,
+      "passed": true
+    },
+    {
+      "name": "neutral root at cutoff, beta=1",
+      "error": 3.33066907387547e-17,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "growth changes to damping across cutoff, beta=1",
+      "below": 5.998980129576323e-05,
+      "above": -6.001020129635685e-05,
+      "passed": true
+    }
+  ],
+  "curves": [
+    {
+      "beta": 0.0,
+      "cutoff_q": null,
+      "sampled_peak_q": 7.0,
+      "sampled_peak_x": 0.2985474490457688,
+      "peak_is_interior": false
+    },
+    {
+      "beta": 0.01,
+      "cutoff_q": 7.0710678118654755,
+      "sampled_peak_q": 1.725,
+      "sampled_peak_x": 0.2636174273912173,
+      "peak_is_interior": true
+    },
+    {
+      "beta": 0.1,
+      "cutoff_q": 2.23606797749979,
+      "sampled_peak_q": 0.85,
+      "sampled_peak_x": 0.20927568462647728,
+      "peak_is_interior": true
+    },
+    {
+      "beta": 1.0,
+      "cutoff_q": 0.7071067811865476,
+      "sampled_peak_q": 0.36,
+      "sampled_peak_x": 0.12741351727492378,
+      "peak_is_interior": true
+    }
+  ],
+  "limitations": [
+    "Analytical and numerical checks; no digitized pointwise comparison with the printed curves.",
+    "Modern typography and line styles; not a facsimile of the original figure.",
+    "Only the unstable condensation branch is drawn. Stable-domain CSV growth entries are blank.",
+    "The beta=0 sampled maximum is a finite-domain endpoint, not a physical finite-wavenumber maximum."
+  ],
+  "environment": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "matplotlib": "3.9.4"
+  },
+  "code_sha256": "0cf739924dd2f7ddab152d4a2292f9d5733cc51a58f578a854e1872fd91087dd",
+  "config_sha256": "67f71885c7e7894161a8c7657b5daf833e902d5ad5a3f6b1837e77e63628aef8"
+}

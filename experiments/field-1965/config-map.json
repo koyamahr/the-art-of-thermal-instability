@@ -1,0 +1,8 @@
+{
+  "gamma": 1.6666666666666667,
+  "extent": 8.0,
+  "grid_samples": 161,
+  "alphas": [0.5, -2.0],
+  "betas": [0.01, 0.1, 1.0],
+  "path_samples": 1201
+}

@@ -1,0 +1,107 @@
+[
+  {
+    "id": "field-1965",
+    "bibcode": "1965ApJ...142..531F",
+    "source_url": "https://articles.adsabs.harvard.edu/pdf/1965ApJ...142..531F",
+    "resolved_url": "https://articles.adsabs.harvard.edu/pdf/1965ApJ...142..531F",
+    "path": "sources/private/field-1965.pdf",
+    "pages": 37,
+    "bytes": 2520382,
+    "sha256": "7ef84946845e30d6f904d7233e9a6ecaa1ff317032df1b3ebcfba660e215ffda",
+    "retrieved_on": "2026-11-03",
+    "status": "downloaded",
+    "identity_check": "Title and authors checked on the first page; full equations and figures not yet reviewed",
+    "edition": "ADS scan of published paper"
+  },
+  {
+    "id": "fgh-1969",
+    "bibcode": "1969ApJ...155L.149F",
+    "source_url": "https://articles.adsabs.harvard.edu/pdf/1969ApJ...155L.149F",
+    "resolved_url": "https://articles.adsabs.harvard.edu/pdf/1969ApJ...155L.149F",
+    "path": "sources/private/fgh-1969.pdf",
+    "pages": 6,
+    "bytes": 495192,
+    "sha256": "44559a4c75199c01a0cd24410b16b976981677dc04e354bbdbb45c64082c30e3",
+    "retrieved_on": "2026-11-03",
+    "status": "downloaded",
+    "identity_check": "Title and authors checked on the first page; full equations and figures not yet reviewed",
+    "edition": "ADS scan of published paper"
+  },
+  {
+    "id": "schwarz-1972",
+    "bibcode": "1972ApJ...175..673S",
+    "source_url": "https://articles.adsabs.harvard.edu/pdf/1972ApJ...175..673S",
+    "resolved_url": "https://articles.adsabs.harvard.edu/pdf/1972ApJ...175..673S",
+    "path": "sources/private/schwarz-1972.pdf",
+    "pages": 14,
+    "bytes": 1039836,
+    "sha256": "8eb1fbcf0481144119a5963faf621372dabc8503fedc941d7b0d7e6e40ac38ab",
+    "retrieved_on": "2026-11-03",
+    "status": "downloaded",
+    "identity_check": "Title and authors checked on the first page; full equations and figures not yet reviewed",
+    "edition": "ADS scan of published paper"
+  },
+  {
+    "id": "ki-2000",
+    "bibcode": "2000ApJ...532..980K",
+    "source_url": "https://arxiv.org/pdf/astro-ph/9912509",
+    "status": "downloaded",
+    "attempts": [
+      {
+        "source_url": "https://articles.adsabs.harvard.edu/pdf/2000ApJ...532..980K",
+        "error": "HTTP Error 403: Forbidden"
+      }
+    ],
+    "resolved_url": "https://arxiv.org/pdf/astro-ph/9912509",
+    "path": "sources/private/ki-2000.pdf",
+    "pages": 21,
+    "bytes": 454289,
+    "sha256": "a56e751057c77eeb9d175fd089fd5ae55c76e7fabc75dff895c6d85279c585f2",
+    "retrieved_on": "2026-11-03",
+    "edition": "arXiv preprint; compare with published version before reproduction",
+    "identity_check": "Title and authors checked on the first page; full equations and figures not yet reviewed",
+    "arxiv_version": "astro-ph/9912509v1"
+  },
+  {
+    "id": "ki-2002",
+    "bibcode": "2002ApJ...564L..97K",
+    "source_url": "https://arxiv.org/pdf/astro-ph/0112420",
+    "status": "downloaded",
+    "attempts": [
+      {
+        "source_url": "https://articles.adsabs.harvard.edu/pdf/2002ApJ...564L..97K",
+        "error": "HTTP Error 403: Forbidden"
+      }
+    ],
+    "resolved_url": "https://arxiv.org/pdf/astro-ph/0112420",
+    "path": "sources/private/ki-2002.pdf",
+    "pages": 4,
+    "bytes": 132241,
+    "sha256": "d98e3376c49811b64eb3c8fa9368d1c9e78209fefd000cc4b62c2bb8e4120a76",
+    "retrieved_on": "2026-11-03",
+    "edition": "arXiv preprint; compare with published version before reproduction",
+    "identity_check": "Title and authors checked on the first page; full equations and figures not yet reviewed",
+    "arxiv_version": "astro-ph/0112420v1"
+  },
+  {
+    "id": "ki-2004",
+    "bibcode": "2004ApJ...602L..25K",
+    "source_url": "https://arxiv.org/pdf/astro-ph/0302126",
+    "status": "downloaded",
+    "attempts": [
+      {
+        "source_url": "https://articles.adsabs.harvard.edu/pdf/2004ApJ...602L..25K",
+        "error": "HTTP Error 403: Forbidden"
+      }
+    ],
+    "resolved_url": "https://arxiv.org/pdf/astro-ph/0302126",
+    "path": "sources/private/ki-2004.pdf",
+    "pages": 12,
+    "bytes": 173925,
+    "sha256": "cfde852c0aec383c01a6d0f155aa1ea403afea597d9f7d263b79791ae350ed8f",
+    "retrieved_on": "2026-11-03",
+    "edition": "arXiv preprint; compare with published version before reproduction",
+    "identity_check": "Title and authors checked on the first page; full equations and figures not yet reviewed",
+    "arxiv_version": "astro-ph/0302126v2"
+  }
+]
