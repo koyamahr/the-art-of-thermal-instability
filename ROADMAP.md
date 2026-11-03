@@ -94,6 +94,9 @@ Hennebelle & Pérault 1999/2000、Burkert & Lin 2000、Audit & Hennebelle 2005�
 
 ## 追加文献の選定方針（ユーザー指定、2026-11-03）
 
-直前の推薦リストからBakes & Tielens (1994)までを採用。Parker1953を含め6編（Spitzer & Tomasko1968、Dalgarno & McCray1972、Balbus1986、Begelman & McKee1990、Bakes & Tielens1994）を登録する。直前に推薦したVázquez-Semadeni et al.2000、Kritsuk & Norman2002、Kim & Kim2013は追加しない。特にVázquez-Semadeniの論文は熱伝導が入っていないため対象外とするユーザーの意向を記録する。この理由を残りの除外候補にも一律に当てはめない。年代の上限は今回の追加候補に対する選択であり、既登録の1994年以降の文献を削除する指示ではない。
+直前の推薦リストからBakes & Tielens (1994)までを採用。Parker1953を含め6編（Spitzer & Tomasko1968、Dalgarno & McCray1972、Balbus1986、Begelman & McKee1990、Bakes & Tielens1994）を登録する。直前に推薦したVázquez-Semadeni et al.2000、Kritsuk & Norman2002は追加しない。Kim & Kim2013は、その後のユーザーの明示指示で追加する。特にVázquez-Semadeniの論文は熱伝導が入っていないため対象外とするユーザーの意向を記録する。この理由を残りの除外候補にも一律に当てはめない。年代の上限は今回の追加候補に対する選択であり、既登録の1994年以降の文献を削除する指示ではない。
 
 新規の非線形TIシミュレーション展示では熱伝導・対応する解像度の扱いを選定時に監査する。Balbus1986は輸送過程を省いた解析理論として位置づけ、熱伝導を含むシミュレーションの検証と混同しない。文献の登録だけで再現完了としない。
+
+
+Kim & Kim (2013), Instability of Evaporation Fronts in the Interstellar Medium, ApJ779,48（arXiv1310.2940、DOI10.1088/0004-637X/779/1/48）を登録。熱伝導を明示的に含む蒸発フロントの線形安定性と非線形飽和。候補は成長率・短波長カットオフであり、熱伝導係数、平衡フロント、境界条件、波数の正規化と解像度条件を原文で確認してから実装する。多次元の飽和構造は公開出力の再解析を基本とする。先に除外した他の候補は追加しない。

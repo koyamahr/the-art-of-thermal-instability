@@ -892,5 +892,26 @@
         "label": "Historical theory & heating sources →"
       }
     ]
+  },
+  {
+    "id": "kim-kim-2013",
+    "year": 2013,
+    "authors": "Jeong-Gyu Kim & Woong-Tae Kim",
+    "title": "Instability of Evaporation Fronts in the Interstellar Medium",
+    "journal": "ApJ 779, 48",
+    "source": "https://arxiv.org/abs/1310.2940",
+    "doi": "10.1088/0004-637X/779/1/48",
+    "group": "fronts",
+    "status": "listed",
+    "reference_section": "fronts",
+    "topic": "Thermal conduction suppresses short-wavelength corrugations of CNM–WNM evaporation fronts. Linear stability analysis connects to nonlinear front deformation and enhanced evaporation.",
+    "scope": "Audit the conduction coefficient, equilibrium front, boundary conditions, and wavelength normalization before selecting a linear growth-rate or cutoff calculation. Compare with Inoue et al. (2006), keeping cooling laws and assumptions distinct. Use available outputs for nonlinear saturation diagnostics; a full two-dimensional rerun is optional.",
+    "review_status": "Author preprint bibliography and abstract checked; thermal conduction is explicitly included. Original equations, target figures, and resolution requirements need a dedicated audit.",
+    "resources": [
+      {
+        "href": "research-paths.html#kim-kim-2013",
+        "label": "Conductive evaporation-front stability →"
+      }
+    ]
   }
 ]
