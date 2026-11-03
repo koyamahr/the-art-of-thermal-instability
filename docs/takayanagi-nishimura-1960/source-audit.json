@@ -1,0 +1,164 @@
+{
+  "source_pdf_sha256": "f644b23905a5f2dc3d9349b9e3a32f9ef234861ba9ea1c43126b4a93dc7e16b5",
+  "source_url": "https://articles.adsabs.harvard.edu/pdf/1960PASJ...12...77T",
+  "visually_checked": [
+    "Title, p. 77",
+    "Table 1 and equation (7), p. 82",
+    "Equation (9), energy definition and Table 2, p. 83"
+  ],
+  "table2": {
+    "printed_page": 83,
+    "quantity": "Radiative cooling per para-H2 molecule",
+    "units": "erg s^-1",
+    "H_atom_densities_cm_inverse3": [
+      0.1,
+      1,
+      10,
+      100
+    ],
+    "rows": [
+      {
+        "T_K": 5000,
+        "cooling_erg_s": [
+          8.29e-24,
+          7.22e-23,
+          5.03e-22,
+          3.01e-21
+        ]
+      },
+      {
+        "T_K": 4000,
+        "cooling_erg_s": [
+          5.78e-24,
+          4.99e-23,
+          3.41e-22,
+          1.95e-21
+        ]
+      },
+      {
+        "T_K": 3000,
+        "cooling_erg_s": [
+          3.55e-24,
+          2.94e-23,
+          1.99e-22,
+          1.07e-21
+        ]
+      },
+      {
+        "T_K": 2000,
+        "cooling_erg_s": [
+          1.81e-24,
+          1.31e-23,
+          9.17e-23,
+          4.35e-22
+        ]
+      },
+      {
+        "T_K": 1000,
+        "cooling_erg_s": [
+          6.15e-25,
+          2.91e-24,
+          1.9e-23,
+          9.03e-23
+        ]
+      },
+      {
+        "T_K": 500,
+        "cooling_erg_s": [
+          1.84e-25,
+          8.55e-25,
+          2.75e-24,
+          1.37e-23
+        ]
+      },
+      {
+        "T_K": 300,
+        "cooling_erg_s": [
+          5.45e-26,
+          3.46e-25,
+          8.2e-25,
+          1.78e-24
+        ]
+      },
+      {
+        "T_K": 200,
+        "cooling_erg_s": [
+          1.52e-26,
+          1.18e-25,
+          3.68e-25,
+          5.95e-25
+        ]
+      },
+      {
+        "T_K": 100,
+        "cooling_erg_s": [
+          6.26e-28,
+          5.63e-27,
+          2.8e-26,
+          4.65e-26
+        ]
+      },
+      {
+        "T_K": 80,
+        "cooling_erg_s": [
+          1.4e-28,
+          1.28e-27,
+          7.07e-27,
+          1.29e-26
+        ]
+      },
+      {
+        "T_K": 60,
+        "cooling_erg_s": [
+          1.34e-29,
+          1.25e-28,
+          7.51e-28,
+          1.51e-27
+        ]
+      },
+      {
+        "T_K": 50,
+        "cooling_erg_s": [
+          2.17e-30,
+          2.04e-29,
+          1.28e-28,
+          2.69e-28
+        ]
+      },
+      {
+        "T_K": 40,
+        "cooling_erg_s": [
+          1.45e-31,
+          1.38e-30,
+          9.04e-30,
+          2.05e-29
+        ]
+      },
+      {
+        "T_K": 30,
+        "cooling_erg_s": [
+          1.81e-33,
+          1.73e-32,
+          1.18e-31,
+          2.83e-31
+        ]
+      },
+      {
+        "T_K": 20,
+        "cooling_erg_s": [
+          2.92e-37,
+          2.8e-36,
+          2.02e-35,
+          5.34e-35
+        ]
+      }
+    ],
+    "excluded_rows": "The row between 200 and 100 K appears as 155 in Table 2, whereas Table 1 gives 150. It is excluded from the reference comparison pending clarification."
+  },
+  "caveats": [
+    "Table 1 upward rates are distinct from the downward rates derived with equation (9).",
+    "Table 2 is an external comparison, not an assertion that the truncated Table 1 model reproduces every entry.",
+    "The source coefficient accuracy is not independently assessed. Its discussion on p. 83 warns about the potential approximation and high-temperature accuracy.",
+    "The origin of discrepancies, including the 200 K high-density entry, requires additional level/rate information or a source erratum; no correction is invented."
+  ]
+}

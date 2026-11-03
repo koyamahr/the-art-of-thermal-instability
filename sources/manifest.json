@@ -151,5 +151,43 @@
     "status": "downloaded",
     "edition": "ADS scan of published paper",
     "identity_check": "Title pending visual review"
+  },
+  {
+    "id": "takayanagi-nishimura-1960",
+    "bibcode": "1960PASJ...12...77T",
+    "source_url": "https://articles.adsabs.harvard.edu/pdf/1960PASJ...12...77T",
+    "path": "sources/private/takayanagi-nishimura-1960.pdf",
+    "sha256": "f644b23905a5f2dc3d9349b9e3a32f9ef234861ba9ea1c43126b4a93dc7e16b5",
+    "retrieved_on": "2026-11-03",
+    "status": "downloaded",
+    "edition": "ADS scan of published paper",
+    "identity_check": "Title p. 77 and Tables 1\u20132, equations 7 and 9, photon energy pp. 82\u201383 visually reviewed",
+    "pages": 29
+  },
+  {
+    "id": "hayakawa-nishimura-takayanagi-1961",
+    "bibcode": "1961PASJ...13..184H",
+    "source_url": "https://articles.adsabs.harvard.edu/pdf/1961PASJ...13..184H",
+    "path": "sources/private/hayakawa-nishimura-takayanagi-1961.pdf",
+    "sha256": "454e59287c6f04a8c949a8c5e2a9e89f0361723e94b8646ed044c093e3130272",
+    "retrieved_on": "2026-11-03",
+    "status": "downloaded",
+    "edition": "ADS scan of published paper",
+    "identity_check": "Title, authors, and abstract visually checked on p. 184; coefficient audit pending",
+    "pages": 23
+  },
+  {
+    "id": "hattori-nakano-hayashi-1969",
+    "bibcode": "1969PThPh..42..781H",
+    "source_url": "https://articles.adsabs.harvard.edu/pdf/1969PThPh..42..781H",
+    "status": "not_downloaded",
+    "attempts": [
+      {
+        "retrieved_on": "2026-11-03",
+        "error": "HTTP 403 Forbidden from ADS"
+      }
+    ],
+    "bibliography_url": "https://doi.org/10.1143/PTP.42.781",
+    "identity_check": "Publisher bibliography and abstract checked; local source PDF unavailable; coefficient audit pending"
   }
 ]

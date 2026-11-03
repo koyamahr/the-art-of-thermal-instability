@@ -1,0 +1,102 @@
+{
+  "scope": "Source-table transcription and an explicitly truncated para-H2 level calculation; not the full original cooling curve.",
+  "checks": [
+    {
+      "name": "34 positive tabulated upward coefficients, blanks retained as null",
+      "passed": true
+    },
+    {
+      "name": "Equation (7), J=2 spontaneous decay rate in s^-1",
+      "error": 2.220446049250313e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "J=2 to 0 photon energy in erg",
+      "error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Population normalization",
+      "error": 2.220446049250313e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "All level populations nonnegative",
+      "passed": true
+    },
+    {
+      "name": "Recursion agrees with independent constrained rate-matrix solution",
+      "error": 1.942890293094024e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Stationary transition fluxes balance",
+      "error": 1.3428277469489454e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Net collisional energy loss equals emitted radiative energy",
+      "error": 1.3322676295501878e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Dilute limit equals nH*q_02*DeltaE_20 per molecule",
+      "error": 1.5376144801848568e-11,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Dense limit approaches Boltzmann populations of the same finite ladder",
+      "error": 2.4937274467617954e-12,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "Zero collider density leaves all molecules in J=0 with no cooling",
+      "passed": true
+    },
+    {
+      "name": "Negative collider density rejected",
+      "passed": true
+    }
+  ],
+  "external_reference_comparison": {
+    "points": 60,
+    "maximum_absolute_fractional_difference": 0.2171823151080957,
+    "worst_case": {
+      "T_K": 200,
+      "nH_atoms_cm_inverse3": 100,
+      "maximum_J": 2,
+      "printed_cooling_erg_s": 5.95e-25,
+      "calculated_cooling_erg_s": 4.65776522510683e-25
+    },
+    "interpretation": "A finite-ladder comparison, not a validated reproduction of every Table 2 entry. The largest discrepancy is retained openly, without fitting or replacing missing coefficients."
+  },
+  "limitations": [
+    "Only para-H2, H-atom collisions, adjacent even-J transitions, and spontaneous downward emission.",
+    "Steady, optically thin populations at fixed gas temperature and H-atom density; no thermal or chemical equilibrium of the gas is solved.",
+    "The finite ladder varies with available Table 1 entries: maximum J=2,4,6,or8. No missing upward rate is invented or interpolated.",
+    "Historical rounded energy and detailed-balance prefactors are preserved separately; no modern H2 rates are substituted.",
+    "The source warns that the high-temperature calculation is less reliable and only estimates low-temperature accuracy; implementation checks do not validate the atomic data.",
+    "Table 1 upward rates are distinct from the downward rates derived with equation (9).",
+    "Table 2 is an external comparison, not an assertion that the truncated Table 1 model reproduces every entry.",
+    "The source coefficient accuracy is not independently assessed. Its discussion on p. 83 warns about the potential approximation and high-temperature accuracy.",
+    "The origin of discrepancies, including the 200 K high-density entry, requires additional level/rate information or a source erratum; no correction is invented."
+  ],
+  "environment": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "matplotlib": "3.9.4"
+  },
+  "code_sha256": {
+    "reproduce.py": "d30f5ba57677e09314a12850975b9ae738254a88cb8e0e25a624e1b0b5558611",
+    "source-audit.json": "ce34fd58a90182a4b9672e18849c6cc029d7350338f259112428d1f67864fc6a"
+  },
+  "config_sha256": "ca07a8053bd7ff23a0d97467a530d6c04961666a60c3744370b5e82922d257fb"
+}

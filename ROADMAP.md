@@ -64,3 +64,12 @@ Wolfire et al. (1995, 2003)、Gong・Ostriker・Wolfire (2017)、2018訂正と�
 ## 反応係数・加熱冷却処方の独立系譜
 
 熱的不安定性の本線とは別に、Takayanagi & Nishimura (1960)、Hayakawa・Nishimura・Takayanagi (1961)、Hattori・Nakano・Hayashi (1969)を登録。初期段階は出版社の書誌・要旨と確認できた引用関係までとし、係数が同じという意味の継承関係は主張しない。断面積、反応速度係数、エネルギー損失係数、体積当たりの率、収率を区別する。個々の数値係数には反応・遷移、collider、単位、規格化、温度範囲、分布／準位の仮定、式・表番号、訂正、コード版、検証状態を付ける。`docs/microphysics/lineage.json`が初期目録。
+
+
+## 反応係数の最初の計算展示
+
+Takayanagi & Nishimura 1960のTable 1励起係数34点を原スキャンで照合。式(7)(9)と放射エネルギーを用いた有限para-H2準位モデルを実装し、独立行列解・保存・エネルギー収支・低密度／高密度極限など12項目を検証。Table 2冷却率60点との比較を別記し、200 K・n(H)=100 cm^-3で約−21.72%の差を残す。欠けた係数の補間・フィットで一致させず、完全再現とは区別する。
+
+## 相転移フロントの系譜
+
+Zel’dovich & Pikel’ner (1969, JETP 29, 170–173)、Penston & Brown (1970, MNRAS 150, 373–388)、Nagashima・Koyama・Inutsuka (2005, MNRAS Letters 361, L25–L29)、Nagashima・Inutsuka・Koyama (2006, ApJL 652, L41–L44)を独立した研究系譜として登録。Koyama & Inutsukaの2006 preprintも関連付けるが、雑誌掲載は未確認とする。既登録のInoue et al. 2006、Iwasaki & Inutsuka 2012/2014へつなぐ。飽和圧、平面フロント、伝播速度、曲率、臨界半径・蒸発時間の順に、解析式・ODE・1Dの小規模計算を優先する。加熱冷却関数と幾何・等圧／準定常の仮定が異なるため、同一モデルとしては扱わない。

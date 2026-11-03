@@ -41,7 +41,7 @@ jobs:
           cache: pip
           cache-dependency-path: experiments/*/requirements.txt
       - name: Install pinned calculation dependencies
-        run: python -m pip install -r experiments/field-1965/requirements.txt -r experiments/fgh-1969/requirements.txt
+        run: python -m pip install -r experiments/field-1965/requirements.txt -r experiments/fgh-1969/requirements.txt -r experiments/takayanagi-nishimura-1960/requirements.txt
       - name: Recompute and validate all three figures
         env:
           MPLCONFIGDIR: ${{ runner.temp }}/matplotlib
@@ -50,6 +50,10 @@ jobs:
         env:
           MPLCONFIGDIR: ${{ runner.temp }}/matplotlib
         run: python experiments/fgh-1969/publish.py
+      - name: Recompute the historical H2 rate audit
+        env:
+          MPLCONFIGDIR: ${{ runner.temp }}/matplotlib
+        run: python experiments/takayanagi-nishimura-1960/publish.py
       - name: Build the research reading paths
         run: python scripts/build_reading.py
       - name: Check site links, downloads, and provenance

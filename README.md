@@ -4,7 +4,7 @@
 
 ## 現在地
 
-初期公開版。論文台帳と展示の構成を用意しています。主要6編のPDFをADS・arXivから取得済みです。Field 1965 Figures 1・2・3を式から再計算し、それぞれ15項目・10項目・24項目の検証を通過しました。FGH/GHF 1969の加熱・金属冷却の計算も追加し、簡略化した低温枝の連立平衡計算も公開し、合計126項目を検証します。Wolfire 1995/2003、GOW 2017と公開コード、化学実装2023、Inoue・Iwasakiの関連10編を英語のResearch pathsに登録しました。反応係数の歴史を独立系譜とし、Takayanagi–Nishimura 1960、Hayakawa–Nishimura–Takayanagi 1961、Hattori–Nakano–Hayashi 1969も追加（全23編）。FGHの平衡曲線自体の再現は未完了です。英語の展示ページ、Pythonコード、CSVと検証記録を用意しています。GitHub Pagesに初版を公開済みです。ライセンス選定は未完了です。近年の多次元計算は、文献・公開コード／データの案内、取得可能な出力の再解析、小規模検証を基本スコープとし、本計算の再実行は必須にしません。
+初期公開版。論文台帳と展示の構成を用意しています。主要6編のPDFをADS・arXivから取得済みです。Field 1965 Figures 1・2・3を式から再計算し、それぞれ15項目・10項目・24項目の検証を通過しました。FGH/GHF 1969の加熱・金属冷却の計算も追加し、簡略化した低温枝の連立平衡計算も公開し、合計138項目を検証します。Wolfire 1995/2003、GOW 2017と公開コード、化学実装2023、Inoue・Iwasakiの関連10編を英語のResearch pathsに登録しました。反応係数の歴史を独立系譜とし、Takayanagi–Nishimura 1960、Hayakawa–Nishimura–Takayanagi 1961、Hattori–Nakano–Hayashi 1969も追加。相転移フロントの系譜5編（Zel’dovich–Pikel’ner、Penston–Brown、Nagashima 2005/2006、Koyama–Inutsuka 2006 preprint）も登録し全28編。Takayanagi–Nishimura 1960の励起係数34点と有限準位モデルを公開し、原表の冷却率60点との不一致も記録しました。FGHの平衡曲線自体の再現は未完了です。英語の展示ページ、Pythonコード、CSVと検証記録を用意しています。GitHub Pagesに初版を公開済みです。ライセンス選定は未完了です。近年の多次元計算は、文献・公開コード／データの案内、取得可能な出力の再解析、小規模検証を基本スコープとし、本計算の再実行は必須にしません。
 
 ## ローカルで見る
 

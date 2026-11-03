@@ -52,5 +52,18 @@
     "implementation_version",
     "validation_status"
   ],
-  "numerical_coefficients_transcribed": false
+  "numerical_coefficients_transcribed": true,
+  "audited_rate_sets": [
+    {
+      "paper_id": "takayanagi-nishimura-1960",
+      "source": "Table 1, p. 82; equations 7 and 9 and energy definition, pp. 82–83",
+      "upward_coefficients": 34,
+      "coefficient_units": "cm^3 s^-1",
+      "model_scope": "Finite adjacent even-J para-H2 ladder with H-atom collisions; maximum included J depends on available table entries",
+      "exhibit": "takayanagi-nishimura-1960/",
+      "configuration": "takayanagi-nishimura-1960/config.json",
+      "audit": "takayanagi-nishimura-1960/source-audit.json",
+      "external_comparison": "60 Table 2 values; discrepancies reported, not counted as passed validation checks"
+    }
+  ]
 }

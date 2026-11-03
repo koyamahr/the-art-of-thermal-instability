@@ -394,18 +394,26 @@
     "authors": "Takayanagi & Nishimura",
     "title": "Cooling of the Interstellar Clouds in Region of Neutral Hydrogen",
     "group": "rate_history",
-    "status": "listed",
+    "status": "audited",
     "source": "https://academic.oup.com/pasj/article/12/1/77/8122966",
     "topic": "H₂ rotational excitation and the cooling budget of neutral clouds.",
-    "scope": "Begin with the excitation/cooling inputs, collider definitions, level populations, and temperature range; inspect numerical coefficients before reuse.",
+    "scope": "34 printed upward H + para-H2 rates audited on p. 82; a truncated steady level calculation is compared with 60 printed cooling values. Twelve numerical checks pass, while the largest Table 2 discrepancy is retained at about 21.72%.",
     "journal": "PASJ 12, 77–105",
     "doi": "10.1093/pasj/12.1.77",
     "reference_section": "rate-history",
-    "review_status": "Publisher bibliography and abstract checked; individual coefficient formulas and ranges not yet transcribed.",
+    "review_status": "Title p. 77, Table 1 and Eq. 7 p. 82, Eq. 9, energy and Table 2 p. 83 visually reviewed.",
     "resources": [
       {
         "href": "research-paths.html#takayanagi-nishimura-1960",
         "label": "Rate-coefficient lineage & scope →"
+      }
+    ],
+    "exhibits": [
+      {
+        "href": "takayanagi-nishimura-1960/",
+        "label": "H₂ rates & cooling comparison →",
+        "kind": "rate_audit",
+        "validated": true
       }
     ]
   },
@@ -448,6 +456,111 @@
       {
         "href": "research-paths.html#hattori-nakano-hayashi-1969",
         "label": "Rate-coefficient lineage & scope →"
+      }
+    ]
+  },
+  {
+    "id": "zeldovich-pikelner-1969",
+    "year": 1969,
+    "authors": "Zel’dovich & Pikel’ner",
+    "title": "The Phase Equilibrium and Dynamics of a Gas Volume That Is Heated and Cooled",
+    "group": "fronts",
+    "status": "listed",
+    "source": "https://jetp.ras.ru/cgi-bin/dn/e_029_01_0170.pdf",
+    "topic": "Conductive interfaces select the stationary two-phase pressure; away from that pressure the boundary moves.",
+    "scope": "Candidate: the planar saturation condition and a steady front or front-speed calculation. Specify the heat-loss law, conductivity, signs, and boundary conditions.",
+    "journal": "Soviet Physics JETP 29, 170–173; Russian original: ZhETF 56, 310–315",
+    "doi": "",
+    "reference_section": "fronts",
+    "review_status": "Bibliography and abstract checked; equations and target figures require a dedicated audit.",
+    "resources": [
+      {
+        "href": "research-paths.html#zeldovich-pikelner-1969",
+        "label": "Phase-transition front lineage →"
+      }
+    ]
+  },
+  {
+    "id": "penston-brown-1970",
+    "year": 1970,
+    "authors": "Penston & Brown",
+    "title": "The Cloud–Intercloud Phase-Change in the Interstellar Medium",
+    "group": "fronts",
+    "status": "listed",
+    "source": "https://academic.oup.com/mnras/article/150/4/373/2602903",
+    "topic": "Thermal balance across a conducting cloud–intercloud interface adds a condition beyond pressure balance.",
+    "scope": "Candidate: compare the stationary interface criterion and thermal timescales with the Zel’dovich–Pikel’ner formulation before choosing a small front calculation.",
+    "journal": "MNRAS 150, 373–388",
+    "doi": "10.1093/mnras/150.4.373",
+    "reference_section": "fronts",
+    "review_status": "Bibliography and abstract checked; equations and target figures require a dedicated audit.",
+    "resources": [
+      {
+        "href": "research-paths.html#penston-brown-1970",
+        "label": "Phase-transition front lineage →"
+      }
+    ]
+  },
+  {
+    "id": "nagashima-2005",
+    "year": 2005,
+    "authors": "Nagashima, Koyama & Inutsuka",
+    "title": "Evaporation and condensation of H I clouds in thermally bistable interstellar media: semi-analytic description of isobaric dynamics of curved interfaces",
+    "group": "fronts",
+    "status": "listed",
+    "source": "https://arxiv.org/abs/astro-ph/0503137",
+    "topic": "Curvature modifies evaporation and condensation for cylindrical, spherical, and general fronts under an isobaric approximation.",
+    "scope": "Candidate: evaluate the semi-analytic curvature correction and compare planar, cylindrical, and spherical limits using a small ODE calculation. Keep the polynomial heat-loss model distinct from later realistic fits.",
+    "journal": "MNRAS Letters 361, L25–L29",
+    "doi": "10.1111/j.1745-3933.2005.00057.x",
+    "reference_section": "fronts",
+    "review_status": "Bibliography and abstract checked; equations and target figures require a dedicated audit.",
+    "resources": [
+      {
+        "href": "research-paths.html#nagashima-2005",
+        "label": "Phase-transition front lineage →"
+      }
+    ]
+  },
+  {
+    "id": "nagashima-2006",
+    "year": 2006,
+    "authors": "Nagashima, Inutsuka & Koyama",
+    "title": "How Long Can Tiny H I Clouds Survive?",
+    "group": "fronts",
+    "status": "listed",
+    "source": "https://arxiv.org/abs/astro-ph/0603259",
+    "topic": "Spherical cloud evaporation times depend on cloud size and ambient pressure, with a quasi-steady interpretation.",
+    "scope": "Candidate: reproduce the analytic timescale/critical-radius relation and, if practical, a one-dimensional radial benchmark. Large multidimensional reruns are unnecessary for this scope.",
+    "journal": "ApJ Letters 652, L41–L44",
+    "doi": "10.1086/509805",
+    "reference_section": "fronts",
+    "review_status": "Bibliography and abstract checked; equations and target figures require a dedicated audit.",
+    "resources": [
+      {
+        "href": "research-paths.html#nagashima-2006",
+        "label": "Phase-transition front lineage →"
+      }
+    ]
+  },
+  {
+    "id": "ki-2006-preprint",
+    "year": 2006,
+    "authors": "Koyama & Inutsuka",
+    "title": "Nonlinear Development of Thermal Instability without External Forcing",
+    "group": "fronts",
+    "status": "listed",
+    "source": "https://arxiv.org/abs/astro-ph/0605528",
+    "topic": "Conduction, viscosity, and cloud motions in multidimensional nonlinear thermal instability without external forcing.",
+    "scope": "Start with the preprint’s physical mechanism, diagnostics, and any available outputs. A full 2D/3D rerun is optional; its journal-publication status remains unverified.",
+    "journal": "arXiv:astro-ph/0605528 (2006 preprint; journal publication not verified)",
+    "doi": "10.48550/arXiv.astro-ph/0605528",
+    "reference_section": "fronts",
+    "review_status": "Bibliography and abstract checked; equations and target figures require a dedicated audit.",
+    "resources": [
+      {
+        "href": "research-paths.html#ki-2006-preprint",
+        "label": "Phase-transition front lineage →"
       }
     ]
   }
