@@ -68,10 +68,21 @@
     "authors": "Schwarz, McCray & Stein",
     "title": "Formation of Clouds in a Cooling Interstellar Medium",
     "group": "classics",
-    "status": "planned",
+    "status": "prototype",
     "source": "https://adsabs.harvard.edu/pdf/1972ApJ...175..673S",
-    "topic": "Follow the formation of clouds in a cooling medium.",
-    "scope": "Time-dependent evolution is a candidate exhibit. We will first review ionization, perturbations, and boundary conditions."
+    "topic": "Thermal conduction and recombination shape perturbations growing in an isochorically cooling background.",
+    "scope": "Figure2 early-time linear prototype with graph-reconstructed cooling;31 numerical checks. Runs to about1.68Myr at the source-data boundary. Source comparisons, interpolation sensitivity and historical normalization issues remain visible. Late-time Figure2 and nonlinear Figures3–6 are unfinished.",
+    "journal": "ApJ175,673–686",
+    "reference_section": "theory",
+    "exhibits": [
+      {
+        "href": "schwarz-1972/",
+        "label": "Cooling-medium condensation: Figure2 prototype →",
+        "kind": "prototype",
+        "validated": false
+      }
+    ],
+    "review_status": "Governing equations, figures and proof note reviewed; cooling input reconstructed from Figure1 with explicit domain limits."
   },
   {
     "id": "ki-2000",

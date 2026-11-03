@@ -1,0 +1,196 @@
+{
+  "scope": "Early-time Figure2 prototype with graph-reconstructed cooling; not an independent historical rate reconstruction",
+  "source": {
+    "bibcode": "1972ApJ...175..673S",
+    "url": "https://adsabs.harvard.edu/pdf/1972ApJ...175..673S",
+    "pdf_sha256": "8eb1fbcf0481144119a5963faf621372dabc8503fedc941d7b0d7e6e40ac38ab"
+  },
+  "cooling_digitization": {
+    "figure": 1,
+    "page_index": 3,
+    "render_scale_px_per_PDF_point": 4,
+    "crop_origin_full_px": [
+      880,
+      360
+    ],
+    "crop_size_px": [
+      750,
+      1160
+    ],
+    "x_ticks": [
+      [
+        56,
+        1
+      ],
+      [
+        190,
+        2
+      ],
+      [
+        325,
+        3
+      ],
+      [
+        460,
+        4
+      ],
+      [
+        595,
+        5
+      ]
+    ],
+    "y_ticks": [
+      [
+        27,
+        -22
+      ],
+      [
+        158,
+        -23
+      ],
+      [
+        292,
+        -24
+      ],
+      [
+        426,
+        -25
+      ],
+      [
+        560,
+        -26
+      ],
+      [
+        695,
+        -27
+      ],
+      [
+        830,
+        -28
+      ],
+      [
+        964,
+        -29
+      ],
+      [
+        1097,
+        -30
+      ]
+    ],
+    "method": "Manually selected curve crossings; nearest contiguous dark-pixel run in a27-pixel vertical window; median ordinate. Points visually checked. Reading envelopes are not statistical confidence intervals.",
+    "interpolation": "PCHIP of logLambda versus logT; piecewise linear Lambda in x, motivated by electron/neutral collider contributions at fixed trace-ion abundances. No extrapolation. A logLambda/logx alternative is reported as a sensitivity probe, not fitted to Figure2."
+  },
+  "initial": {
+    "nH_cm3": 0.3,
+    "T_K": 8200.0,
+    "electron_fraction": 0.05,
+    "helium_per_H": 0.1,
+    "gamma": 1.6666666666666667,
+    "relative_density": 1.0,
+    "relative_pressure": 0.0,
+    "scaled_velocity_divergence": 0.0,
+    "relative_ionization": 0.0
+  },
+  "wavelength_pc": [
+    0.3,
+    1.0,
+    3.0,
+    10.0
+  ],
+  "conductivity_cgs_prefactor": 2500.0,
+  "time_max_Myr": 6.0,
+  "time_samples": 601,
+  "recombination": "Hjellming1966 Eqs56-57 excited-state hydrogen approximation; exact fit used by Schwarz et al. not specified and not established here.",
+  "limitations": [
+    "Cooling is reconstructed from the published Figure1, not independently recovered from every Jura\u2013Dalgarno rate. Do not substitute the FGH or KI curve: the paper uses a different Fe abundance5e-5 perH.",
+    "Stop at the lower temperature or ionization boundary of the source readings. No late-time cold extrapolation or nonlinear cloud solution is claimed.",
+    "Initial perturbation is taken isobaric with uniform ionization and zero velocity; this is explicit for the nonlinear example, but its precise use for Figure2 requires further confirmation.",
+    "Linear amplitudes are normalized to n1(0)=1; a large amplification factor does not validate finite-amplitude nonlinear evolution.",
+    "He/H=.1 is neutral helium perH, unlike FGH He/(H+He)=.1. No external heating, continuing ionization, or gravity is included.",
+    "The note added in proof (p686) reports corrections to the Jura\u2013Dalgarno cooling interpretation. Published figures and later corrected physics must remain distinct.",
+    "Eq7 defines radiated power per gram as nLambda/(1.4mH), while the Figure1 caption omits1.4. This implementation follows Eqs7\u20139 and does not rescale time to match Figure2. The caption inconsistency remains recorded."
+  ],
+  "x_interpolation": "linear_lambda",
+  "growth_digitization": {
+    "figure": 2,
+    "page_index": 7,
+    "render_scale_px_per_PDF_point": 4,
+    "crop_origin_full_px": [
+      875,
+      375
+    ],
+    "crop_size_px": [
+      705,
+      680
+    ],
+    "x_ticks": [
+      [
+        30,
+        0
+      ],
+      [
+        132,
+        1
+      ],
+      [
+        234,
+        2
+      ]
+    ],
+    "y_ticks": [
+      [
+        636,
+        -1
+      ],
+      [
+        486,
+        0
+      ],
+      [
+        333,
+        1
+      ],
+      [
+        178,
+        2
+      ],
+      [
+        23,
+        3
+      ]
+    ],
+    "y_axis": "log10(amplification); temperature is10 times the amplification-axis value at the same ordinate",
+    "method": "Sparse manual centerline readings on isolated parts of the curves. Crowded crossings avoided;3px practical envelopes, not statistical errors. An independent second reading has not been performed.",
+    "all_observed_x_ticks": [
+      [
+        30,
+        0
+      ],
+      [
+        132,
+        1
+      ],
+      [
+        234,
+        2
+      ],
+      [
+        338,
+        3
+      ],
+      [
+        441,
+        4
+      ],
+      [
+        547,
+        5
+      ],
+      [
+        655,
+        6
+      ]
+    ],
+    "calibration_note": "Use the0\u20132Myr ticks bracketing all selected early-time readings. The full0\u20136Myr scan has slight horizontal distortion and is not assumed to have a single exact affine scale."
+  }
+}

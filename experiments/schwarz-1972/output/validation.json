@@ -1,0 +1,282 @@
+{
+  "scope": "Early-time Figure2 prototype with graph-reconstructed cooling; not an independent historical rate reconstruction",
+  "checks": [
+    {
+      "name": "Figure1 x calibration residual in dex",
+      "error": 0.002971755118574393,
+      "tolerance": 0.03,
+      "passed": true
+    },
+    {
+      "name": "Figure1 y calibration residual in dex",
+      "error": 0.016448179978375776,
+      "tolerance": 0.03,
+      "passed": true
+    },
+    {
+      "name": "Figure2 x calibration residual (Myr or dex)",
+      "error": 4.996003610813204e-16,
+      "tolerance": 0.03,
+      "passed": true
+    },
+    {
+      "name": "Figure2 y calibration residual (Myr or dex)",
+      "error": 0.013132375912985328,
+      "tolerance": 0.03,
+      "passed": true
+    },
+    {
+      "name": "Cooling source contains three13-point curves",
+      "passed": true
+    },
+    {
+      "name": "PCHIP interpolates every supplied graph reading",
+      "error": 6.661338147750939e-15,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Cooling T derivative at 50",
+      "error": 1.0830536467665297e-10,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Cooling x derivative at 50",
+      "error": 3.434164064231027e-11,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Recombination slope at 50",
+      "error": 4.324696156743357e-11,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Eq19 agrees with primitive-equation Jacobian at 50",
+      "error": 7.487570563569079e-10,
+      "tolerance": 2e-08,
+      "passed": true
+    },
+    {
+      "name": "Cooling T derivative at 500",
+      "error": 1.6006551639691224e-10,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Cooling x derivative at 500",
+      "error": 2.40046094113211e-10,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Recombination slope at 500",
+      "error": 1.2065171084429949e-10,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Eq19 agrees with primitive-equation Jacobian at 500",
+      "error": 1.1697424652718604e-11,
+      "tolerance": 2e-08,
+      "passed": true
+    },
+    {
+      "name": "Cooling T derivative at 7800",
+      "error": 1.866361953872797e-09,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Cooling x derivative at 7800",
+      "error": 2.5574531381522547e-10,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Recombination slope at 7800",
+      "error": 3.557132366438509e-11,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Eq19 agrees with primitive-equation Jacobian at 7800",
+      "error": 2.035583923643003e-10,
+      "tolerance": 2e-08,
+      "passed": true
+    },
+    {
+      "name": "Independent integrators agree on stopping time",
+      "error": 8.028941955728897e-10,
+      "tolerance": 2e-06,
+      "passed": true
+    },
+    {
+      "name": "Background temperature agrees between integrators",
+      "error": 2.7427660143075627e-10,
+      "tolerance": 2e-06,
+      "passed": true
+    },
+    {
+      "name": "Background ionization agrees between integrators",
+      "error": 2.1111201675694247e-10,
+      "tolerance": 2e-06,
+      "passed": true
+    },
+    {
+      "name": "Accepted output remains inside cooling-temperature domain",
+      "passed": true
+    },
+    {
+      "name": "Accepted output remains inside ionization domain",
+      "passed": true
+    },
+    {
+      "name": "Background cools and recombines monotonically",
+      "passed": true
+    },
+    {
+      "name": "0.3pc density agrees between integrators",
+      "error": 2.7722171378462576e-08,
+      "tolerance": 2e-05,
+      "passed": true
+    },
+    {
+      "name": "1.0pc density agrees between integrators",
+      "error": 7.789572035687947e-10,
+      "tolerance": 2e-05,
+      "passed": true
+    },
+    {
+      "name": "3.0pc density agrees between integrators",
+      "error": 6.226328019943286e-10,
+      "tolerance": 2e-05,
+      "passed": true
+    },
+    {
+      "name": "10.0pc density agrees between integrators",
+      "error": 2.3117425110412513e-10,
+      "tolerance": 2e-05,
+      "passed": true
+    },
+    {
+      "name": "0.3pc density initially decreases with conduction",
+      "passed": true
+    },
+    {
+      "name": "Removing conduction changes the short-wave solution",
+      "passed": true
+    },
+    {
+      "name": "Conduction does not change the uniform cooling background",
+      "error": 2.495692541515382e-10,
+      "tolerance": 2e-06,
+      "passed": true
+    }
+  ],
+  "stopping_time_Myr": 1.678571634287754,
+  "stop_reason": "Cooling source-data boundary",
+  "cooling_temperature_domain_K": [
+    13.929034040622067,
+    8429.73623310641
+  ],
+  "solutions": [
+    {
+      "wavelength_pc": 0.3,
+      "max_amplification_in_window": 14.839284093396882,
+      "peak_time_Myr": 1.272916822059352,
+      "minimum_amplification": -1.9239525130490533,
+      "end_amplification": -1.923465430437248
+    },
+    {
+      "wavelength_pc": 1.0,
+      "max_amplification_in_window": 107.28200819307865,
+      "peak_time_Myr": 1.6785716334848597,
+      "minimum_amplification": 0.9884592459468733,
+      "end_amplification": 107.28200819307865
+    },
+    {
+      "wavelength_pc": 3.0,
+      "max_amplification_in_window": 50.230816960684884,
+      "peak_time_Myr": 1.6785716334848597,
+      "minimum_amplification": 0.9999991331810091,
+      "end_amplification": 50.230816960684884
+    },
+    {
+      "wavelength_pc": 10.0,
+      "max_amplification_in_window": 12.773385734446807,
+      "peak_time_Myr": 1.6785716334848597,
+      "minimum_amplification": 1.0,
+      "end_amplification": 12.773385734446807
+    }
+  ],
+  "interpolation_probe": {
+    "alternative": "logLambda linear in logx; a sensitivity alternative, not an uncertainty bound",
+    "stopping_time_Myr": 1.5093832898769337
+  },
+  "reference_comparison": [
+    {
+      "quantity": "T",
+      "wavelength_pc": null,
+      "reference_points": 9,
+      "scored_points": 8,
+      "rms_dex": 0.1901639470261345,
+      "note": "Descriptive sparse-point discrepancy; not a passing numerical tolerance. Points past the source-domain stop are unscored."
+    },
+    {
+      "quantity": "amplification",
+      "wavelength_pc": 0.3,
+      "reference_points": 6,
+      "scored_points": 6,
+      "rms_dex": 0.3834722637530868,
+      "note": "Descriptive sparse-point discrepancy; not a passing numerical tolerance. Points past the source-domain stop are unscored."
+    },
+    {
+      "quantity": "amplification",
+      "wavelength_pc": 1.0,
+      "reference_points": 3,
+      "scored_points": 2,
+      "rms_dex": 0.03480570842967421,
+      "note": "Descriptive sparse-point discrepancy; not a passing numerical tolerance. Points past the source-domain stop are unscored."
+    },
+    {
+      "quantity": "amplification",
+      "wavelength_pc": 3.0,
+      "reference_points": 3,
+      "scored_points": 2,
+      "rms_dex": 0.11556810383151378,
+      "note": "Descriptive sparse-point discrepancy; not a passing numerical tolerance. Points past the source-domain stop are unscored."
+    },
+    {
+      "quantity": "amplification",
+      "wavelength_pc": 10.0,
+      "reference_points": 3,
+      "scored_points": 2,
+      "rms_dex": 0.07012964806135501,
+      "note": "Descriptive sparse-point discrepancy; not a passing numerical tolerance. Points past the source-domain stop are unscored."
+    }
+  ],
+  "limitations": [
+    "Cooling is reconstructed from the published Figure1, not independently recovered from every Jura\u2013Dalgarno rate. Do not substitute the FGH or KI curve: the paper uses a different Fe abundance5e-5 perH.",
+    "Stop at the lower temperature or ionization boundary of the source readings. No late-time cold extrapolation or nonlinear cloud solution is claimed.",
+    "Initial perturbation is taken isobaric with uniform ionization and zero velocity; this is explicit for the nonlinear example, but its precise use for Figure2 requires further confirmation.",
+    "Linear amplitudes are normalized to n1(0)=1; a large amplification factor does not validate finite-amplitude nonlinear evolution.",
+    "He/H=.1 is neutral helium perH, unlike FGH He/(H+He)=.1. No external heating, continuing ionization, or gravity is included.",
+    "The note added in proof (p686) reports corrections to the Jura\u2013Dalgarno cooling interpretation. Published figures and later corrected physics must remain distinct.",
+    "Eq7 defines radiated power per gram as nLambda/(1.4mH), while the Figure1 caption omits1.4. This implementation follows Eqs7\u20139 and does not rescale time to match Figure2. The caption inconsistency remains recorded."
+  ],
+  "environment": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1",
+    "matplotlib": "3.9.4"
+  },
+  "code_sha256": {
+    "reproduce.py": "9ef86ec0a221e666f8f5b3a3048fe02e71c5000eabe76317240602229cec4801",
+    "cooling-readings.csv": "0eb7b2611659b24ad2fa47ae4e79ab6e54fa746a825effbc629a8ad034456203",
+    "reference-readings.csv": "ef94594e3f10bacd238328167abcf0c03e0e322e0c236fbbde4c4f8fdfca215d"
+  },
+  "config_sha256": "14a875c16998f48eff5ce9a47355798847b6b9ee79336dfc7413ad9acad6989f"
+}

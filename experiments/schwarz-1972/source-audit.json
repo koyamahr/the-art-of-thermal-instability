@@ -1,0 +1,28 @@
+{
+  "scope": "Early-time linear Figure2 prototype with graph-reconstructed cooling",
+  "target": {
+    "bibcode": "1972ApJ...175..673S",
+    "reviewed_pages": "673\u2013682 and686; Eqs1\u201330, Figures1/2 and nonlinear initial conditions visually reviewed"
+  },
+  "rate_reference": {
+    "bibcode": "1972ApJ...174..365J",
+    "title": "Time-Dependent Models of the Interstellar Gas",
+    "authors": "Jura & Dalgarno",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1972ApJ...174..365J",
+    "sha256": "74eddc0aeac19b146ccb20086acf840c1e0fe48cc8e453e3e14329417ce281c3",
+    "reviewed_pages": "365\u2013370; Table1 p370 visually reviewed; source does not alone supply the full adopted neutral-gas cooling input"
+  },
+  "normalization": "Eqs7\u20139 followed. Figure1 caption omits the1.4 present in Eq7; not adjusted to fit target.",
+  "initial_mode": "Isobaric density perturbation with zero velocity and uniform ionization is declared, not confirmed as the unique Figure2 initial mode.",
+  "proof_note": "p686 corrects the discussion of trace-element ionization and cooling in sectionVI. It supplies no replacement rate table; the published curves and later corrections remain distinct.",
+  "planned_nonlinear": {
+    "wavelength_pc": 3,
+    "relative_amplitude": 0.1,
+    "nH_cm3": 0.3,
+    "T_K": 8200,
+    "x": 0.05,
+    "geometry": "one-dimensional periodic",
+    "targets": "Figures3\u20136; later density/velocity/temperature/ionization snapshots and convergence",
+    "status": "not implemented"
+  }
+}
