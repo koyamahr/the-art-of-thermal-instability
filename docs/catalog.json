@@ -34,8 +34,14 @@
     "status": "in_progress",
     "source": "https://ui.adsabs.harvard.edu/abs/1969ApJ...155L.149F/abstract",
     "topic": "From heating and cooling balance to two coexisting phases.",
-    "scope": "Historical heating/cooling diagnostics and a reduced 10–2,000 K cold-branch calculation with explicit assumptions. Numerical checks do not establish reproduction of the Letter’s equilibrium Figures 1 and 2.",
+    "scope": "Historical heating/cooling diagnostics, reduced cold branch, and a cold-to-warm S-curve prototype with 48 numerical checks. Atomic excitation and recombination assumptions remain explicit; the Letter’s Figures 1 and 2 are not yet quantitatively reproduced.",
     "exhibits": [
+      {
+        "href": "fgh-1969/two-phase.html",
+        "label": "Two-phase equilibrium prototype →",
+        "kind": "prototype",
+        "validated": false
+      },
       {
         "href": "fgh-1969/",
         "label": "Heating & cooling ingredients →",

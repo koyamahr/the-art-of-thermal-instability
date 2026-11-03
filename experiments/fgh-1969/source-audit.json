@@ -1,5 +1,5 @@
 {
-  "scope": "Historical ingredients and a reduced cold-gas equilibrium experiment. FGH equilibrium Figures 1 and 2 have not been independently reproduced.",
+  "scope": "Historical ingredients, reduced cold branch, and a coupled cold-to-warm prototype. FGH Figures 1 and 2 have not been quantitatively validated.",
   "sources": [
     {
       "id": "fgh-1969",
@@ -56,6 +56,11 @@
       "item": "Historical abundance baseline",
       "source": "Field et al. (1968), Table 1, p. 958, citing Allen (1963)",
       "definition": "Per 1e6 H nuclei: C 300, O 670, Si 30, Fe 8; not a direct inspection of Allen (1963)"
+    },
+    {
+      "item": "Cold-to-warm prototype",
+      "source": "GHF equations 12-22; two_phase.py and config-two-phase.json",
+      "definition": "H/He populations, superthermal balance, secondary H ionization, thermal H excitation/ionization, metal cooling and energy balance. H excitation ramp and high-energy tails remain declared approximations."
     }
   ],
   "depletion_factor_definitions": "Factors below divide normal abundances. GHF prints remaining fractions xi, converted here by 1/xi without silently reconciling them with the Letter.",
@@ -88,7 +93,7 @@
   "open_items": [
     "Reconcile differing Fe depletion values in the Letter caption and detailed paper; do not mix the two parameter sets.",
     "Recover Maxwellian H/He excitation and ionization cross-section fits, including referenced data and Goldsmith thesis details.",
-    "Implement and validate coupled thermal, H/He ionization, electron-density, and superthermal-electron balances (GHF equations 19-22).",
+    "Coupled balances implemented and numerically checked in the prototype. Recover the original atomic fits, resolve the recombination energy convention, and add omitted thermal He processes before historical validation.",
     "Only then compare calculated equilibrium T(n), (n+n_e)T, and n_e(n) with the original Figures 1 and 2.",
     "Validate cold extrapolation of the Hjellming recombination fits and include trace-level statistical equilibrium; the reduced calculation is not an exact historical model."
   ],

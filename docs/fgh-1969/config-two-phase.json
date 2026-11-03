@@ -1,0 +1,28 @@
+{
+  "scope": "Cold-to-warm historical-input prototype, not certified reproduction of FGH Figures 1 and 2",
+  "zeta_s_inverse": 4e-16,
+  "n0_min_cm-3": 0.01,
+  "n0_max_cm-3": 1000,
+  "temperature_samples": 301,
+  "T_min_K": 10,
+  "T_max_K": 12000,
+  "density_scan_samples": 161,
+  "inputs": {
+    "superthermal_energy_eV": 20,
+    "heating_source": "GHF Eqs12-13, p178: n_fast*(3.2e-19*nHI+4.1e-17*ne), plus direct electron heating",
+    "H_ionization_triangle": "GHF p178: threshold13.6eV, peak1.2e-16cm2 at50eV, zero at300eV",
+    "H_excitation": "Infer sigma(20eV) from rounded Eq13 minus the explicit H ionization contribution in Eq12. Assume a linear ramp from10.2 to20eV. Test zero beyond20 versus indefinite linear continuation; neither tail is recovered historical data.",
+    "abundances": "config-cold.json: Field1968 baseline and FGH Letter depletion divisors, not mixed with GHF cases"
+  },
+  "limitations": [
+    "Lyman-alpha near-threshold ramp is an assumption: the actual Fite et al. data and Goldsmith1969 thesis fit have not been recovered. Tail sensitivity cannot validate this slope or the inferred20eV normalization.",
+    "Thermal He excitation and ionization omitted; low warm-branch temperatures motivate but do not validate this approximation. No extension beyond12000K.",
+    "Hjellming excited-state kinetic recombination energy is baseline. An explicit2/3 multiplier tests the unresolved GHF Eq17 energy convention; this is not an uncertainty interval.",
+    "HeI recombination approximated by hydrogen. Metal cooling uses the low-density sum, whole elemental populations per transition and available collider channels only; no level statistical equilibrium.",
+    "H/He charge neutrality follows the printed GHF closure without metal-donor electrons. Pressure excludes trace nuclei and superthermal electrons.",
+    "Sign-change root scans can miss tangent roots; doubled scans test numerical robustness but cannot certify completeness.",
+    "Pressure turning points demonstrate the prototype S-curve only. No conductive saturation pressure, Maxwell equal-area construction, or full ionization-dependent stability analysis is inferred.",
+    "No pointwise comparison with digitized FGH curves has yet been made. Passing numerical conservation checks does not establish historical accuracy."
+  ],
+  "helium_nuclei_fraction": 0.1
+}

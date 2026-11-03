@@ -35,7 +35,7 @@ for r in resources['resources']:
     if r.get('snapshot_url'):parts.append(f' <a href="{r["snapshot_url"]}" target="_blank" rel="noopener noreferrer">Recorded snapshot: {r["observed_commit"][:12]} ↗</a>')
     parts.append('</li>')
 parts.append('''</ul><p class="small">Links checked on 3 November 2026. <a href="microphysics/resources.json">Resource provenance / JSON</a> · <a href="catalog.json">Complete paper catalog / JSON</a></p></section>
-<section><h2>Connect these references to the current exhibits.</h2><p><a href="field-1965/figure-1.html">Field’s stability map</a> connects to front and perturbation problems. <a href="fgh-1969/">FGH/GHF ingredients</a> and our <a href="fgh-1969/cold-branch.html">reduced cold-branch calculation</a> give a starting point for comparing historical and later microphysics.</p></section>
+<section><h2>Connect these references to the current exhibits.</h2><p><a href="field-1965/figure-1.html">Field’s stability map</a> connects to front and perturbation problems. <a href="fgh-1969/two-phase.html">FGH/GHF two-phase equilibrium prototype</a>, <a href="fgh-1969/">historical ingredients</a>, and <a href="fgh-1969/cold-branch.html">reduced cold branch</a> give a starting point for comparing historical and later microphysics.</p></section>
 </main><footer><p>The Art of Thermal Instability</p><a href="./#atlas">Back to the paper atlas</a></footer></body></html>''')
 (docs/'research-paths.html').write_text('\n'.join(parts)+'\n')
 print('Built research paths from',sum('reference_section' in p for p in catalog),'listed references.')

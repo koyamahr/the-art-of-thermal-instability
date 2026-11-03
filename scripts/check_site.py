@@ -59,6 +59,7 @@ def main():
              ('field-1965','validation-map.json','config-map.json'),
              ('fgh-1969','validation.json','config.json'),
              ('fgh-1969','validation-cold.json','config-cold.json'),
+             ('fgh-1969','validation-two-phase.json','config-two-phase.json'),
              ('takayanagi-nishimura-1960','validation.json','config.json'),
              ('iwasaki-2012','validation.json','config.json')]
     total=0

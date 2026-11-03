@@ -67,3 +67,33 @@ The baseline abundances come from Field et al. (1968), Table 1, p. 958, citing A
 Heating is GHF equation (23) times `zeta*n_target`, plus direct electron heating. Recombination energy follows Hjellming; free-free cooling follows GHF equation (18). Secondary ionization, thermal H/He ionization and excitation, molecules, grains, and stellar heating are absent. The pressure proxy `(n0+ne)*T` omits trace nuclei. No stability assignment, warm branch, or exact agreement with the original Letter is claimed. The config and validation report carry these assumptions.
 
 The previous ingredient CSV mislabeled its normalized heating denominator as `n0`; it is corrected to `n_target`. Its normalized numerical values are unchanged.
+
+
+## Cold-to-warm equilibrium prototype
+
+Run `python two_phase.py` beside `cold_branch.py`, `reproduce.py`, `config.json`,
+`config-cold.json`, and `config-two-phase.json`, with the pinned requirements.
+It writes `output/two-phase.{png,svg,csv}` and `validation-two-phase.json`.
+No SciPy or source PDF is needed. Parameters and approximations are recorded in
+config-two-phase.json; changing code constants requires a corresponding input audit.
+
+The calculation solves charge neutrality, H/He ion populations, superthermal
+production/removal, secondary hydrogen ionization, and energy balance. It uses
+GHF Eq13 directly rather than combining its rounded normalization with Eq23.
+The 20-eV excitation point is inferred from Eqs12-13 and the explicitly printed
+H ionization triangle. A linear excitation ramp from 10.2 to20eV is assumed;
+its shape and normalization have not been validated against the original
+Fite et al. data or Goldsmith thesis. Zero and continued linear tails beyond20eV
+are sensitivity alternatives, not physical uncertainty bounds.
+
+Temperature parameterization retains folds in T(n). A sign-change density scan
+and doubled scan are compared; roots outside0.01–1000cm^-3 or10–12000K are
+not extrapolated. The report lists sampled temperatures without a bracket.
+Pressure turning points are grid brackets for this prototype, not historical
+measurements, conductive saturation pressures, or a full stability analysis.
+
+The baseline uses Hjellming kinetic recombination energy. The separate2/3 test
+records the unresolved GHF Eq17 convention. Thermal He excitation/ionization,
+metal level populations, and other limitations remain explicit. No modern KI or
+Wolfire fit substitutes for the historical H cooling here. Passing48 numerical
+checks is not a claim to reproduce the original FGH figure quantitatively.

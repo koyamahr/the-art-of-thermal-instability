@@ -1,5 +1,5 @@
 {
-  "scope": "Historical ingredients and a reduced cold-gas equilibrium experiment. FGH equilibrium Figures 1 and 2 have not been independently reproduced.",
+  "scope": "Historical ingredients, reduced cold branch, and a coupled cold-to-warm prototype. FGH Figures 1 and 2 have not been quantitatively validated.",
   "source": "Goldsmith, Habing & Field (1969), ApJ 158, 173; Table 1 and equations (16), (23)-(26)",
   "checks": [
     {
@@ -73,7 +73,7 @@
   },
   "code_sha256": {
     "reproduce.py": "9c32c3d42d6b72e323a3a496e560c1347ecdb840b737308a8473d9bbf07e46ac",
-    "source-audit.json": "2304bb95a7ac7702b850b5e451e618721b9c91238ad48d9c4e3c3cc74672de91"
+    "source-audit.json": "6b8f5e63b034043df1dbb08dcf6559b6d8fbe58209e35cec9bfda418690d4ffd"
   },
   "config_sha256": "360a21633aa0db34287120d32f5eecccdd3f97a27fe09dc613b9795d71a772be",
   "limitations": [

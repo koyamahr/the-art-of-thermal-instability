@@ -1,0 +1,375 @@
+{
+  "scope": "Cold-to-warm historical-input prototype, not certified reproduction of FGH Figures 1 and 2",
+  "checks": [
+    {
+      "name": "H ionization quadrature at 3000.0",
+      "error": 3.9412919820680514e-05,
+      "tolerance": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "H ionization quadrature at 8000.0",
+      "error": 5.223512059560065e-06,
+      "tolerance": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "H ionization quadrature at 12000.0",
+      "error": 2.2194113995510634e-06,
+      "tolerance": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "normal: nonempty unique root at sampled temperatures",
+      "passed": true
+    },
+    {
+      "name": "normal: thermal balance",
+      "error": 4.65134066687856e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "normal: charge balance",
+      "error": 4.833911049217932e-13,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "normal: superthermal balance",
+      "error": 4.440892098500626e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "normal: H ionization",
+      "error": 9.421352586969078e-13,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "normal: He I ionization",
+      "error": 4.440892098500626e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "normal: He II ionization",
+      "error": 4.440892098500626e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "normal: thermal-electron balance (Eq21)",
+      "error": 8.668621376273222e-13,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "normal: scan refinement root counts",
+      "passed": true
+    },
+    {
+      "name": "normal: scan refinement densities",
+      "error": 1.2434497875801753e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "normal: pressure curve has a negative-slope interval",
+      "passed": true
+    },
+    {
+      "name": "normal: sensitivity linear/1.0 roots",
+      "passed": true
+    },
+    {
+      "name": "normal: sensitivity linear/1.0 thermal residual",
+      "error": 4.65134066687856e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "normal: sensitivity cut20/0.6666666666666666 roots",
+      "passed": true
+    },
+    {
+      "name": "normal: sensitivity cut20/0.6666666666666666 thermal residual",
+      "error": 4.264359976868808e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "FGH a: nonempty unique root at sampled temperatures",
+      "passed": true
+    },
+    {
+      "name": "FGH a: thermal balance",
+      "error": 3.912069470665742e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "FGH a: charge balance",
+      "error": 7.005507285384738e-13,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "FGH a: superthermal balance",
+      "error": 6.661338147750939e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "FGH a: H ionization",
+      "error": 9.447997939560082e-13,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "FGH a: He I ionization",
+      "error": 4.440892098500626e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "FGH a: He II ionization",
+      "error": 5.551115123125783e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "FGH a: thermal-electron balance (Eq21)",
+      "error": 8.690825836765725e-13,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "FGH a: scan refinement root counts",
+      "passed": true
+    },
+    {
+      "name": "FGH a: scan refinement densities",
+      "error": 2.930988785010413e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "FGH a: pressure curve has a negative-slope interval",
+      "passed": true
+    },
+    {
+      "name": "FGH a: sensitivity linear/1.0 roots",
+      "passed": true
+    },
+    {
+      "name": "FGH a: sensitivity linear/1.0 thermal residual",
+      "error": 3.912069470665742e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "FGH a: sensitivity cut20/0.6666666666666666 roots",
+      "passed": true
+    },
+    {
+      "name": "FGH a: sensitivity cut20/0.6666666666666666 thermal residual",
+      "error": 4.421462866654935e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "FGH b: nonempty unique root at sampled temperatures",
+      "passed": true
+    },
+    {
+      "name": "FGH b: thermal balance",
+      "error": 6.5329083442443125e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "FGH b: charge balance",
+      "error": 6.226130722097878e-13,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "FGH b: superthermal balance",
+      "error": 6.661338147750939e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "FGH b: H ionization",
+      "error": 6.608047442568932e-13,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "FGH b: He I ionization",
+      "error": 4.440892098500626e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "FGH b: He II ionization",
+      "error": 4.440892098500626e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "FGH b: thermal-electron balance (Eq21)",
+      "error": 6.077360836798107e-13,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "FGH b: scan refinement root counts",
+      "passed": true
+    },
+    {
+      "name": "FGH b: scan refinement densities",
+      "error": 1.2101430968414206e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "FGH b: pressure curve has a negative-slope interval",
+      "passed": true
+    },
+    {
+      "name": "FGH b: sensitivity linear/1.0 roots",
+      "passed": true
+    },
+    {
+      "name": "FGH b: sensitivity linear/1.0 thermal residual",
+      "error": 6.5329083442443125e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "FGH b: sensitivity cut20/0.6666666666666666 roots",
+      "passed": true
+    },
+    {
+      "name": "FGH b: sensitivity cut20/0.6666666666666666 thermal residual",
+      "error": 2.1987925248883916e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    }
+  ],
+  "solutions": [
+    {
+      "case": "normal",
+      "roots": 287,
+      "sampled_temperatures_without_bracket": 14,
+      "turning_point_grid_brackets": [
+        {
+          "n0_cm3": [
+            0.16115010040362968,
+            0.16957590196469685
+          ],
+          "P_over_k": [
+            1513.8092138446746,
+            1514.2130972567363
+          ]
+        },
+        {
+          "n0_cm3": [
+            0.43658136610388737,
+            0.4580265116240142
+          ],
+          "P_over_k": [
+            87.05859368522484,
+            87.06985976613896
+          ]
+        }
+      ],
+      "max_relative_density_change_at_fixed_T_linear_1.0": 0.0008444329067660572,
+      "max_relative_density_change_at_fixed_T_cut20_0.6666666666666666": 0.004180843546078394
+    },
+    {
+      "case": "FGH a",
+      "roots": 270,
+      "sampled_temperatures_without_bracket": 31,
+      "turning_point_grid_brackets": [
+        {
+          "n0_cm3": [
+            0.561998624987719,
+            0.5912065882610389
+          ],
+          "P_over_k": [
+            4618.1091821377695,
+            4625.008696871896
+          ]
+        },
+        {
+          "n0_cm3": [
+            1.9470051814749452,
+            2.041658767739418
+          ],
+          "P_over_k": [
+            576.3702685582344,
+            576.308356202468
+          ]
+        }
+      ],
+      "max_relative_density_change_at_fixed_T_linear_1.0": 0.0011163373542354416,
+      "max_relative_density_change_at_fixed_T_cut20_0.6666666666666666": 0.005691986654890346
+    },
+    {
+      "case": "FGH b",
+      "roots": 247,
+      "sampled_temperatures_without_bracket": 54,
+      "turning_point_grid_brackets": [
+        {
+          "n0_cm3": [
+            1.0073909209013308,
+            1.0607946625157199
+          ],
+          "P_over_k": [
+            7992.164463796255,
+            8015.568570932519
+          ]
+        },
+        {
+          "n0_cm3": [
+            4.081409902469834,
+            4.278805675945559
+          ],
+          "P_over_k": [
+            1293.930397582783,
+            1293.5961629002736
+          ]
+        }
+      ],
+      "max_relative_density_change_at_fixed_T_linear_1.0": 0.0012119089892063117,
+      "max_relative_density_change_at_fixed_T_cut20_0.6666666666666666": 0.006482684244535131
+    }
+  ],
+  "limitations": [
+    "Lyman-alpha near-threshold ramp is an assumption: the actual Fite et al. data and Goldsmith1969 thesis fit have not been recovered. Tail sensitivity cannot validate this slope or the inferred20eV normalization.",
+    "Thermal He excitation and ionization omitted; low warm-branch temperatures motivate but do not validate this approximation. No extension beyond12000K.",
+    "Hjellming excited-state kinetic recombination energy is baseline. An explicit2/3 multiplier tests the unresolved GHF Eq17 energy convention; this is not an uncertainty interval.",
+    "HeI recombination approximated by hydrogen. Metal cooling uses the low-density sum, whole elemental populations per transition and available collider channels only; no level statistical equilibrium.",
+    "H/He charge neutrality follows the printed GHF closure without metal-donor electrons. Pressure excludes trace nuclei and superthermal electrons.",
+    "Sign-change root scans can miss tangent roots; doubled scans test numerical robustness but cannot certify completeness.",
+    "Pressure turning points demonstrate the prototype S-curve only. No conductive saturation pressure, Maxwell equal-area construction, or full ionization-dependent stability analysis is inferred.",
+    "No pointwise comparison with digitized FGH curves has yet been made. Passing numerical conservation checks does not establish historical accuracy."
+  ],
+  "environment": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "matplotlib": "3.9.4"
+  },
+  "code_sha256": {
+    "two_phase.py": "2e1835ad2c142659dfed2966e13df94b5ad7585d3c599b5a846649576b5b547c",
+    "cold_branch.py": "ba40297e1a4f129ab67cd6b9de55f679de02d6db394708b74da025299f6ed549",
+    "reproduce.py": "9c32c3d42d6b72e323a3a496e560c1347ecdb840b737308a8473d9bbf07e46ac",
+    "config.json": "360a21633aa0db34287120d32f5eecccdd3f97a27fe09dc613b9795d71a772be",
+    "config-cold.json": "9139d8c2eb34e02cf1bc4d85f0da8b9f8c77e42258a6097620d1782582fc8a52"
+  },
+  "config_sha256": "68acd40db1838d99cc11f6d6ff36dd661aed1a247d77a8691adde488bd1adb80"
+}
