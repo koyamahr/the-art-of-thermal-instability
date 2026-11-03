@@ -577,5 +577,47 @@
         "label": "Phase-transition front lineage →"
       }
     ]
+  },
+  {
+    "id": "ferrara-shchekinov-1993",
+    "year": 1993,
+    "authors": "Ferrara & Shchekinov",
+    "title": "Dynamics of Conductive/Cooling Fronts: Cloud Implosion and Thermal Solitons",
+    "source": "https://arxiv.org/abs/astro-ph/9307034",
+    "doi": "10.1086/173339",
+    "journal": "ApJ 417, 595",
+    "topic": "Conductive and radiative interfaces admit static and steady fronts, cloud compression, and soliton-like solutions.",
+    "scope": "Start with planar static/steady front equations, boundary heat fluxes, and the mechanical analogy. Select a small ODE benchmark after auditing the heat-loss law, conductivity, and pressure/flow assumptions. Cloud implosion simulations are a separate, optional scope.",
+    "review_status": "Author preprint abstract and bibliography checked; equations, target figures, and simulation inputs require a dedicated audit.",
+    "group": "fronts",
+    "status": "listed",
+    "reference_section": "fronts",
+    "resources": [
+      {
+        "href": "research-paths.html#ferrara-shchekinov-1993",
+        "label": "Planar fronts & steady flow →"
+      }
+    ]
+  },
+  {
+    "id": "shchekinov-ibanez-2001",
+    "year": 2001,
+    "authors": "Shchekinov & Ibáñez",
+    "title": "Interaction of Small Planar Perturbations with Cooling-Conductive Fronts",
+    "source": "https://doi.org/10.1086/323499",
+    "doi": "10.1086/323499",
+    "journal": "ApJ 563, 209–220",
+    "topic": "Acoustic and entropy perturbations interact with steady subsonic cold–hot fronts in one-dimensional planar geometry, with heating, cooling, and thermal conduction.",
+    "scope": "First audit the steady planar background and its mass-flux eigenvalue at prescribed pressure, as discussed by Iwasaki & Inutsuka (2012), section 3. Then consider reflection/transmission coefficients as a separate perturbation benchmark. Do not equate this one-dimensional perturbation problem with transverse front corrugation.",
+    "review_status": "Bibliography and author-uploaded abstract checked; the mass-flux eigenvalue connection was checked in Iwasaki & Inutsuka (2012), section 3. Original equations and target figures still require a dedicated audit.",
+    "group": "fronts",
+    "status": "listed",
+    "reference_section": "fronts",
+    "resources": [
+      {
+        "href": "research-paths.html#shchekinov-ibanez-2001",
+        "label": "Planar fronts & steady flow →"
+      }
+    ]
   }
 ]
