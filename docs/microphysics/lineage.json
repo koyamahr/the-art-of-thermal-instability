@@ -1,0 +1,56 @@
+{
+  "scope": "A separate research path for atomic/molecular data and heating/cooling prescriptions. Bibliographic links do not establish identical numerical coefficients.",
+  "checked_on": "2026-11-03",
+  "references": [
+    "takayanagi-nishimura-1960",
+    "hayakawa-nishimura-takayanagi-1961",
+    "hattori-nakano-hayashi-1969"
+  ],
+  "relations": [
+    {
+      "from_paper": "field-1968",
+      "to_paper": "takayanagi-nishimura-1960",
+      "relation": "Uses and discusses H2 excitation data",
+      "evidence": "Field et al. (1968), introduction, molecular-cooling discussion and Figure 1 caption",
+      "source": "https://adsabs.harvard.edu/pdf/1968ApJ...151..953F",
+      "audit_status": "Text identified; coefficient-by-coefficient correspondence pending"
+    },
+    {
+      "from_paper": "fgh-1969",
+      "to_paper": "hayakawa-nishimura-takayanagi-1961",
+      "relation": "Cites earlier cosmic-ray heating work",
+      "evidence": "FGH (1969), opening discussion and reference list",
+      "source": "https://adsabs.harvard.edu/pdf/1969ApJ...155L.149F",
+      "audit_status": "Citation identified; numerical rate adoption not established"
+    },
+    {
+      "from_paper": "hattori-nakano-hayashi-1969",
+      "to_paper": "takayanagi-nishimura-1960",
+      "relation": "Cites",
+      "evidence": "Publisher reference list, reference 14",
+      "source": "https://academic.oup.com/ptp/article/42/4/781/1933453",
+      "audit_status": "Bibliographic relationship confirmed; coefficient audit pending"
+    },
+    {
+      "from_paper": "hattori-nakano-hayashi-1969",
+      "to_paper": "hayakawa-nishimura-takayanagi-1961",
+      "relation": "Cites",
+      "evidence": "Publisher reference list, reference 20",
+      "source": "https://academic.oup.com/ptp/article/42/4/781/1933453",
+      "audit_status": "Bibliographic relationship confirmed; coefficient audit pending"
+    }
+  ],
+  "coefficient_record_fields": [
+    "quantity_type: cross_section / rate_coefficient / energy_loss_coefficient / volumetric_rate / yield",
+    "reaction_or_transition",
+    "species_and_colliders",
+    "units_and_normalization",
+    "independent_variables_and_temperature_range",
+    "level_population_and_distribution_assumptions",
+    "source_equation_or_table",
+    "original_printing_and_corrections",
+    "implementation_version",
+    "validation_status"
+  ],
+  "numerical_coefficients_transcribed": false
+}

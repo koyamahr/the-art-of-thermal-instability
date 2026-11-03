@@ -387,5 +387,68 @@
         "label": "Research path & scope →"
       }
     ]
+  },
+  {
+    "id": "takayanagi-nishimura-1960",
+    "year": 1960,
+    "authors": "Takayanagi & Nishimura",
+    "title": "Cooling of the Interstellar Clouds in Region of Neutral Hydrogen",
+    "group": "rate_history",
+    "status": "listed",
+    "source": "https://academic.oup.com/pasj/article/12/1/77/8122966",
+    "topic": "H₂ rotational excitation and the cooling budget of neutral clouds.",
+    "scope": "Begin with the excitation/cooling inputs, collider definitions, level populations, and temperature range; inspect numerical coefficients before reuse.",
+    "journal": "PASJ 12, 77–105",
+    "doi": "10.1093/pasj/12.1.77",
+    "reference_section": "rate-history",
+    "review_status": "Publisher bibliography and abstract checked; individual coefficient formulas and ranges not yet transcribed.",
+    "resources": [
+      {
+        "href": "research-paths.html#takayanagi-nishimura-1960",
+        "label": "Rate-coefficient lineage & scope →"
+      }
+    ]
+  },
+  {
+    "id": "hayakawa-nishimura-takayanagi-1961",
+    "year": 1961,
+    "authors": "Hayakawa, Nishimura & Takayanagi",
+    "title": "Radiations from the Interstellar Hydrogen Atoms",
+    "group": "rate_history",
+    "status": "listed",
+    "source": "https://academic.oup.com/pasj/article/13/2/184/8112326",
+    "topic": "Excitation and ionization of interstellar hydrogen by suprathermal particles, connecting radiation and cloud heating.",
+    "scope": "Audit particle spectra, excitation/ionization definitions, and radiation/heating yields separately from thermally averaged chemical rates.",
+    "journal": "PASJ 13, 184–206",
+    "doi": "10.1093/pasj/13.2.184",
+    "reference_section": "rate-history",
+    "review_status": "Publisher bibliography and abstract checked; individual coefficient formulas and ranges not yet transcribed.",
+    "resources": [
+      {
+        "href": "research-paths.html#hayakawa-nishimura-takayanagi-1961",
+        "label": "Rate-coefficient lineage & scope →"
+      }
+    ]
+  },
+  {
+    "id": "hattori-nakano-hayashi-1969",
+    "year": 1969,
+    "authors": "Hattori, Nakano & Hayashi",
+    "title": "Thermal and Dynamical Evolution of Gas Clouds of Various Masses",
+    "group": "rate_history",
+    "status": "listed",
+    "source": "https://academic.oup.com/ptp/article/42/4/781/1933453",
+    "topic": "Gas-cloud evolution with molecular/atomic line cooling, grains, radiation, and ionization in transparent and opaque regimes.",
+    "scope": "Inventory the individual heating/cooling prescriptions and their cited atomic/molecular data before choosing a small thermal-evolution calculation.",
+    "journal": "Progress of Theoretical Physics 42, 781–798",
+    "doi": "10.1143/PTP.42.781",
+    "reference_section": "rate-history",
+    "review_status": "Publisher bibliography and abstract checked; individual coefficient formulas and ranges not yet transcribed.",
+    "resources": [
+      {
+        "href": "research-paths.html#hattori-nakano-hayashi-1969",
+        "label": "Rate-coefficient lineage & scope →"
+      }
+    ]
   }
 ]
