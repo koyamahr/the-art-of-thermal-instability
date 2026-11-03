@@ -1,5 +1,16 @@
 # 公開ロードマップ
 
+## 現在の優先順位と管理先
+
+具体的な作業は [GitHub Issues](https://github.com/koyamahr/the-art-of-thermal-instability/issues) を正本とする。公開案内は [progressページ](https://koyamahr.github.io/the-art-of-thermal-instability/progress.html)。同時に進める科学計算は原則1件で、仕様整理・実装・検証・公開を分けて記録する。
+
+- 短期：KI2002の圧力依存ポテンシャル図（[#1](https://github.com/koyamahr/the-art-of-thermal-instability/issues/1)）、圧縮性流体・圧力駆動と反応拡散系の違いの解説（[#2](https://github.com/koyamahr/the-art-of-thermal-instability/issues/2)）。KI図は仕様整理済み、計算と図の実装は未着手。
+- 中期：定圧近似と圧縮性1Dの小規模比較、Iwasakiの未再現領域を一例ずつ診断（[#3](https://github.com/koyamahr/the-art-of-thermal-instability/issues/3)）、Schwarzの時刻・解像度の限定比較（[#4](https://github.com/koyamahr/the-art-of-thermal-instability/issues/4)）。動く資料が整ってから技術レビュー用資料を用意する。
+- 長期：KI2000/2004、公開済み多次元出力の再解析、未発表計算の整理、出典・版・引用方法・ライセンスを備えるデータ公開。本計算の全面再実行は必須にしない。
+- 保留：FGHの歴史的係数回収（[#5](https://github.com/koyamahr/the-art-of-thermal-instability/issues/5)）。具体的な新資料・検証可能な規約・数値的な新根拠が再開条件。
+
+報告は成果公開・方針変更・判断依頼の際に短く行う。週次確認は金曜17時（日本時間）。意味のある変化がない場合は通知を控える。
+
 ## 今回の追加 — KI2002平衡曲線とZP基準点
 
 - [x] 原論文arXiv版と訂正後の式を目視確認。2007年の原論文脚注がH.Koyama提供の訂正式と記載。Iwasaki2012 Eqs4–7との一致を確認。
