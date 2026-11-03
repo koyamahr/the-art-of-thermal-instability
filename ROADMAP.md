@@ -90,3 +90,10 @@ Zel’dovich & Pikel’ner (1969, JETP 29, 170–173)、Penston & Brown (1970, M
 ## Hennebelle・Burkert系：動的凝縮から乱流・破砕へ
 
 Hennebelle & Pérault 1999/2000、Burkert & Lin 2000、Audit & Hennebelle 2005、Heitsch et al. 2006、Hennebelle & Audit 2007、Heitsch, Hartmann & Burkert 2008の7編を追加。出版年で配列し、2005論文の2004 preprint、2007論文の2006 preprintを区別。低コストの候補は自己相似解・凝縮閾値、冷却背景での摂動成長、乱流下の不安定ガスの半解析モデル、時間尺度の領域図。多次元の統計量は取得可能な出力の再解析を基本とし、大規模な再計算は必須にしない。本文式・図番号・出力の利用可能性は各論文ごとに監査する。
+
+
+## 追加文献の選定方針（ユーザー指定、2026-11-03）
+
+直前の推薦リストからBakes & Tielens (1994)までを採用。Parker1953を含め6編（Spitzer & Tomasko1968、Dalgarno & McCray1972、Balbus1986、Begelman & McKee1990、Bakes & Tielens1994）を登録する。直前に推薦したVázquez-Semadeni et al.2000、Kritsuk & Norman2002、Kim & Kim2013は追加しない。特にVázquez-Semadeniの論文は熱伝導が入っていないため対象外とするユーザーの意向を記録する。この理由を残りの除外候補にも一律に当てはめない。年代の上限は今回の追加候補に対する選択であり、既登録の1994年以降の文献を削除する指示ではない。
+
+新規の非線形TIシミュレーション展示では熱伝導・対応する解像度の扱いを選定時に監査する。Balbus1986は輸送過程を省いた解析理論として位置づけ、熱伝導を含むシミュレーションの検証と混同しない。文献の登録だけで再現完了としない。

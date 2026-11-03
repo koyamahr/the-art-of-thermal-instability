@@ -766,5 +766,131 @@
         "label": "Condensation, turbulence & fragmentation →"
       }
     ]
+  },
+  {
+    "id": "parker-1953",
+    "year": 1953,
+    "authors": "Eugene N. Parker",
+    "title": "Instability of Thermal Fields",
+    "journal": "ApJ 117, 431",
+    "source": "https://adsabs.harvard.edu/pdf/1953ApJ...117..431P",
+    "doi": "",
+    "group": "theory",
+    "status": "listed",
+    "reference_section": "theory",
+    "topic": "Thermal-field stability before Field (1965), with a solar-atmosphere application.",
+    "scope": "Historical background: compare the temperature-field equation, conduction, and heating assumptions with Field’s hydrodynamic analysis. Keep the original solar application distinct from neutral interstellar gas.",
+    "review_status": "Bibliography and source overview checked; equations, target figures, and numerical inputs require a dedicated audit.",
+    "resources": [
+      {
+        "href": "research-paths.html#parker-1953",
+        "label": "Historical theory & heating sources →"
+      }
+    ]
+  },
+  {
+    "id": "spitzer-tomasko-1968",
+    "year": 1968,
+    "authors": "Spitzer & Tomasko",
+    "title": "Heating of H I Regions by Energetic Particles",
+    "journal": "ApJ 152, 971",
+    "source": "https://adsabs.harvard.edu/pdf/1968apj...152..971s",
+    "doi": "",
+    "group": "rate_history",
+    "status": "listed",
+    "reference_section": "rate-history",
+    "topic": "Energetic-particle heating and ionization of H I, including secondary-electron energy deposition and metal cooling.",
+    "scope": "Prioritize the definitions of primary/total ionization rates and energy per ionization when comparing with FGH/GHF. Audit secondary-electron treatment, abundances, and collider channels before implementing a heating benchmark.",
+    "review_status": "Bibliography and source overview checked; equations, target figures, and numerical inputs require a dedicated audit.",
+    "resources": [
+      {
+        "href": "research-paths.html#spitzer-tomasko-1968",
+        "label": "Historical theory & heating sources →"
+      }
+    ]
+  },
+  {
+    "id": "dalgarno-mccray-1972",
+    "year": 1972,
+    "authors": "Dalgarno & McCray",
+    "title": "Heating and Ionization of HI Regions",
+    "journal": "ARA&A 10, 375–426",
+    "source": "https://doi.org/10.1146/annurev.aa.10.090172.002111",
+    "doi": "10.1146/annurev.aa.10.090172.002111",
+    "group": "rate_history",
+    "status": "listed",
+    "reference_section": "rate-history",
+    "topic": "A historical review of heating and ionization processes in neutral interstellar gas.",
+    "scope": "Use as a source map for historical heating/cooling processes. Audit individual formulas, ionization fractions, abundance assumptions, and original rate references before selecting a cooling-curve calculation.",
+    "review_status": "Bibliography and source overview checked; equations, target figures, and numerical inputs require a dedicated audit.",
+    "resources": [
+      {
+        "href": "research-paths.html#dalgarno-mccray-1972",
+        "label": "Historical theory & heating sources →"
+      }
+    ]
+  },
+  {
+    "id": "balbus-1986",
+    "year": 1986,
+    "authors": "Steven A. Balbus",
+    "title": "Local Dynamic Thermal Instability",
+    "journal": "ApJ Letters 303, L79–L82",
+    "source": "https://adsabs.harvard.edu/pdf/1986ApJ...303L..79B",
+    "doi": "10.1086/184657",
+    "group": "theory",
+    "status": "listed",
+    "reference_section": "theory",
+    "topic": "Local thermal-instability criteria for time-dependent background flows; transport processes are omitted in this analytical treatment.",
+    "scope": "Compare the loss-per-unit-mass convention and the derivative of loss/T with Field’s equilibrium criterion. This is analytical background, not a conduction-resolved nonlinear simulation exhibit.",
+    "review_status": "Bibliography and source overview checked; equations, target figures, and numerical inputs require a dedicated audit.",
+    "resources": [
+      {
+        "href": "research-paths.html#balbus-1986",
+        "label": "Historical theory & heating sources →"
+      }
+    ]
+  },
+  {
+    "id": "begelman-mckee-1990",
+    "year": 1990,
+    "authors": "Begelman & McKee",
+    "title": "Global Effects of Thermal Conduction on Two-Phase Media",
+    "journal": "ApJ 358, 375–391",
+    "source": "https://adsabs.harvard.edu/pdf/1990ApJ...358..375B",
+    "doi": "",
+    "group": "theory",
+    "status": "listed",
+    "reference_section": "theory",
+    "topic": "Thermal conduction transfers mass between phases through evaporation and condensation; a Field-length scale organizes the competition with heating and cooling.",
+    "scope": "Audit the Field-length definition and the assumptions of classical conduction, uniform pressure, and small cloud filling factor. Compare reduced evolution equations while retaining the original thermal model and application.",
+    "review_status": "Bibliography and source overview checked; equations, target figures, and numerical inputs require a dedicated audit.",
+    "resources": [
+      {
+        "href": "research-paths.html#begelman-mckee-1990",
+        "label": "Historical theory & heating sources →"
+      }
+    ]
+  },
+  {
+    "id": "bakes-tielens-1994",
+    "year": 1994,
+    "authors": "Bakes & Tielens",
+    "title": "The Photoelectric Heating Mechanism for Very Small Graphitic Grains and Polycyclic Aromatic Hydrocarbons",
+    "journal": "ApJ 427 (1994)",
+    "source": "https://ntrs.nasa.gov/citations/19950040609",
+    "doi": "",
+    "group": "microphysics",
+    "status": "listed",
+    "reference_section": "microphysics",
+    "topic": "Photoelectric heating by small carbonaceous grains and PAHs, including grain charging and a heating-efficiency prescription.",
+    "scope": "Trace the photoelectric-heating input used in later neutral-gas models. Audit radiation-field normalization, electron density, grain population, temperature range, and net gas–grain energy exchange before plotting the efficiency fit.",
+    "review_status": "Bibliography and source overview checked; equations, target figures, and numerical inputs require a dedicated audit.",
+    "resources": [
+      {
+        "href": "research-paths.html#bakes-tielens-1994",
+        "label": "Historical theory & heating sources →"
+      }
+    ]
   }
 ]
