@@ -1,0 +1,11 @@
+{
+  "review_date": "2026-11-03",
+  "source": "Elphick, Regev & Shaviv (1992), ApJ 392, 106--117",
+  "doi": "https://doi.org/10.1086/171410",
+  "pdf_url": "https://adsabs.harvard.edu/pdf/1992ApJ...392..106E",
+  "pdf_sha256": "cea8753b3f435216e8abb5b6d9b926e9cc0d26e5ed4f94261c11997e4b9ae246",
+  "reviewed": "Original scan pp.108--109; Eqs2.14,3.2--3.6 and Figure1 visually inspected.",
+  "scope": "One-dimensional isobaric reduction in Lagrangian mass coordinates; positive state-dependent mobility and a Lyapunov functional. Not a full compressible-gas gradient-flow claim.",
+  "own_derivation": "The theta=int kappa dT static transformation is explicitly our derivation from the static energy equation. No numerical dynamics or speed validation added.",
+  "source_distinction": "The paper distinguishes its general cooling function from the earlier cubic model of Elphick, Regev & Spiegel1991. Do not imply all cooling laws in the 1992 paper are cubic."
+}
