@@ -37,7 +37,7 @@ history.csv stores global integrals of solver variables over the domain in pc^2,
 
 The Field proxy sqrt[kappa T/(n^2 Lambda)] is an energy-balance estimate, not an exact marginal wavelength or measured interface width. Its minimum is reported at sampled history times, not every stage. The coarse run tests aggregate pressure and cold mass fraction, not pointwise morphology or continuum convergence. Four cells in a proxy is not a proof of convergence. This finite box and enhanced transport intentionally limit interpretation.
 
-The homepage respects reduced-motion preferences, offers play/pause and uses a real-frame poster. Density colors are fixed over the full sequence; spatial enlargement is only display interpolation. Looping visibly returns to initial time; it is not a periodic physical orbit.
+The homepage respects reduced-motion preferences, offers play/pause and uses a real-frame poster. Density colors are fixed over the full sequence; spatial enlargement is only display interpolation. Faint lines mark the actual 256 x 160 cell boundaries; slightly stronger guides occur every eight cells. These are display overlays, registered to the computational domain and omitted from the annotation strip. Looping visibly returns to initial time; it is not a periodic physical orbit.
 
 ## Attribution
 

@@ -20,10 +20,18 @@ def main():
     try:font=ImageFont.truetype('/System/Library/Fonts/Helvetica.ttc',22)
     except OSError:font=ImageFont.load_default()
     poster_index=round(.78*(len(paths)-1))
+    # Cell boundaries in display pixels, registered to the numerical domain.
+    mesh=v['mesh'];grid=Image.new('RGBA',(w,hh),(0,0,0,0));lines=ImageDraw.Draw(grid)
+    for count,extent,vertical in [(nx,w,True),(ny,hh,False)]:
+        for j in range(count+1):
+            alpha=mesh['guide_opacity'] if j%mesh['guide_every_cells']==0 else mesh['cell_opacity']
+            pos=round(j*extent/count);color=(238,243,229,round(255*alpha))
+            lines.line([(pos,0),(pos,hh)] if vertical else [(0,pos),(w,pos)],fill=color,width=1)
     for i,path in enumerate(paths):
         d=np.fromfile(path,dtype='<f4').reshape(ny,nx)
         z=(np.log10(d)-np.log10(v['density_min_cm3']))/np.log10(v['density_max_cm3']/v['density_min_cm3'])
         im=Image.fromarray((cmap(np.clip(z,0,1))[...,:3]*255).astype('uint8')[::-1]).resize((w,hh),Image.Resampling.BICUBIC)
+        im=Image.alpha_composite(im.convert('RGBA'),grid).convert('RGB')
         draw=ImageDraw.Draw(im);draw.rectangle((0,hh-55,w,hh),fill=(8,15,27));draw.text((24,hh-41),f"{i*c['end_time_Myr']/c['snapshots']:.2f} Myr   |   log density   |   4.8 x 3.0 pc   |   enhanced conduction",font=font,fill='#e8ecd9')
         writer.send(np.asarray(im).tobytes())
         if i==poster_index:im.save(out/'poster.png')
@@ -32,6 +40,7 @@ def main():
     stats=dict(grid=c['grid'],dx_pc=c['domain_pc'][0]/nx,end_Myr=float(h[-1]['time_Myr']),frames=len(paths),poster_time_Myr=poster_index*c['end_time_Myr']/c['snapshots'],min_n_cm3=float(h['min_n'].min()),max_n_cm3=float(h['max_n'].max()),min_T_K=float(h['min_T'].min()),max_T_K=float(h['max_T'].max()),min_Field_proxy_cells_sampled=float(h['min_Field_proxy_cells'].min()),max_Mach_sampled=float(h['max_Mach'].max()),final_cold_mass_fraction=float(h[-1]['cold_mass_fraction_T_below_300K']),coarse_final_cold_mass_fraction=float(coarse[-1]['cold_mass_fraction_T_below_300K']),final_mean_P_over_kB=float(h[-1]['mean_P_over_kB']),coarse_final_mean_P_over_kB=float(coarse[-1]['mean_P_over_kB']),relative_mass_drift=float(np.max(abs(h['mass']/h[0]['mass']-1))),relative_energy_ledger_residual=float(np.max(abs(h['total_energy']-h[0]['total_energy']+h['integrated_net_radiative_loss']))/h[0]['total_energy']),retries=int(h[-1]['retries']),HLLE_fallbacks=int(h[-1]['HLLE_fallbacks']),model_landmarks=landmarks(c))
     (out/'diagnostics.json').write_text(json.dumps(stats,indent=2)+'\n')
     report=json.loads((HERE/'validation.json').read_text())
+    report['checks']=[check for check in report['checks'] if check['name'] not in ('movie run mass conservation','movie run radiative energy ledger','positive temperatures','movie has all actual frames')]
     for name,val,limit in [('movie run mass conservation',stats['relative_mass_drift'],1e-10),('movie run radiative energy ledger',stats['relative_energy_ledger_residual'],1e-9),('positive temperatures',0 if stats['min_T_K']>0 else 1,.5),('movie has all actual frames',0 if len(paths)==c['snapshots']+1 else 1,.5)]:
         report['checks'].append(dict(name=name,value=val,limit=limit,passed=val<limit))
     report['code_sha256']={p.name:sha(p) for p in HERE.iterdir() if p.suffix in ('.py','.cpp') and p.name!='publish.py'}
