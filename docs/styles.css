@@ -5,4 +5,14 @@
 .hero-film video,.hero-film .film-shade{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
 .hero-film .film-shade{z-index:-1;background:linear-gradient(90deg,rgba(4,12,21,.87),rgba(4,12,21,.28) 65%,rgba(4,12,21,.08)),linear-gradient(0deg,rgba(4,12,21,.9),transparent 35%)}
 .hero-film h1{font-size:clamp(50px,6.4vw,98px);color:inherit;line-height:1.02;max-width:900px}.hero-film h1 span{color:#d9decc;font-size:clamp(17px,1.6vw,23px);margin-top:28px}.hero-film .eyebrow,.hero-film .intro{color:#e0e6d7}.hero-film .intro{font-size:19px;line-height:1.6}.hero-film .button{background:#eee9da;color:#15242b;border-color:#eee9da}.film-method{color:#e0e6d7;display:inline-block;margin:20px}.film-caption{position:absolute;bottom:25px;left:7%;right:7%;display:flex;gap:20px;align-items:end;justify-content:space-between}.film-caption p{font-size:12px;line-height:1.65;margin:0;color:#e1e7d8}.film-caption span{color:#bdc9bc}.film-caption button{border:1px solid #c4cdbd;background:#10242bd9;color:#f4f1e5;border-radius:2px;padding:10px 15px;cursor:pointer;white-space:nowrap}.film-caption button:focus-visible,.film-method:focus-visible{outline:3px solid #f2dfad;outline-offset:4px}
-@media(max-width:650px){.hero-film{padding:80px 6% 180px;min-height:780px}.hero-film h1{font-size:51px}.hero-film .intro{font-size:16px}.film-method{margin-left:0;display:block}.film-caption{left:6%;right:6%;align-items:start;flex-direction:column;gap:12px}.hero-film .film-shade{background:linear-gradient(90deg,#080f1be0,#080f1b50),linear-gradient(0deg,#080f1bef,transparent 50%)}}
+/* Narrow screens show the entire numerical domain, separately from the title. */
+@media(max-width:800px){
+  .hero-film{padding:0;min-height:0;justify-content:flex-start}
+  .hero-film .film-copy{order:0;padding:38px 6% 26px;min-width:0}
+  .hero-film video{position:static;order:1;inset:auto;z-index:auto;display:block;flex:none;width:100%;max-width:100%;height:auto;aspect-ratio:8/5;object-fit:contain;background:#080f1b}
+  .hero-film .film-shade{display:none}
+  .hero-film h1{font-size:clamp(36px,8vw,58px);margin:22px 0}
+  .hero-film .intro{font-size:16px}
+  .film-method{margin:18px 0 0;display:block}
+  .hero-film .film-caption{position:static;order:2;padding:18px 6% 26px;align-items:start;flex-direction:column;gap:12px}
+}
