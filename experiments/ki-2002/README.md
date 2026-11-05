@@ -64,3 +64,12 @@ Outputs: equilibrium.csv, saturation.csv, coefficient-comparison.csv, SVG/PNG
 figures and validation.json. Checks cover energy closure, analytic vs finite
 difference derivatives, independent equilibrium inversion, parcel response,
 independent conductive quadrature and agreement with the Iwasaki code.
+
+
+## Pressure-dependent static-front potential
+
+Run `python potential.py --output output` with equilibrium.py, config-potential.json and the same pinned dependencies. No multidimensional calculation is required. potential.svg/png compares 0.9, 1 and 1.1 Psat in log temperature and in the natural conduction coordinate; potential-mobile.svg/png stacks temperature panels for narrow displays. potential.csv preserves every curve, while validation-potential.json records all equilibria, densities, well depths, normalization, independent checks and source/configuration hashes.
+
+The coordinate is theta=(5000/3)T^(3/2), in erg cm^-1 s^-1. V(theta(T),P)=integral_Tcold^T kappa Q dT, in erg^2 cm^-4 s^-2. Vcold=0 independently at each pressure. All panels divide by the same saturation barrier, 3.425672655e-18 erg^2 cm^-4 s^-2. This effective potential is not thermodynamic free energy. A static zero-flux connection requires Vwarm=Vcold; dV/dtheta=Q and equilibrium curvature is Q_T/kappa. A logarithmic-temperature axis changes well widths but preserves extrema and depth differences.
+
+Independent Simpson integration and 16001-to-32001-point refinement check the adaptive quadrature; finite differences check the derivative in theta and all equilibrium curvatures. Below saturation the warm minimum is deeper; above it the cold minimum is deeper. The report retains the small signed cancellation residual at Psat. No time-dependent compressible front velocity is computed or inferred.

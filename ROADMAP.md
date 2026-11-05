@@ -4,8 +4,8 @@
 
 具体的な作業は [GitHub Issues](https://github.com/koyamahr/the-art-of-thermal-instability/issues) を正本とする。公開案内は [progressページ](https://koyamahr.github.io/the-art-of-thermal-instability/progress.html)。同時に進める科学計算は原則1件で、仕様整理・実装・検証・公開を分けて記録する。
 
-- 短期：KI2002の圧力依存ポテンシャル図（[#1](https://github.com/koyamahr/the-art-of-thermal-instability/issues/1)）、圧縮性流体・圧力駆動と反応拡散系の違いの解説（[#2](https://github.com/koyamahr/the-art-of-thermal-instability/issues/2)）。KI図は仕様整理済み、計算と図の実装は未着手。
-- 次の本格的な線形解析：Kim & Kim2013の固有関数（[#6](https://github.com/koyamahr/the-art-of-thermal-instability/issues/6)）。ユーザーの追加指定により、成長率だけでなくFigure9の温度・横速度を同じ固有モードから再構成することを必須成果物とする。原論文・AppendixAの確認と仕様整理まで完了し、背景解・固有値・固有関数ソルバーは未実装。現在のKI課題と同時に二本の計算を走らせない。
+- 短期：KI2002の圧力依存ポテンシャル図（[#1](https://github.com/koyamahr/the-art-of-thermal-instability/issues/1)）、圧縮性流体・圧力駆動と反応拡散系の違いの解説（[#2](https://github.com/koyamahr/the-art-of-thermal-instability/issues/2)）。KIポテンシャル図は2026-11-05に計算・独立検証・公開。0.9/1/1.1 Psat、共通規格化、温度・伝導座標、全交点・井戸の深さをCSV/JSON/SVG/PNGで提供。
+- 次の本格的な線形解析：Kim & Kim2013の固有関数（[#6](https://github.com/koyamahr/the-art-of-thermal-instability/issues/6)）。ユーザーの追加指定により、成長率だけでなくFigure9の温度・横速度を同じ固有モードから再構成することを必須成果物とする。原論文・AppendixAの確認と仕様整理まで完了し、背景解・固有値・固有関数ソルバーは未実装。KIポテンシャル図の完了により次の本格的な実装対象。複数の科学計算を同時に作業中にしない。
 - 中期：定圧近似と圧縮性1Dの小規模比較、Iwasakiの未再現領域を一例ずつ診断（[#3](https://github.com/koyamahr/the-art-of-thermal-instability/issues/3)）、Schwarzの時刻・解像度の限定比較（[#4](https://github.com/koyamahr/the-art-of-thermal-instability/issues/4)）。動く資料が整ってから技術レビュー用資料を用意する。
 - 長期：KI2000/2004、公開済み多次元出力の再解析、未発表計算の整理、出典・版・引用方法・ライセンスを備えるデータ公開。本計算の全面再実行は必須にしない。
 - 保留：FGHの歴史的係数回収（[#5](https://github.com/koyamahr/the-art-of-thermal-instability/issues/5)）。具体的な新資料・検証可能な規約・数値的な新根拠が再開条件。
@@ -164,3 +164,8 @@ Table1と元素組成の転記誤りは見つからない。Lyα冷却の半分�
 ## 2026-11-04: reproducible 2D cover
 
 ユーザー指定の表紙制作を一時的に優先し、KIポテンシャル #1 を候補へ戻して #7 を実装。実際の圧縮性2D流体・KI型加熱冷却・明記した強化伝導による非線形凝縮を動画化し、初期・最終状態と数値検証を公開。歴史論文の再現、物理的なParker伝導、定常乱流の主張はしない。公開後は #1 に戻り、Kim2013固有関数 #6 の優先順位は維持する。
+
+
+## 2026-11-05: KI静的フロントのポテンシャル
+
+Issue1の図を実装。theta=int kappa dT、V=int kappa Q dTを用い、各圧力の冷相をV=0、飽和時障壁を共通縦軸単位とする。0.9/1/1.1 Psatの暖相−冷相の深さ差は -0.540211 / 2.6e-12 / +0.657425。全平衡交点の温度・密度、単位とゲージ、CSV・原図SVG/PNG・スマホ向け縦並び図を公開。独立Simpson求積と16001→32001点の精密化、dV/dtheta=Q、全極値の曲率など42項目を検証。熱力学自由エネルギーや圧縮性フロント速度は主張しない。次はKim2013固有関数 #6（ソルバー未実装）。

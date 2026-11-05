@@ -1,0 +1,345 @@
+{
+  "scope": "New static diagnostic of the corrected KI fit. Effective potential in the conduction coordinate, not thermodynamic free energy or a prediction of compressible front speed.",
+  "definition": "theta=(5000/3) T^(3/2); V=integral_Tcold^T kappa Q dT; dV/dtheta=Q; Vcold=0 separately at each pressure",
+  "normalization": {
+    "V_barrier_at_saturation_erg2_cm4_s2": 3.425672655167338e-18,
+    "theta_warm_at_saturation_erg_cm1_s1": 856762061.0358396
+  },
+  "saturation_pressure_over_kB_K_cm3": 2822.8842973799683,
+  "pressures": [
+    {
+      "pressure_factor": 0.9,
+      "P_over_kB_K_cm3": 2540.5958676419714,
+      "equilibria": [
+        {
+          "branch": "cold",
+          "T_K": 60.531250039669224,
+          "n_H_cm3": 41.9716405324025,
+          "theta_erg_cm1_s1": 784907.0205907606,
+          "V_erg2_cm4_s2": 0.0,
+          "V_normalized": 0.0
+        },
+        {
+          "branch": "intermediate",
+          "T_K": 1064.2431044028356,
+          "n_H_cm3": 2.38723263240455,
+          "theta_erg_cm1_s1": 57864208.50258122,
+          "V_erg2_cm4_s2": 2.0857351105237745e-18,
+          "V_normalized": 0.608854178573548
+        },
+        {
+          "branch": "warm",
+          "T_K": 6519.644655141374,
+          "n_H_cm3": 0.38968318091362,
+          "theta_erg_cm1_s1": 877373753.0480783,
+          "V_erg2_cm4_s2": -1.8505861580206895e-18,
+          "V_normalized": -0.5402110313223409
+        }
+      ],
+      "warm_minus_cold_V_erg2_cm4_s2": -1.8505861580206895e-18,
+      "warm_minus_cold_V_normalized": -0.5402110313223409,
+      "deeper_minimum": "warm"
+    },
+    {
+      "pressure_factor": 1.0,
+      "P_over_kB_K_cm3": 2822.8842973799683,
+      "equilibria": [
+        {
+          "branch": "cold",
+          "T_K": 54.98018778250153,
+          "n_H_cm3": 51.343664167665935,
+          "theta_erg_cm1_s1": 679450.8993887769,
+          "V_erg2_cm4_s2": 0.0,
+          "V_normalized": 0.0
+        },
+        {
+          "branch": "intermediate",
+          "T_K": 1364.881272726123,
+          "n_H_cm3": 2.0682269980463044,
+          "theta_erg_cm1_s1": 84040971.09028819,
+          "V_erg2_cm4_s2": 3.425672655167338e-18,
+          "V_normalized": 1.0
+        },
+        {
+          "branch": "warm",
+          "T_K": 6417.132178328342,
+          "n_H_cm3": 0.4398981069633083,
+          "theta_erg_cm1_s1": 856762061.0358396,
+          "V_erg2_cm4_s2": 8.866463119261426e-30,
+          "V_normalized": 2.5882400368544016e-12
+        }
+      ],
+      "warm_minus_cold_V_erg2_cm4_s2": 8.866463119261426e-30,
+      "warm_minus_cold_V_normalized": 2.5882400368544016e-12,
+      "deeper_minimum": "equal within numerical tolerance"
+    },
+    {
+      "pressure_factor": 1.1,
+      "P_over_kB_K_cm3": 3105.172727117965,
+      "equilibria": [
+        {
+          "branch": "cold",
+          "T_K": 50.910529671657514,
+          "n_H_cm3": 60.99274054197576,
+          "theta_erg_cm1_s1": 605424.7523376232,
+          "V_erg2_cm4_s2": 0.0,
+          "V_normalized": 0.0
+        },
+        {
+          "branch": "intermediate",
+          "T_K": 1695.4958596281112,
+          "n_H_cm3": 1.8314245413722516,
+          "theta_erg_cm1_s1": 116357357.55671766,
+          "V_erg2_cm4_s2": 5.1301869202199645e-18,
+          "V_normalized": 1.4975706778292173
+        },
+        {
+          "branch": "warm",
+          "T_K": 6316.540241640702,
+          "n_H_cm3": 0.49159391190887214,
+          "theta_erg_cm1_s1": 836695918.7309144,
+          "V_erg2_cm4_s2": 2.2521217924154134e-18,
+          "V_normalized": 0.6574246926419773
+        }
+      ],
+      "warm_minus_cold_V_erg2_cm4_s2": 2.2521217924154134e-18,
+      "warm_minus_cold_V_normalized": 0.6574246926419773,
+      "deeper_minimum": "cold"
+    }
+  ],
+  "checks": [
+    {
+      "name": "0.9 Psat: independent signed-integral cancellation",
+      "error": 6.711588742973276e-13,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "0.9 Psat: Simpson mesh refinement 16001 to 32001",
+      "error": 1.0067127264321996e-11,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "0.9 Psat: potential tilt equals existing ZP integral",
+      "error": 0.0,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "0.9 Psat: cold curvature in theta coordinate",
+      "error": 4.864004532478816e-09,
+      "tolerance": 2e-05,
+      "passed": true
+    },
+    {
+      "name": "0.9 Psat: cold is a minimum",
+      "passed": true
+    },
+    {
+      "name": "0.9 Psat: intermediate curvature in theta coordinate",
+      "error": 3.903754508538526e-08,
+      "tolerance": 2e-05,
+      "passed": true
+    },
+    {
+      "name": "0.9 Psat: intermediate is a maximum",
+      "passed": true
+    },
+    {
+      "name": "0.9 Psat: warm curvature in theta coordinate",
+      "error": 6.826768883527734e-08,
+      "tolerance": 2e-05,
+      "passed": true
+    },
+    {
+      "name": "0.9 Psat: warm is a minimum",
+      "passed": true
+    },
+    {
+      "name": "0.9 Psat: dV/dtheta=Q at 150 K",
+      "error": 2.277633637248755e-11,
+      "tolerance": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "0.9 Psat: dV/dtheta=Q at 800 K",
+      "error": 1.6585666173796199e-10,
+      "tolerance": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "0.9 Psat: dV/dtheta=Q at 3000 K",
+      "error": 2.6297852784296083e-12,
+      "tolerance": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "0.9 Psat: dV/dtheta=Q at 6000 K",
+      "error": 1.3084006100783085e-09,
+      "tolerance": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "0.9 Psat: stable minimum selection",
+      "passed": true
+    },
+    {
+      "name": "1 Psat: independent signed-integral cancellation",
+      "error": 7.952193917618613e-13,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "1 Psat: Simpson mesh refinement 16001 to 32001",
+      "error": 1.1928469966605662e-11,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "1 Psat: potential tilt equals existing ZP integral",
+      "error": 0.0,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "1 Psat: cold curvature in theta coordinate",
+      "error": 3.890330502187567e-09,
+      "tolerance": 2e-05,
+      "passed": true
+    },
+    {
+      "name": "1 Psat: cold is a minimum",
+      "passed": true
+    },
+    {
+      "name": "1 Psat: intermediate curvature in theta coordinate",
+      "error": 1.6505717903569916e-08,
+      "tolerance": 2e-05,
+      "passed": true
+    },
+    {
+      "name": "1 Psat: intermediate is a maximum",
+      "passed": true
+    },
+    {
+      "name": "1 Psat: warm curvature in theta coordinate",
+      "error": 7.461835949129636e-08,
+      "tolerance": 2e-05,
+      "passed": true
+    },
+    {
+      "name": "1 Psat: warm is a minimum",
+      "passed": true
+    },
+    {
+      "name": "1 Psat: dV/dtheta=Q at 150 K",
+      "error": 1.3315348823539352e-11,
+      "tolerance": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "1 Psat: dV/dtheta=Q at 800 K",
+      "error": 7.55187024026327e-11,
+      "tolerance": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "1 Psat: dV/dtheta=Q at 3000 K",
+      "error": 2.6143864850780574e-11,
+      "tolerance": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "1 Psat: dV/dtheta=Q at 6000 K",
+      "error": 1.8256854916742782e-09,
+      "tolerance": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "1 Psat: stable minimum selection",
+      "passed": true
+    },
+    {
+      "name": "1.1 Psat: independent signed-integral cancellation",
+      "error": 8.262383449791121e-13,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "1.1 Psat: Simpson mesh refinement 16001 to 32001",
+      "error": 1.2393382780148324e-11,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "1.1 Psat: potential tilt equals existing ZP integral",
+      "error": 0.0,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "1.1 Psat: cold curvature in theta coordinate",
+      "error": 3.1347056062003276e-09,
+      "tolerance": 2e-05,
+      "passed": true
+    },
+    {
+      "name": "1.1 Psat: cold is a minimum",
+      "passed": true
+    },
+    {
+      "name": "1.1 Psat: intermediate curvature in theta coordinate",
+      "error": 1.628072276993464e-08,
+      "tolerance": 2e-05,
+      "passed": true
+    },
+    {
+      "name": "1.1 Psat: intermediate is a maximum",
+      "passed": true
+    },
+    {
+      "name": "1.1 Psat: warm curvature in theta coordinate",
+      "error": 7.925655820528732e-08,
+      "tolerance": 2e-05,
+      "passed": true
+    },
+    {
+      "name": "1.1 Psat: warm is a minimum",
+      "passed": true
+    },
+    {
+      "name": "1.1 Psat: dV/dtheta=Q at 150 K",
+      "error": 3.1685765122801968e-12,
+      "tolerance": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "1.1 Psat: dV/dtheta=Q at 800 K",
+      "error": 6.733147372983694e-11,
+      "tolerance": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "1.1 Psat: dV/dtheta=Q at 3000 K",
+      "error": 5.95781202150647e-11,
+      "tolerance": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "1.1 Psat: dV/dtheta=Q at 6000 K",
+      "error": 2.652626451826734e-09,
+      "tolerance": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "1.1 Psat: stable minimum selection",
+      "passed": true
+    }
+  ],
+  "config_sha256": "2014911a7f53b0e837faa60da614c48af06c25b7c5597ae0386355466e2ff9f0",
+  "code_sha256": {
+    "equilibrium.py": "6c26d60ebbb015916e410901aced4ec0c0bc9dba0aaa85e167df963e0c7c3254",
+    "potential.py": "62dd9ca83f1948bd663dd3099aea2c40728ba47fb9ec196edd07b7083a73eb54"
+  }
+}

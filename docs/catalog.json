@@ -110,11 +110,17 @@
     "status": "validated",
     "source": "https://arxiv.org/abs/astro-ph/0112420",
     "topic": "Corrected heating/cooling law, thermal equilibria and local isobaric stability.",
-    "scope": "Validated equilibrium benchmark and planar ZP saturation pressure with cold, unstable and warm intersections; corrected coefficients traced to primary sources. Original 2D simulation remains outside this exhibit.",
+    "scope": "Validated equilibrium benchmark, planar ZP saturation and pressure-dependent effective potential wells with explicit coordinates, normalization and independent quadrature checks; corrected coefficients traced to primary sources. Original 2D simulation remains outside this exhibit.",
     "exhibits": [
       {
         "label": "Thermal equilibrium & ZP saturation",
         "href": "ki-2002/"
+      }
+    ],
+    "resources": [
+      {
+        "href": "ki-2002/index.html#potential",
+        "label": "Pressure-dependent potential wells →"
       }
     ]
   },

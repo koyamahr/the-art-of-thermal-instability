@@ -16,6 +16,7 @@ class Page(HTMLParser):
     def handle_starttag(self,tag,attrs):
         for key,val in attrs:
             if key in ("href","src","poster","data-src"):self.links.append(val)
+            if key=="srcset":self.links.extend(item.strip().split()[0] for item in val.split(',') if item.strip())
             if key=="id":self.ids.add(val)
             if tag=="html" and key=="lang":self.language=val
 
@@ -57,7 +58,7 @@ def main():
             target=(DOCS/exhibit['href']).resolve()
             if target.is_dir():target=target/'index.html'
             require(target in pages,f"Catalog exhibit missing: {target}")
-    reports=[('ti-2d','validation.json','config.json'),('ki-2002','validation.json','config.json'),
+    reports=[('ti-2d','validation.json','config.json'),('ki-2002','validation.json','config.json'),('ki-2002','validation-potential.json','config-potential.json'),
              ('fgh-1969','validation-saturation.json','config-saturation.json'),
              ('field-1965','validation.json','config.json'),
              ('field-1965','validation-wave.json','config-wave.json'),

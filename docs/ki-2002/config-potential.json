@@ -1,0 +1,9 @@
+{
+  "pressure_factors": [0.9, 1.0, 1.1],
+  "temperature_samples": 1001,
+  "cold_temperature_margin": 0.85,
+  "warm_temperature_margin": 1.02,
+  "conductivity": "kappa(T)=2500 sqrt(T) erg cm^-1 s^-1 K^-1",
+  "density_convention": "Pure atomic H: n=rho/m_H, P/k_B=nT",
+  "scope": "New static diagnostic of the corrected KI fit. Effective potential in the conduction coordinate, not thermodynamic free energy or a prediction of compressible front speed."
+}
