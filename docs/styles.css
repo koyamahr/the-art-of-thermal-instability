@@ -21,3 +21,6 @@
 
 /* Keep the expanded navigation within narrow phone screens. */
 header nav{flex-wrap:wrap}
+
+.archive-teaser{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center;padding:52px 0;border-bottom:1px solid var(--line)}.archive-teaser p{font-size:14px;color:var(--muted)}.archive-teaser .eyebrow{font-size:11px;color:var(--accent)}.archive-teaser figure{margin:0}.archive-teaser img{display:block;width:100%;max-width:420px;height:auto;background:#000}.archive-teaser figcaption{font-size:11px;color:var(--muted);margin-top:10px}.archive-detail{max-width:300px;margin:28px auto}
+@media(max-width:700px){.archive-teaser{grid-template-columns:1fr;gap:26px}}

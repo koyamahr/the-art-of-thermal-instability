@@ -302,7 +302,43 @@
     "showreel.mp4": "b97748a1a40a88ab1bfec4354d28e19599e13b3c3ba719bcd97059fd31149849",
     "showreel.png": "9d32a31b4106d9f81aa7b6f05ebf59590a199c84f8c27b6c9efc26e95f8dfca6",
     "selection.json": "fedb42aef6b703f66510e216efd3c0d66ed963cf14165cf964957fe14603ff45",
-    "README.md": "8a822b7e5f044b9c3fd9ba9ca8d5b69d4c93649c5a870e764dabf2dce8f0e1ce"
+    "README.md": "a1e556d4f50008a2426882e4e650c87190a29fb18301141db655e004feb7d49e",
+    "shock-detail.png": "947d16b43b66114f7d617fb1869230b3e43213b431bcaeed528a428df061e845",
+    "phase-detail.png": "40dbda2c8e0fcb8c15decb2358552961bf9ff5330de22731fa1172b6eeaf129f"
   },
-  "builder_sha256": "0467465b0c2a5a0ec018457198d645a20354dd48bd108b82a4d3ba82a14e70d3"
+  "builder_sha256": "1b280d3fbbb28d99a7eab213ef4a8d8a28fdd77348ccd1fda332d03cda1121e8",
+  "illustrations": [
+    {
+      "file": "shock-detail.png",
+      "source_id": "shock-hydro-3d",
+      "source_relative_path": "sim/tw_mov/shock.avi",
+      "source_sha256": "23f418706b0e22dcc713388dabaf32d8a135238006b5d979dc85ce4888cbb56a",
+      "source_poster": "shock-hydro-3d.png",
+      "requested_video_seek_s": 10.66,
+      "crop_xywh": [
+        0,
+        103,
+        700,
+        497
+      ],
+      "note": "Archival 3D shock illustration; the old title area is cropped, while the scene and coordinate axes are retained.",
+      "editing": "Native pixels; spatial crop only, with no rescaling, recoloring or restoration. Seek time is quantized by the original frame cadence."
+    },
+    {
+      "file": "phase-detail.png",
+      "source_id": "phase-separation-2d",
+      "source_relative_path": "sim/movie/phase.avi",
+      "source_sha256": "08b92dedb0f6dfd6c838737b38026c461937cf863da54d03757c34bb29e10aa9",
+      "source_poster": "phase-separation-2d.png",
+      "requested_video_seek_s": 13.455,
+      "crop_xywh": [
+        76,
+        75,
+        357,
+        356
+      ],
+      "note": "Qualitative 2D field detail; surrounding axes are cropped. Not a calibrated quantitative figure.",
+      "editing": "Native pixels; spatial crop only, with no rescaling, recoloring or restoration. Seek time is quantized by the original frame cadence."
+    }
+  ]
 }
