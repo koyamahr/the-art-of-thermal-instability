@@ -70,6 +70,8 @@ jobs:
         run: |
           python experiments/ti-2d/validate.py --check-only
           python experiments/ti-2d/publish.py --verify-only
+      - name: Verify archival gallery media
+        run: python scripts/build_gallery.py --verify-only
       - name: Build the research reading paths
         run: python scripts/build_reading.py
       - name: Build model-specific equilibrium landmark registry
