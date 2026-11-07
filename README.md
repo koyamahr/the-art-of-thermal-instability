@@ -10,11 +10,19 @@ KI2002の訂正後の加熱冷却関数から平衡曲線・等圧安定区間�
 
 ## ローカルで見る
 
-Python 3で `python3 -m http.server 8000 --directory docs` を実行し、http://localhost:8000 を開きます。サイトにビルドや外部ライブラリは不要です。
+Python 3の標準ライブラリだけで公開用HTMLを生成できます。
+
+```sh
+python3 scripts/build_site.py
+python3 scripts/check_site.py --directory dist
+python3 -m http.server 8000 --bind 127.0.0.1 --directory dist
+```
+
+http://localhost:8000 を開きます。既存18ページに加え、文献47件の個別紹介を `papers/<id>/` に生成します。一覧はJavaScriptなしでも読め、スクリプトはトピック絞り込みを補助します。既存の図・計算ページと `#field-1965` などのアンカーは引き継ぎます。全65ページに固有のタイトル・説明文、canonical、Open Graph情報を付け、`sitemap.xml` を生成します。英語の既存資料に対応する構成で、日本語訳は追加していません。
 
 ## GitHub Pages
 
-公開練習と自動更新の手順は [PUBLISHING.md](PUBLISHING.md) にあります。GitHub Actionsで全図を再計算・検証し、`docs/`だけを公開する構成です。手動の練習モードに加え、mainへのpush後に検証・公開する自動更新を有効にしています。リポジトリは https://github.com/koyamahr/the-art-of-thermal-instability に作成済みです。サイトは https://koyamahr.github.io/the-art-of-thermal-instability/ で公開しています。
+公開練習と自動更新の手順は [PUBLISHING.md](PUBLISHING.md) にあります。GitHub Actionsで全図を再計算・検証し、公開用 `docs/` から静的HTMLを生成し、検証済みの `dist/` だけを公開する構成です。手動の練習モードに加え、mainへのpush後に検証・公開する自動更新を有効にしています。リポジトリは https://github.com/koyamahr/the-art-of-thermal-instability に作成済みです。サイトは https://koyamahr.github.io/the-art-of-thermal-instability/ で公開しています。
 
 ## コンテンツ
 

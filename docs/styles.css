@@ -16,3 +16,5 @@
   .film-method{margin:18px 0 0;display:block}
   .hero-film .film-caption{position:static;order:2;padding:18px 6% 26px;align-items:start;flex-direction:column;gap:12px}
 }
+/* Static catalog rows remain accessible before scripts load. */
+.paper[hidden]{display:none}.paper-title{text-decoration:none}.paper-title:hover{text-decoration:underline}.paper-context{padding-top:24px;font-size:13px}

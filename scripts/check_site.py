@@ -2,6 +2,8 @@
 from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import unquote, urlsplit
+from argparse import ArgumentParser
+from xml.etree import ElementTree as ET
 import hashlib
 import json
 
@@ -12,13 +14,23 @@ DOCS=ROOT/"docs"
 class Page(HTMLParser):
     def __init__(self,path):
         super().__init__();self.links=[];self.ids=set();self.language=None
+        self.canonicals=[];self.metadata={};self.title='';self.in_title=False;self.paper_ids=[]
         self.feed(path.read_text())
     def handle_starttag(self,tag,attrs):
+        attributes=dict(attrs)
+        if tag=='title':self.in_title=True
+        if tag=='link' and attributes.get('rel')=='canonical':self.canonicals.append(attributes.get('href'))
+        if tag=='meta':self.metadata[attributes.get('name',attributes.get('property'))]=attributes.get('content','')
+        if tag=='article' and 'data-group' in attributes:self.paper_ids.append(attributes.get('id'))
         for key,val in attrs:
             if key in ("href","src","poster","data-src"):self.links.append(val)
             if key=="srcset":self.links.extend(item.strip().split()[0] for item in val.split(',') if item.strip())
             if key=="id":self.ids.add(val)
             if tag=="html" and key=="lang":self.language=val
+    def handle_endtag(self,tag):
+        if tag=='title':self.in_title=False
+    def handle_data(self,data):
+        if self.in_title:self.title+=data
 
 
 def require(condition,message):
@@ -26,7 +38,7 @@ def require(condition,message):
 
 
 def main():
-    allowed={".html",".css",".js",".json",".svg",".png",".csv",".py",".txt",".md",".cpp",".mp4",".npz"}
+    allowed={".html",".css",".js",".json",".svg",".png",".csv",".py",".txt",".md",".cpp",".mp4",".npz",".xml"}
     for path in DOCS.rglob("*"):
         require(not path.is_symlink(),f"Publication cannot contain symlinks: {path}")
         if path.is_file():
@@ -50,6 +62,26 @@ def main():
         require(hashlib.sha256((DOCS/name).read_bytes()).hexdigest()==sha,f'Stale equilibrium landmark registry: {name}')
     catalog=json.loads((DOCS/'catalog.json').read_text())
     require(len({p['id'] for p in catalog})==len(catalog),'Duplicate paper identifiers')
+    if DOCS.resolve() != (ROOT/'docs').resolve():
+        from build_site import SITE_URL, canonical_url
+        sitemap=ET.parse(DOCS/'sitemap.xml')
+        urls=[node.text for node in sitemap.findall('{http://www.sitemaps.org/schemas/sitemap/0.9}url/{http://www.sitemaps.org/schemas/sitemap/0.9}loc')]
+        expected_urls={canonical_url(path.relative_to(DOCS.resolve()).as_posix()) for path in pages}
+        require(len(urls)==len(set(urls)) and set(urls)==expected_urls,'Sitemap does not match generated pages')
+        require(set(pages[(DOCS/'index.html').resolve()].paper_ids)=={p['id'] for p in catalog},'Homepage must contain every reference without JavaScript')
+        for path,page in pages.items():
+            canonical=canonical_url(path.relative_to(DOCS.resolve()).as_posix())
+            require(page.canonicals==[canonical],f'Missing or duplicate canonical: {path}')
+            require(page.title and page.metadata.get('description'),f'Missing title or description: {path}')
+            require(page.metadata.get('og:title')==page.title,f'Incorrect Open Graph title: {path}')
+            require(page.metadata.get('og:url')==canonical,f'Incorrect Open Graph URL: {path}')
+            require(page.metadata.get('og:description')==page.metadata['description'],f'Incorrect Open Graph description: {path}')
+        for paper in catalog:
+            path=(DOCS/'papers'/paper['id']/'index.html').resolve()
+            require(path in pages,f'Missing paper overview: {paper["id"]}')
+            html=path.read_text()
+            from html import escape
+            require(escape(paper['scope']) in html and escape(paper['topic']) in html,f'Paper scope missing: {paper["id"]}')
     for paper in catalog:
         for reference in paper.get('resources',[]):
             url=urlsplit(reference['href']);target=(DOCS/unquote(url.path)).resolve()
@@ -90,7 +122,11 @@ def main():
             require((directory/path.name).is_file(),f"Download missing: {chapter}/{path.name}")
             require(path.read_bytes()==(directory/path.name).read_bytes(),f"Download differs from source: {chapter}/{path.name}")
     print(f"Site check passed: {len(pages)} English pages; {total} scientific checks; links, catalog, and source hashes valid.")
-    print("Only docs/ will be uploaded; PDFs and private source material are excluded.")
+    print(f"Checked publication directory: {DOCS.name}/")
 
 
-if __name__=='__main__':main()
+if __name__=='__main__':
+    parser=ArgumentParser()
+    parser.add_argument('--directory',type=Path,default=DOCS)
+    DOCS=parser.parse_args().directory.resolve()
+    main()

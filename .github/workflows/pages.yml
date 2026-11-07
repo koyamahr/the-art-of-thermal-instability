@@ -78,11 +78,15 @@ jobs:
         run: |
           node --check docs/app.js
           python scripts/check_site.py
+      - name: Build static paper overviews and search metadata
+        run: |
+          python scripts/build_site.py
+          python scripts/check_site.py --directory dist
       - name: Save a downloadable rehearsal artifact
         uses: actions/upload-artifact@v7
         with:
           name: site-rehearsal
-          path: docs/
+          path: dist/
           if-no-files-found: error
           retention-days: 7
       - name: Configure Pages
@@ -92,7 +96,7 @@ jobs:
         if: (github.event_name == 'push' && vars.PAGES_AUTO_DEPLOY == 'true') || (github.event_name == 'workflow_dispatch' && inputs.publish && github.ref == 'refs/heads/main')
         uses: actions/upload-pages-artifact@v4
         with:
-          path: docs/
+          path: dist/
 
   deploy:
     if: (github.event_name == 'push' && vars.PAGES_AUTO_DEPLOY == 'true') || (github.event_name == 'workflow_dispatch' && inputs.publish && github.ref == 'refs/heads/main')

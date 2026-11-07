@@ -6,3 +6,5 @@ sources/private/*
 data/raw/
 **/.matplotlib/
 experiments/ti-2d/output/raw/
+dist/
+.preview/
