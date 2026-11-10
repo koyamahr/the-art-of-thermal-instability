@@ -41,4 +41,4 @@ The homepage respects reduced-motion preferences, offers play/pause and uses a r
 
 ## Attribution
 
-Koyama & Inutsuka (2002), ApJ 564, L97; corrected analytic heating/cooling fit documented in the archive's KI2002 chapter. This particular 2D initial value problem and enlarged conductivity are new illustrative choices for The Art of Thermal Instability, November 2026. No additional reuse license is assigned by this experiment; citation and licensing policy remain project-level decisions.
+Koyama & Inutsuka (2002), ApJ 564, L97; corrected analytic heating/cooling fit documented in the archive's KI2002 chapter. This particular 2D initial value problem and enlarged conductivity are new illustrative choices for The Art of Thermal Instability, November 2026. Original implementation code is MIT under the project LICENSE. Generated figures and data follow the separate terms in LICENSING.md.

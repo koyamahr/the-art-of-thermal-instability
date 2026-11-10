@@ -35,7 +35,7 @@ In repository **Settings → Pages → Build and deployment → Source**, select
 
 In **Actions → Check, rehearse, and publish site → Run workflow**, choose **main** and check **publish**. A successful run deploys only the generated `dist/` artifact to Pages. Open the URL returned by the deployment and check the home page, Figures 1–3, and code/CSV download links. Resolve any Pages environment approval or account-specific repository setting shown by GitHub.
 
-The normal project URL is `https://<account>.github.io/the-art-of-thermal-instability/`; use the actual deployment URL as authoritative. Publishing from a non-main branch is explicitly rejected. License selection for code, explanatory text, and generated data remains a separate release task.
+The normal project URL is `https://<account>.github.io/the-art-of-thermal-instability/`; use the actual deployment URL as authoritative. Publishing from a non-main branch is explicitly rejected. Original implementation code is MIT; content/data/media have separate terms. See LICENSING.md.
 
 ## 4. Enable automatic updates
 

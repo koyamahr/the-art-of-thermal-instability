@@ -189,7 +189,7 @@ def build(source=ROOT / 'docs', destination=ROOT / 'dist'):
             for paper in catalog:
                 if paper.get('reference_section'):
                     html = html.replace(f'<h3>{escape(paper["title"])}</h3>', f'<h3><a href="{paper_path(paper)}">{escape(paper["title"])}</a></h3>')
-        path.write_text(metadata(html, relative))
+        path.write_text(metadata(html.replace("</head>", '<style id="rights-notice-style">.rights-notice{box-sizing:border-box;max-width:1240px;width:100%;margin:32px auto 0;padding:20px 24px;border-top:1px solid #c8c4ba;color:#56564e;background:transparent;font:13px/1.7 system-ui,sans-serif}.rights-notice p{display:flex;flex-wrap:wrap;gap:8px 24px;margin:0!important}.rights-notice a{color:inherit;text-underline-offset:3px}.rights-notice span{overflow-wrap:anywhere}</style>\n</head>').replace("</body>", '<footer class="rights-notice" aria-label="利用条件 / Licensing"><p><a href="https://koyamahr.github.io/rights/">利用条件 / Rights &amp; reuse</a><span>Original code: MIT · Text, figures &amp; photos: separate terms</span></p></footer>\n</body>') if 'class="rights-notice"' not in html else html, relative))
         ET.SubElement(ET.SubElement(sitemap, 'url'), 'loc').text = canonical_url(relative)
     ET.ElementTree(sitemap).write(destination / 'sitemap.xml', encoding='utf-8', xml_declaration=True)
     print(f'Built {len(pages)} static English pages, including {len(catalog)} paper overviews, and sitemap.xml.')

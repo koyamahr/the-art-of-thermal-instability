@@ -51,7 +51,7 @@ The short Letter does not contain all rate details. The detailed paper requires 
 
 There is also an unresolved input discrepancy: the Letter's Figure 1 caption gives Fe depletion factors 4 and 10 for cases a and b. The detailed paper's section IV gives remaining Fe fractions 0.3 and 0.01, corresponding to depletion factors about 3.33 and 100. The source audit preserves both statements. They must not be silently combined into a supposedly exact reproduction.
 
-Validation checks the quoted heating anchors, limits, monotonicity, efficiency bounds, analytical cooling slopes, missing-channel handling, and the C II collider-contribution ratio. Passing these checks verifies the implemented ingredients, not the full FGH equilibrium solution. Licenses remain unselected; original paper rights are separate.
+Validation checks the quoted heating anchors, limits, monotonicity, efficiency bounds, analytical cooling slopes, missing-channel handling, and the C II collider-contribution ratio. Passing these checks verifies the implemented ingredients, not the full FGH equilibrium solution. Original implementation code is MIT; content and data have separate terms at https://koyamahr.github.io/rights/ . Original paper rights are unchanged.
 
 
 ## Reduced cold-branch experiment

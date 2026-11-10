@@ -34,7 +34,7 @@ http://localhost:8000 を開きます。既存18ページに加え、文献47件
 
 取得元・版・チェックサムは `sources/manifest.json` に記録しています。主要6編の表題と著者は各PDFの先頭ページで確認済みです。追加資料の確認範囲は台帳に記録します。式・図番号とarXiv版／出版版の差異は今後照合します。原論文PDFは自動では公開しません。
 
-ライセンスは未設定です。コード・解説・計算データそれぞれの公開条件は最初の計算公開までに決定します。
+自作の実装コードはMIT。解説・図・計算データ・動画はMITの対象外で、個別条件または権利留保です。詳細はLICENSING.mdを参照してください。
 
 追加基礎文献：Parker 1953、Spitzer–Tomasko 1968、Dalgarno–McCray 1972、Balbus 1986、Begelman–McKee 1990、Bakes–Tielens 1994。新規の非線形TIシミュレーション展示では熱伝導と対応する解像度の扱いを選定時に確認する。解析理論・加熱冷却係数の原典は別の役割として整理する。
 
@@ -45,3 +45,8 @@ FGHは原図96点との比較・係数監査・80項目の数値チェックを�
 Schwarz, McCray & Stein (1972)のFigure2を最初の再現対象とし、冷却・再結合背景と熱伝導を含む線形試作を追加。Figure1の39読み取り点を冷却入力とし、Figure2の24点と比較。入力下限13.929Kに達する1.679Myrで停止し、後半と非線形Figures3–6は未再現と明記。独立積分法・元方程式のヤコビアン等31項目を検証。
 
 Schwarz1972の非線形ラグランジュ試作も公開。リーマンソルバーを用いず、互換圧力仕事・圧縮時人工粘性・熱伝導・再結合を実装。64/96/128メッシュと補助512セルを比較し、表示は96セル。33項目の数値自己検証を通過する一方、細い伝導層の十分な解像は未確認と明示。0.985Myrで密度差約187、最低温度12.7K、密度FWHM0.0078pc。原論文との時刻・温度・電離度の違い、冷却入力外挿を記録。
+
+
+## Licensing / ライセンス
+
+Original implementation code: **MIT** ([LICENSE](LICENSE)). Text, figures, photographs, book material and data are **excluded** and follow separate terms; see [LICENSING.md](LICENSING.md) and [third-party notices](THIRD_PARTY_NOTICES.md). Public guide: https://koyamahr.github.io/rights/ .
