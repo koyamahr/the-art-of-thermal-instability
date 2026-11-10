@@ -126,6 +126,8 @@ def canonical_url(relative):
 
 
 def metadata(html, relative):
+    # Experiment publishers retain byte-verified scientific sources; normalize only their old license notice.
+    html = re.sub('Code(?:, explanatory (?:content|text), and|, text and| and) generated-data licenses (?:remain unselected|are not yet selected|have not yet been selected)[.;]', 'Original implementation code is MIT. Text, figures and generated data have separate terms; see the Rights &amp; reuse link below.', html)
     page = Metadata(html)
     if not page.title or not page.description:
         raise ValueError(f'Missing title or description: {relative}')
