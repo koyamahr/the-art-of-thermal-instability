@@ -306,7 +306,7 @@
     "shock-detail.png": "947d16b43b66114f7d617fb1869230b3e43213b431bcaeed528a428df061e845",
     "phase-detail.png": "40dbda2c8e0fcb8c15decb2358552961bf9ff5330de22731fa1172b6eeaf129f"
   },
-  "builder_sha256": "1b280d3fbbb28d99a7eab213ef4a8d8a28fdd77348ccd1fda332d03cda1121e8",
+  "builder_sha256": "52cd70799cab6d39a905ed7fe594040494d2ce73c9d4862c77386afc4e450481",
   "illustrations": [
     {
       "file": "shock-detail.png",
@@ -340,5 +340,10 @@
       "note": "Qualitative 2D field detail; surrounding axes are cropped. Not a calibrated quantitative figure.",
       "editing": "Native pixels; spatial crop only, with no rescaling, recoloring or restoration. Seek time is quantized by the original frame cadence."
     }
-  ]
+  ],
+  "builder_url_migration": {
+    "previous_builder_sha256": "1b280d3fbbb28d99a7eab213ef4a8d8a28fdd77348ccd1fda332d03cda1121e8",
+    "date": "2026-11-11",
+    "scope": "Only the GitHub namespace in the generated gallery source link changed. Encoding, frame selection, media bytes and their recorded hashes are unchanged."
+  }
 }
