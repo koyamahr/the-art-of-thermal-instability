@@ -5,7 +5,7 @@
   "reports_sha256": {
     "ki-2002/validation.json": "7994b4db821d0d86415fb3e7b6b1fcd109de4fefb783b76866cd59a4f1071311",
     "fgh-1969/validation-saturation.json": "60df699b526637e0383494afc376e4dba9c2005a733645e3722ddf50a2580e41",
-    "kim-kim-2013/source-audit.json": "c92b1d2d5234bf9c1bed56f91013ed03683fe269a917b9be960e9f266b0bead8"
+    "kim-kim-2013/source-audit.json": "a7b2303a5c51ae9158d8dca44bb89e383e47e086df705a0c6d2cc5aa76fd152d"
   },
   "models": [
     {

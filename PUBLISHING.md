@@ -2,9 +2,9 @@
 
 ## Current status
 
-Initial publication succeeded on 2026-11-03. Site: https://koyamahr.github.io/the-art-of-thermal-instability/ . Repository: https://github.com/koyamahr/the-art-of-thermal-instability . `PAGES_AUTO_DEPLOY=true` is enabled: pushes to main validate and deploy automatically.
+Initial publication succeeded on 2026-11-03. Site: https://koyamarium.github.io/the-art-of-thermal-instability/ . Repository: https://github.com/koyamarium/the-art-of-thermal-instability . `PAGES_AUTO_DEPLOY=true` is enabled: pushes to main validate and deploy automatically.
 
-The first [rehearsal](https://github.com/koyamahr/the-art-of-thermal-instability/actions/runs/41558943576) and [manual deployment](https://github.com/koyamahr/the-art-of-thermal-instability/actions/runs/41559093976) succeeded, including all 49 scientific checks. The steps below document how to repeat the rehearsal and initial setup.
+The first [rehearsal](https://github.com/koyamarium/the-art-of-thermal-instability/actions/runs/41558943576) and [manual deployment](https://github.com/koyamarium/the-art-of-thermal-instability/actions/runs/41559093976) succeeded, including all 49 scientific checks. The steps below document how to repeat the rehearsal and initial setup.
 
 ## 1. Rehearse locally
 
@@ -23,7 +23,7 @@ Visit http://127.0.0.1:8000 and inspect all three exhibits and their downloads. 
 
 ## 2. Connect GitHub and rehearse there
 
-The repository `koyamahr/the-art-of-thermal-instability` has been created. Authenticate Git on this Mac, then push this project with `git push -u origin main`. For a free personal GitHub plan, use a public repository for Pages. Author PDFs are ignored by Git; only the checked `dist/` artifact, generated from public `docs/` inputs, is packaged for the website.
+The repository `koyamarium/the-art-of-thermal-instability` has been created. Authenticate Git on this Mac, then push this project with `git push -u origin main`. For a free personal GitHub plan, use a public repository for Pages. Author PDFs are ignored by Git; only the checked `dist/` artifact, generated from public `docs/` inputs, is packaged for the website.
 
 For an initial setup on another repository, do not add the repository variable `PAGES_AUTO_DEPLOY` yet. On this repository it is already enabled. With that variable absent, pushing `main` runs checks and creates the `site-rehearsal` artifact without deploying. In Actions, open **Check, rehearse, and publish site**, inspect the logs, and download the artifact to review it with a local HTTP server.
 

@@ -60,7 +60,7 @@ The limiting relations are `x/q -> sqrt((1-alpha)/(gamma*alpha))` as q→0 and, 
 
 ## Publication status
 
-Implemented and validated locally and in GitHub Actions. Original implementation code is MIT. Text, figures and generated data have separate content terms; see https://koyamahr.github.io/rights/ . Original paper rights are unchanged.
+Implemented and validated locally and in GitHub Actions. Original implementation code is MIT. Text, figures and generated data have separate content terms; see https://koyamarium.github.io/rights/ . Original paper rights are unchanged.
 
 ## Figure 3 is also available
 

@@ -6,7 +6,7 @@
   "source_pdf_sha256": "dbdc2b023ba6bb69ffb850ae2ef5b157514f18b0fe8dbe9377e07030a5e4f447",
   "stage": "Source-audited reconstruction specification; no Kim2013 background, eigenvalue or eigenfunction computed yet.",
   "priority": "User explicitly requires detailed analytical reproduction, especially eigenfunctions. Figure9 is the primary acceptance target; Figure5 growth rates alone are insufficient.",
-  "issue": "https://github.com/koyamahr/the-art-of-thermal-instability/issues/6",
+  "issue": "https://github.com/koyamarium/the-art-of-thermal-instability/issues/6",
   "reviewed": {
     "text": "Sections2\u20133, Figure9 discussion and AppendixA read.",
     "visual_pages": [

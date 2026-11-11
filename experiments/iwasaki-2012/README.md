@@ -50,4 +50,4 @@ Checks cover thermal landmarks, saturation quadrature, matched ZP flux, tighter 
 
 Outputs include two classification PNG/SVG files; grid CSVs with class codes, physical fluxes, terminal temperatures, and decision reasons; boundary CSVs; an equilibrium PNG/SVG and CSV; and `validation.json`. The two grid CSVs are the underlying sampled results, including masked and unresolved cells.
 
-Original implementation code is MIT. Generated data and figures have separate content terms; see https://koyamahr.github.io/rights/ . Original paper rights are unchanged.
+Original implementation code is MIT. Generated data and figures have separate content terms; see https://koyamarium.github.io/rights/ . Original paper rights are unchanged.

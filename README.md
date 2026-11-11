@@ -22,7 +22,7 @@ http://localhost:8000 を開きます。既存18ページに加え、文献47件
 
 ## GitHub Pages
 
-公開練習と自動更新の手順は [PUBLISHING.md](PUBLISHING.md) にあります。GitHub Actionsで全図を再計算・検証し、公開用 `docs/` から静的HTMLを生成し、検証済みの `dist/` だけを公開する構成です。手動の練習モードに加え、mainへのpush後に検証・公開する自動更新を有効にしています。リポジトリは https://github.com/koyamahr/the-art-of-thermal-instability に作成済みです。サイトは https://koyamahr.github.io/the-art-of-thermal-instability/ で公開しています。
+公開練習と自動更新の手順は [PUBLISHING.md](PUBLISHING.md) にあります。GitHub Actionsで全図を再計算・検証し、公開用 `docs/` から静的HTMLを生成し、検証済みの `dist/` だけを公開する構成です。手動の練習モードに加え、mainへのpush後に検証・公開する自動更新を有効にしています。リポジトリは https://github.com/koyamarium/the-art-of-thermal-instability に作成済みです。サイトは https://koyamarium.github.io/the-art-of-thermal-instability/ で公開しています。
 
 ## コンテンツ
 
@@ -49,4 +49,4 @@ Schwarz1972の非線形ラグランジュ試作も公開。リーマンソルバ
 
 ## Licensing / ライセンス
 
-Original implementation code: **MIT** ([LICENSE](LICENSE)). Text, figures, photographs, book material and data are **excluded** and follow separate terms; see [LICENSING.md](LICENSING.md) and [third-party notices](THIRD_PARTY_NOTICES.md). Public guide: https://koyamahr.github.io/rights/ .
+Original implementation code: **MIT** ([LICENSE](LICENSE)). Text, figures, photographs, book material and data are **excluded** and follow separate terms; see [LICENSING.md](LICENSING.md) and [third-party notices](THIRD_PARTY_NOTICES.md). Public guide: https://koyamarium.github.io/rights/ .

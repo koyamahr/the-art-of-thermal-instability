@@ -46,4 +46,4 @@ The 12 numerical checks include an independent constrained rate-matrix solution,
 - `validation.json`: numerical checks, runtime, hashes, limitations, and separate external-comparison statistics.
 - Two PNG/SVG figures: rates and cooling, plus discrepancies from the printed cooling table.
 
-Original implementation code is MIT. Generated data and figures have separate content terms; see https://koyamahr.github.io/rights/ . Original paper rights are unchanged.
+Original implementation code is MIT. Generated data and figures have separate content terms; see https://koyamarium.github.io/rights/ . Original paper rights are unchanged.
